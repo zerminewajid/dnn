@@ -1,13 +1,5 @@
 Checkout [BADDE WEATHER SLAY](https://huggingface.co/spaces/zermeenewajid/weathering-with-you)
----
-title: Weathering With You
-emoji: 🌧️
-colorFrom: indigo
-colorTo: purple
-sdk: docker
-app_port: 7860
-pinned: true
----
+
 
 # Weathering With You
 
