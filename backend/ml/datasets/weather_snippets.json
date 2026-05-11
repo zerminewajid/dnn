@@ -1,0 +1,3635 @@
+[
+  {
+    "id": "pk_monsoon_01",
+    "text": "Pakistan's monsoon season runs from late June to September. The Arabian Sea branch brings heavy rainfall to Sindh and southern Punjab, while the Bay of Bengal branch affects northern Punjab and KPK. Karachi typically receives 6080% of its annual rainfall in JulyAugust.",
+    "tags": [
+      "monsoon",
+      "karachi",
+      "sindh",
+      "punjab",
+      "kpk",
+      "rainfall"
+    ]
+  },
+  {
+    "id": "pk_monsoon_02",
+    "text": "Monsoon onset over Pakistan is declared when the 850 hPa wind over Karachi shifts from westerly to southwesterly. In 2022 a super-flood year, monsoon rainfall exceeded 300% of normal in Balochistan and Sindh, inundating one-third of the country.",
+    "tags": [
+      "monsoon",
+      "flood",
+      "balochistan",
+      "sindh",
+      "2022"
+    ]
+  },
+  {
+    "id": "pk_monsoon_03",
+    "text": "Pre-monsoon thunderstorms, called nor'westers locally, are common in Punjab during AprilMay. These squall lines produce gusty winds exceeding 70 km/h and hail, often lasting 12 hours.",
+    "tags": [
+      "norwester",
+      "thunderstorm",
+      "punjab",
+      "pre-monsoon",
+      "hail"
+    ]
+  },
+  {
+    "id": "lahore_smog_01",
+    "text": "Lahore experiences severe smog from October to February, driven by crop residue burning in surrounding districts, vehicular emissions, and brick kilns. AQI values exceeding 500 (Hazardous) are recorded on peak days, with visibility dropping below 200 metres.",
+    "tags": [
+      "smog",
+      "lahore",
+      "aqi",
+      "pollution",
+      "winter"
+    ]
+  },
+  {
+    "id": "lahore_smog_02",
+    "text": "The Lahore smog season is worsened by thermal inversions that trap pollutants near the surface. Schools are often closed when PM2.5 exceeds 300 µg/m³. The primary agricultural burning window is October 15  November 20.",
+    "tags": [
+      "smog",
+      "lahore",
+      "pm25",
+      "inversion",
+      "burning"
+    ]
+  },
+  {
+    "id": "karachi_cyclone_01",
+    "text": "Karachi is vulnerable to Arabian Sea cyclones, historically most active in MayJune (pre-monsoon) and OctoberNovember (post-monsoon). Cyclone Biparjoy in June 2023 was one of the longest-lived Arabian Sea cyclones on record, making landfall near the SindhGujarat border.",
+    "tags": [
+      "cyclone",
+      "karachi",
+      "arabian-sea",
+      "biparjoy",
+      "2023"
+    ]
+  },
+  {
+    "id": "karachi_cyclone_02",
+    "text": "Arabian Sea cyclones intensify rapidly when sea surface temperatures exceed 28°C. Karachi's coastal geography provides limited lead time  surge warnings are issued when a storm is within 300 km of the coast.",
+    "tags": [
+      "cyclone",
+      "karachi",
+      "surge",
+      "sea-surface-temperature"
+    ]
+  },
+  {
+    "id": "karachi_heat_01",
+    "text": "Karachi experiences deadly heat waves in MayJune before monsoon onset. The June 2015 heat wave killed over 1,200 people, with temperatures exceeding 45°C and high humidity preventing effective cooling. Loo winds from the desert amplify heat stress.",
+    "tags": [
+      "heatwave",
+      "karachi",
+      "2015",
+      "loo",
+      "humidity"
+    ]
+  },
+  {
+    "id": "quetta_winter_01",
+    "text": "Quetta, at 1,680 m elevation, experiences harsh winters with temperatures regularly dropping below -10°C from December to February. Snowfall is common on the surrounding Chiltan and Zarghoon ranges. The city receives most of its annual precipitation as winter snow.",
+    "tags": [
+      "quetta",
+      "winter",
+      "snow",
+      "cold",
+      "elevation"
+    ]
+  },
+  {
+    "id": "quetta_winter_02",
+    "text": "Balochistan's cold winters are driven by continental air masses from Central Asia. Quetta's airport has recorded -18°C. Roads to Ziarat and Ziarat are frequently closed due to snowdrifts in January.",
+    "tags": [
+      "quetta",
+      "balochistan",
+      "extreme-cold",
+      "frost"
+    ]
+  },
+  {
+    "id": "islamabad_rain_01",
+    "text": "Islamabad receives bimodal rainfall  a winter-spring peak (JanuaryMarch) from western disturbances and a summer monsoon peak (JulyAugust). Annual rainfall averages 1,142 mm, making it one of the wettest major Pakistani cities.",
+    "tags": [
+      "islamabad",
+      "rainfall",
+      "monsoon",
+      "western-disturbance"
+    ]
+  },
+  {
+    "id": "islamabad_hail_01",
+    "text": "Islamabad and Rawalpindi are prone to hailstorms in MarchApril associated with westerly wave troughs. Hailstones up to 3 cm diameter have damaged vehicles and crops in the Potohar plateau region.",
+    "tags": [
+      "islamabad",
+      "rawalpindi",
+      "hail",
+      "spring"
+    ]
+  },
+  {
+    "id": "pk_heatwave_record_01",
+    "text": "Pakistan holds one of the world's highest reliably recorded temperatures: 53.7°C measured at Turbat, Balochistan, on 28 May 2017. This is the highest reliably recorded temperature in Asia.",
+    "tags": [
+      "heatwave",
+      "turbat",
+      "balochistan",
+      "record",
+      "temperature"
+    ]
+  },
+  {
+    "id": "pk_heatwave_record_02",
+    "text": "Jacobabad and Sibi in Sindh regularly record temperatures above 50°C in MayJune. Wet-bulb temperatures in Jacobabad have exceeded the survivability threshold of 35°C wet-bulb during peak heat events.",
+    "tags": [
+      "heatwave",
+      "jacobabad",
+      "sibi",
+      "wet-bulb",
+      "extreme"
+    ]
+  },
+  {
+    "id": "pk_loo_01",
+    "text": "The Loo is a hot, dry westerly or north-westerly wind that blows across the Indo-Gangetic plain and Pakistan's Punjab in summer. Wind speeds reach 3050 km/h and temperatures can rise 58°C above ambient. It desiccates standing crops and causes dehydration.",
+    "tags": [
+      "loo",
+      "hot-wind",
+      "punjab",
+      "summer",
+      "agriculture"
+    ]
+  },
+  {
+    "id": "pk_haboob_01",
+    "text": "Haboobs are massive dust storms common in the Thar Desert and Cholistan in MayJune. They form ahead of squall lines when outflow winds loft dust to heights of 13 km. Visibility drops to zero and they can travel 200300 km.",
+    "tags": [
+      "haboob",
+      "dust-storm",
+      "thar",
+      "cholistan",
+      "visibility"
+    ]
+  },
+  {
+    "id": "pk_western_disturbance_01",
+    "text": "Western disturbances are extratropical cyclones originating over the Mediterranean that bring winter rainfall and snowfall to Pakistan's north. They reach Pakistan as upper-level troughs, causing widespread cloud cover and rainfall in Punjab, KPK, and AJK between November and March.",
+    "tags": [
+      "western-disturbance",
+      "winter",
+      "kpk",
+      "ajk",
+      "snow",
+      "rainfall"
+    ]
+  },
+  {
+    "id": "peshawar_summer_01",
+    "text": "Peshawar has a semi-arid climate with hot summers exceeding 40°C in June. The surrounding Khyber hills channel afternoon thunderstorms from the southwest during monsoon months. The valley traps heat and the city often records Pakistan's highest temperatures in May.",
+    "tags": [
+      "peshawar",
+      "summer",
+      "heat",
+      "thunderstorm",
+      "monsoon"
+    ]
+  },
+  {
+    "id": "pk_agriculture_kharif_01",
+    "text": "Pakistan's kharif (summer) crop season runs from April to October. Key crops include rice, cotton, sugarcane, and maize. Monsoon onset and intensity directly determine kharif yields  delayed onset by more than 2 weeks historically reduces rice output by 1520%.",
+    "tags": [
+      "kharif",
+      "agriculture",
+      "monsoon",
+      "rice",
+      "cotton"
+    ]
+  },
+  {
+    "id": "pk_agriculture_rabi_01",
+    "text": "The rabi (winter) crop season runs October to April. Wheat is the dominant rabi crop. Winter rainfall from western disturbances is critical  a dry NovemberJanuary reduces wheat yields significantly. Fog in Punjab can cause fungal disease in standing wheat.",
+    "tags": [
+      "rabi",
+      "wheat",
+      "winter",
+      "western-disturbance",
+      "fog",
+      "punjab"
+    ]
+  },
+  {
+    "id": "lahore_fog_01",
+    "text": "Dense radiation fog blankets Lahore, Faisalabad, and the GT Road corridor from December to February. Visibility falls below 50 metres on peak days, causing motorway closures and flight delays. The fog forms overnight when humidity is high and winds are calm after monsoon soil moisture.",
+    "tags": [
+      "fog",
+      "lahore",
+      "faisalabad",
+      "winter",
+      "visibility",
+      "motorway"
+    ]
+  },
+  {
+    "id": "pk_cloud_type_01",
+    "text": "Cumulonimbus clouds (Cb) are the primary producers of heavy rain and hail in Pakistan. Their anvil tops often reach the tropopause at 1618 km during monsoon. Cb development in the afternoon is triggered by surface heating over the Punjab plains.",
+    "tags": [
+      "cumulonimbus",
+      "cloud",
+      "monsoon",
+      "hail",
+      "rain",
+      "punjab"
+    ]
+  },
+  {
+    "id": "pk_cloud_type_02",
+    "text": "Stratocumulus sheets are common over Karachi in winter and pre-monsoon, driven by marine air from the Arabian Sea. They produce little rain but maintain overcast skies for days. Morning fog on the coast often burns off by 10 AM.",
+    "tags": [
+      "stratocumulus",
+      "cloud",
+      "karachi",
+      "arabian-sea",
+      "overcast"
+    ]
+  },
+  {
+    "id": "pk_uv_01",
+    "text": "Pakistan receives intense UV radiation year-round due to its low latitude and high altitude in northern areas. Peak UV Index values of 11+ (extreme) are recorded in Karachi and Islamabad from April to August. UV exposure risk is highest between 10 AM and 3 PM.",
+    "tags": [
+      "uv",
+      "radiation",
+      "karachi",
+      "islamabad",
+      "summer",
+      "health"
+    ]
+  },
+  {
+    "id": "pk_wind_01",
+    "text": "Sea breezes are critical to Karachi's livability in summer, keeping coastal temperatures 35°C cooler than inland Sindh. The breeze sets in around noon and peaks in late afternoon. On days when the sea breeze fails, Karachi can record temperatures above 44°C.",
+    "tags": [
+      "sea-breeze",
+      "karachi",
+      "cooling",
+      "coastal",
+      "wind"
+    ]
+  },
+  {
+    "id": "topi_01",
+    "text": "Topi, in the Swabi district of KPK, has a semi-arid to sub-humid climate. It receives 500700 mm annual rainfall, most of it during monsoon. Summer temperatures reach 42°C but winters are mild. The nearby Indus River moderates humidity.",
+    "tags": [
+      "topi",
+      "kpk",
+      "swabi",
+      "monsoon",
+      "semi-arid"
+    ]
+  },
+  {
+    "id": "pk_climate_change_01",
+    "text": "Pakistan is among the top 10 countries most vulnerable to climate change. Glacial lake outburst floods (GLOFs) from the Karakoram and Hindu Kush have increased. The 2022 super-floods were attributed partly to climate-amplified monsoon extremes.",
+    "tags": [
+      "climate-change",
+      "glof",
+      "karakoram",
+      "flood",
+      "2022"
+    ]
+  },
+  {
+    "id": "pk_aqi_01",
+    "text": "Pakistan's major cities face severe air quality challenges. Lahore frequently ranks among the world's most polluted cities in NovemberDecember. Main pollutants are PM2.5 from biomass burning, vehicle exhaust, and industrial emissions. AQI above 300 triggers school closures.",
+    "tags": [
+      "aqi",
+      "pm25",
+      "lahore",
+      "pollution",
+      "health"
+    ]
+  },
+  {
+    "id": "pk_aqi_02",
+    "text": "Karachi's air quality is impacted by vehicle emissions, the Kemari port industrial zone, and seasonal dust. AQI spikes occur during southwest monsoon failure years when dust from Balochistan blows in. Marine aerosols from the Arabian Sea can mask true pollution readings.",
+    "tags": [
+      "aqi",
+      "karachi",
+      "dust",
+      "marine",
+      "emissions"
+    ]
+  },
+  {
+    "id": "pk_weather_extremes_01",
+    "text": "Pakistan recorded 366 mm of rain in Islamabad in a single day in July 2001  a national record for a 24-hour period in a major city. Urban flooding in Islamabad and Rawalpindi occurs when the Nullah Lai overflows during intense monsoon rainfall events.",
+    "tags": [
+      "extreme-rainfall",
+      "islamabad",
+      "rawalpindi",
+      "nullah-lai",
+      "flood",
+      "record"
+    ]
+  },
+  {
+    "id": "gen_karachi_winter_temperature_extreme_0",
+    "text": "Karachi (Sindh coast) experiences its winter temperature extremes during DecemberFebruary. With a hot semi-arid climate at sea level, daily highs can reach 26°C while nights cool to 13°C. Residents describe the sardi season as bitterly cold.",
+    "tags": [
+      "karachi",
+      "winter",
+      "temperature_extreme",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_winter_temperature_extreme_1",
+    "text": "During DecemberFebruary, Karachi's hot semi-arid climate produces temperatures between 13°C at night and 26°C in the afternoon. Sindh coast topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "karachi",
+      "winter",
+      "temperature_extreme",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_winter_rainfall_event_0",
+    "text": "Karachi receives significant rainfall during DecemberFebruary (winter season). Hourly intensities can exceed 8 mm/h during convective storms, causing urban flooding in low-lying Sindh coast neighbourhoods. Annual contribution from this season is roughly 20% of total.",
+    "tags": [
+      "karachi",
+      "winter",
+      "rainfall_event",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_winter_rainfall_event_1",
+    "text": "Rainfall in Karachi during winter (DecemberFebruary) averages 8 mm for the period. The hot semi-arid climate means dry spells of 1020 days are common between events. Farmers in Sindh coast rely on this window for rabi (wheat, chickpea) cultivation.",
+    "tags": [
+      "karachi",
+      "winter",
+      "rainfall_event",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_winter_wind_event_0",
+    "text": "Karachi is exposed to westerly winds during DecemberFebruary. Speeds average 18 km/h with gusts to 25 km/h, reducing apparent temperature and raising dust. The Sindh coast geography channels and amplifies these winds through the winter season.",
+    "tags": [
+      "karachi",
+      "winter",
+      "wind_event",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_winter_wind_event_1",
+    "text": "Sustained westerly winds in Karachi during winter (DecemberFebruary) can reach 18 km/h, lifting fine dust from the surrounding Sindh coast terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "karachi",
+      "winter",
+      "wind_event",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_winter_fog_smog_0",
+    "text": "Karachi experiences dense radiation fog conditions during DecemberFebruary (winter). Visibility can fall to 50 metres before 10 AM, delaying road traffic and flights. The hot semi-arid climate's winter humidity profile makes Karachi one of the most affected cities in Sindh coast.",
+    "tags": [
+      "karachi",
+      "winter",
+      "fog_smog",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_winter_fog_smog_1",
+    "text": "Morning dense radiation fog in Karachi (Sindh coast) during winter forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during DecemberFebruary.",
+    "tags": [
+      "karachi",
+      "winter",
+      "fog_smog",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_winter_humidity_comfort_0",
+    "text": "Relative humidity in Karachi during winter (DecemberFebruary) averages 62%, making outdoor activities pleasant. The hot semi-arid climate at sea level means Sindh coast residents experience distinct seasonal humidity swings of up to 40 percentage points between winter and the preceding season.",
+    "tags": [
+      "karachi",
+      "winter",
+      "humidity_comfort",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_winter_humidity_comfort_1",
+    "text": "Heat index in Karachi during DecemberFebruary combines 26°C air temperature with 62% relative humidity, producing a feels-like temperature of 28°C. Public health advisories are issued when the heat index exceeds 41°C in Sindh coast.",
+    "tags": [
+      "karachi",
+      "winter",
+      "humidity_comfort",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_spring_temperature_extreme_0",
+    "text": "Karachi (Sindh coast) experiences its spring temperature extremes during MarchApril. With a hot semi-arid climate at sea level, daily highs can reach 33°C while nights cool to 20°C. Residents describe the bahar season as refreshing.",
+    "tags": [
+      "karachi",
+      "spring",
+      "temperature_extreme",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_spring_temperature_extreme_1",
+    "text": "During MarchApril, Karachi's hot semi-arid climate produces temperatures between 20°C at night and 33°C in the afternoon. Sindh coast topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "karachi",
+      "spring",
+      "temperature_extreme",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_spring_rainfall_event_0",
+    "text": "Karachi receives significant rainfall during MarchApril (spring season). Hourly intensities can exceed 5 mm/h during convective storms, causing urban flooding in low-lying Sindh coast neighbourhoods. Annual contribution from this season is roughly 12% of total.",
+    "tags": [
+      "karachi",
+      "spring",
+      "rainfall_event",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_spring_rainfall_event_1",
+    "text": "Rainfall in Karachi during spring (MarchApril) averages 5 mm for the period. The hot semi-arid climate means dry spells of 1020 days are common between events. Farmers in Sindh coast rely on this window for rabi harvest cultivation.",
+    "tags": [
+      "karachi",
+      "spring",
+      "rainfall_event",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_spring_wind_event_0",
+    "text": "Karachi is exposed to nor'wester squall winds during MarchApril. Speeds average 22 km/h with gusts to 30 km/h, reducing apparent temperature and raising dust. The Sindh coast geography channels and amplifies these winds through the spring season.",
+    "tags": [
+      "karachi",
+      "spring",
+      "wind_event",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_spring_wind_event_1",
+    "text": "Sustained nor'wester squall winds in Karachi during spring (MarchApril) can reach 22 km/h, lifting fine dust from the surrounding Sindh coast terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "karachi",
+      "spring",
+      "wind_event",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_spring_fog_smog_0",
+    "text": "Karachi experiences morning mist conditions during MarchApril (spring). Visibility can fall to 300 metres before 10 AM, delaying road traffic and flights. The hot semi-arid climate's spring humidity profile makes Karachi one of the most affected cities in Sindh coast.",
+    "tags": [
+      "karachi",
+      "spring",
+      "fog_smog",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_spring_fog_smog_1",
+    "text": "Morning morning mist in Karachi (Sindh coast) during spring forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during MarchApril.",
+    "tags": [
+      "karachi",
+      "spring",
+      "fog_smog",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_spring_humidity_comfort_0",
+    "text": "Relative humidity in Karachi during spring (MarchApril) averages 55%, making outdoor activities warm but comfortable. The hot semi-arid climate at sea level means Sindh coast residents experience distinct seasonal humidity swings of up to 40 percentage points between spring and the preceding season.",
+    "tags": [
+      "karachi",
+      "spring",
+      "humidity_comfort",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_spring_humidity_comfort_1",
+    "text": "Heat index in Karachi during MarchApril combines 33°C air temperature with 55% relative humidity, producing a feels-like temperature of 34°C. Public health advisories are issued when the heat index exceeds 41°C in Sindh coast.",
+    "tags": [
+      "karachi",
+      "spring",
+      "humidity_comfort",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_pre_monsoon_temperature_extreme_0",
+    "text": "Karachi (Sindh coast) experiences its pre-monsoon temperature extremes during MayJune. With a hot semi-arid climate at sea level, daily highs can reach 38°C while nights cool to 28°C. Residents describe the garmi season as scorching.",
+    "tags": [
+      "karachi",
+      "pre-monsoon",
+      "temperature_extreme",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_pre_monsoon_temperature_extreme_1",
+    "text": "During MayJune, Karachi's hot semi-arid climate produces temperatures between 28°C at night and 38°C in the afternoon. Sindh coast topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "karachi",
+      "pre-monsoon",
+      "temperature_extreme",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_pre_monsoon_rainfall_event_0",
+    "text": "Karachi receives significant rainfall during MayJune (pre-monsoon season). Hourly intensities can exceed 3 mm/h during convective storms, causing urban flooding in low-lying Sindh coast neighbourhoods. Annual contribution from this season is roughly 8% of total.",
+    "tags": [
+      "karachi",
+      "pre-monsoon",
+      "rainfall_event",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_pre_monsoon_rainfall_event_1",
+    "text": "Rainfall in Karachi during pre-monsoon (MayJune) averages 3 mm for the period. The hot semi-arid climate means dry spells of 1020 days are common between events. Farmers in Sindh coast rely on this window for early kharif sowing cultivation.",
+    "tags": [
+      "karachi",
+      "pre-monsoon",
+      "rainfall_event",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_pre_monsoon_wind_event_0",
+    "text": "Karachi is exposed to Loo winds during MayJune. Speeds average 25 km/h with gusts to 35 km/h, reducing apparent temperature and raising dust. The Sindh coast geography channels and amplifies these winds through the pre-monsoon season.",
+    "tags": [
+      "karachi",
+      "pre-monsoon",
+      "wind_event",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_pre_monsoon_wind_event_1",
+    "text": "Sustained Loo winds in Karachi during pre-monsoon (MayJune) can reach 25 km/h, lifting fine dust from the surrounding Sindh coast terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "karachi",
+      "pre-monsoon",
+      "wind_event",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_pre_monsoon_fog_smog_0",
+    "text": "Karachi experiences dust haze conditions during MayJune (pre-monsoon). Visibility can fall to 800 metres before 10 AM, delaying road traffic and flights. The hot semi-arid climate's pre-monsoon humidity profile makes Karachi one of the most affected cities in Sindh coast.",
+    "tags": [
+      "karachi",
+      "pre-monsoon",
+      "fog_smog",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_pre_monsoon_fog_smog_1",
+    "text": "Morning dust haze in Karachi (Sindh coast) during pre-monsoon forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during MayJune.",
+    "tags": [
+      "karachi",
+      "pre-monsoon",
+      "fog_smog",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_pre_monsoon_humidity_comfort_0",
+    "text": "Relative humidity in Karachi during pre-monsoon (MayJune) averages 70%, making outdoor activities oppressive. The hot semi-arid climate at sea level means Sindh coast residents experience distinct seasonal humidity swings of up to 40 percentage points between pre-monsoon and the preceding season.",
+    "tags": [
+      "karachi",
+      "pre-monsoon",
+      "humidity_comfort",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_pre_monsoon_humidity_comfort_1",
+    "text": "Heat index in Karachi during MayJune combines 38°C air temperature with 70% relative humidity, producing a feels-like temperature of 41°C. Public health advisories are issued when the heat index exceeds 41°C in Sindh coast.",
+    "tags": [
+      "karachi",
+      "pre-monsoon",
+      "humidity_comfort",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_monsoon_temperature_extreme_0",
+    "text": "Karachi (Sindh coast) experiences its monsoon temperature extremes during JulySeptember. With a hot semi-arid climate at sea level, daily highs can reach 34°C while nights cool to 27°C. Residents describe the baarish season as rainy and lush.",
+    "tags": [
+      "karachi",
+      "monsoon",
+      "temperature_extreme",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_monsoon_temperature_extreme_1",
+    "text": "During JulySeptember, Karachi's hot semi-arid climate produces temperatures between 27°C at night and 34°C in the afternoon. Sindh coast topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "karachi",
+      "monsoon",
+      "temperature_extreme",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_monsoon_rainfall_event_0",
+    "text": "Karachi receives significant rainfall during JulySeptember (monsoon season). Hourly intensities can exceed 55 mm/h during convective storms, causing urban flooding in low-lying Sindh coast neighbourhoods. Annual contribution from this season is roughly 52% of total.",
+    "tags": [
+      "karachi",
+      "monsoon",
+      "rainfall_event",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_monsoon_rainfall_event_1",
+    "text": "Rainfall in Karachi during monsoon (JulySeptember) averages 55 mm for the period. The hot semi-arid climate means dry spells of 1020 days are common between events. Farmers in Sindh coast rely on this window for kharif (rice, cotton, maize) cultivation.",
+    "tags": [
+      "karachi",
+      "monsoon",
+      "rainfall_event",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_monsoon_wind_event_0",
+    "text": "Karachi is exposed to southwesterly monsoon winds during JulySeptember. Speeds average 28 km/h with gusts to 39 km/h, reducing apparent temperature and raising dust. The Sindh coast geography channels and amplifies these winds through the monsoon season.",
+    "tags": [
+      "karachi",
+      "monsoon",
+      "wind_event",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_monsoon_wind_event_1",
+    "text": "Sustained southwesterly monsoon winds in Karachi during monsoon (JulySeptember) can reach 28 km/h, lifting fine dust from the surrounding Sindh coast terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "karachi",
+      "monsoon",
+      "wind_event",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_monsoon_fog_smog_0",
+    "text": "Karachi experiences low stratus cloud conditions during JulySeptember (monsoon). Visibility can fall to 1500 metres before 10 AM, delaying road traffic and flights. The hot semi-arid climate's monsoon humidity profile makes Karachi one of the most affected cities in Sindh coast.",
+    "tags": [
+      "karachi",
+      "monsoon",
+      "fog_smog",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_monsoon_fog_smog_1",
+    "text": "Morning low stratus cloud in Karachi (Sindh coast) during monsoon forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during JulySeptember.",
+    "tags": [
+      "karachi",
+      "monsoon",
+      "fog_smog",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_monsoon_humidity_comfort_0",
+    "text": "Relative humidity in Karachi during monsoon (JulySeptember) averages 82%, making outdoor activities sticky and humid. The hot semi-arid climate at sea level means Sindh coast residents experience distinct seasonal humidity swings of up to 40 percentage points between monsoon and the preceding season.",
+    "tags": [
+      "karachi",
+      "monsoon",
+      "humidity_comfort",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_monsoon_humidity_comfort_1",
+    "text": "Heat index in Karachi during JulySeptember combines 34°C air temperature with 82% relative humidity, producing a feels-like temperature of 38°C. Public health advisories are issued when the heat index exceeds 41°C in Sindh coast.",
+    "tags": [
+      "karachi",
+      "monsoon",
+      "humidity_comfort",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_post_monsoon_temperature_extreme_0",
+    "text": "Karachi (Sindh coast) experiences its post-monsoon temperature extremes during OctoberNovember. With a hot semi-arid climate at sea level, daily highs can reach 34°C while nights cool to 22°C. Residents describe the khushk season as temperate.",
+    "tags": [
+      "karachi",
+      "post-monsoon",
+      "temperature_extreme",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_post_monsoon_temperature_extreme_1",
+    "text": "During OctoberNovember, Karachi's hot semi-arid climate produces temperatures between 22°C at night and 34°C in the afternoon. Sindh coast topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "karachi",
+      "post-monsoon",
+      "temperature_extreme",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_post_monsoon_rainfall_event_0",
+    "text": "Karachi receives significant rainfall during OctoberNovember (post-monsoon season). Hourly intensities can exceed 4 mm/h during convective storms, causing urban flooding in low-lying Sindh coast neighbourhoods. Annual contribution from this season is roughly 8% of total.",
+    "tags": [
+      "karachi",
+      "post-monsoon",
+      "rainfall_event",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_post_monsoon_rainfall_event_1",
+    "text": "Rainfall in Karachi during post-monsoon (OctoberNovember) averages 4 mm for the period. The hot semi-arid climate means dry spells of 1020 days are common between events. Farmers in Sindh coast rely on this window for late kharif harvest cultivation.",
+    "tags": [
+      "karachi",
+      "post-monsoon",
+      "rainfall_event",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_post_monsoon_wind_event_0",
+    "text": "Karachi is exposed to northerly winds during OctoberNovember. Speeds average 16 km/h with gusts to 22 km/h, reducing apparent temperature and raising dust. The Sindh coast geography channels and amplifies these winds through the post-monsoon season.",
+    "tags": [
+      "karachi",
+      "post-monsoon",
+      "wind_event",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_post_monsoon_wind_event_1",
+    "text": "Sustained northerly winds in Karachi during post-monsoon (OctoberNovember) can reach 16 km/h, lifting fine dust from the surrounding Sindh coast terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "karachi",
+      "post-monsoon",
+      "wind_event",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_post_monsoon_fog_smog_0",
+    "text": "Karachi experiences shallow fog conditions during OctoberNovember (post-monsoon). Visibility can fall to 200 metres before 10 AM, delaying road traffic and flights. The hot semi-arid climate's post-monsoon humidity profile makes Karachi one of the most affected cities in Sindh coast.",
+    "tags": [
+      "karachi",
+      "post-monsoon",
+      "fog_smog",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_post_monsoon_fog_smog_1",
+    "text": "Morning shallow fog in Karachi (Sindh coast) during post-monsoon forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during OctoberNovember.",
+    "tags": [
+      "karachi",
+      "post-monsoon",
+      "fog_smog",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_post_monsoon_humidity_comfort_0",
+    "text": "Relative humidity in Karachi during post-monsoon (OctoberNovember) averages 60%, making outdoor activities mild. The hot semi-arid climate at sea level means Sindh coast residents experience distinct seasonal humidity swings of up to 40 percentage points between post-monsoon and the preceding season.",
+    "tags": [
+      "karachi",
+      "post-monsoon",
+      "humidity_comfort",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_karachi_post_monsoon_humidity_comfort_1",
+    "text": "Heat index in Karachi during OctoberNovember combines 34°C air temperature with 60% relative humidity, producing a feels-like temperature of 36°C. Public health advisories are issued when the heat index exceeds 41°C in Sindh coast.",
+    "tags": [
+      "karachi",
+      "post-monsoon",
+      "humidity_comfort",
+      "sindh coast"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_winter_temperature_extreme_0",
+    "text": "Lahore (central Punjab) experiences its winter temperature extremes during DecemberFebruary. With a semi-arid climate at 217 m, daily highs can reach 18°C while nights cool to 5°C. Residents describe the sardi season as bitterly cold.",
+    "tags": [
+      "lahore",
+      "winter",
+      "temperature_extreme",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_winter_temperature_extreme_1",
+    "text": "During DecemberFebruary, Lahore's semi-arid climate produces temperatures between 5°C at night and 18°C in the afternoon. central Punjab topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "lahore",
+      "winter",
+      "temperature_extreme",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_winter_rainfall_event_0",
+    "text": "Lahore receives significant rainfall during DecemberFebruary (winter season). Hourly intensities can exceed 30 mm/h during convective storms, causing urban flooding in low-lying central Punjab neighbourhoods. Annual contribution from this season is roughly 20% of total.",
+    "tags": [
+      "lahore",
+      "winter",
+      "rainfall_event",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_winter_rainfall_event_1",
+    "text": "Rainfall in Lahore during winter (DecemberFebruary) averages 30 mm for the period. The semi-arid climate means dry spells of 1020 days are common between events. Farmers in central Punjab rely on this window for rabi (wheat, chickpea) cultivation.",
+    "tags": [
+      "lahore",
+      "winter",
+      "rainfall_event",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_winter_wind_event_0",
+    "text": "Lahore is exposed to westerly winds during DecemberFebruary. Speeds average 10 km/h with gusts to 14 km/h, reducing apparent temperature and raising dust. The central Punjab geography channels and amplifies these winds through the winter season.",
+    "tags": [
+      "lahore",
+      "winter",
+      "wind_event",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_winter_wind_event_1",
+    "text": "Sustained westerly winds in Lahore during winter (DecemberFebruary) can reach 10 km/h, lifting fine dust from the surrounding central Punjab terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "lahore",
+      "winter",
+      "wind_event",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_winter_fog_smog_0",
+    "text": "Lahore experiences dense radiation fog conditions during DecemberFebruary (winter). Visibility can fall to 50 metres before 10 AM, delaying road traffic and flights. The semi-arid climate's winter humidity profile makes Lahore one of the most affected cities in central Punjab.",
+    "tags": [
+      "lahore",
+      "winter",
+      "fog_smog",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_winter_fog_smog_1",
+    "text": "Morning dense radiation fog in Lahore (central Punjab) during winter forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during DecemberFebruary.",
+    "tags": [
+      "lahore",
+      "winter",
+      "fog_smog",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_winter_humidity_comfort_0",
+    "text": "Relative humidity in Lahore during winter (DecemberFebruary) averages 75%, making outdoor activities pleasant. The semi-arid climate at 217 m means central Punjab residents experience distinct seasonal humidity swings of up to 40 percentage points between winter and the preceding season.",
+    "tags": [
+      "lahore",
+      "winter",
+      "humidity_comfort",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_winter_humidity_comfort_1",
+    "text": "Heat index in Lahore during DecemberFebruary combines 18°C air temperature with 75% relative humidity, producing a feels-like temperature of 21°C. Public health advisories are issued when the heat index exceeds 41°C in central Punjab.",
+    "tags": [
+      "lahore",
+      "winter",
+      "humidity_comfort",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_spring_temperature_extreme_0",
+    "text": "Lahore (central Punjab) experiences its spring temperature extremes during MarchApril. With a semi-arid climate at 217 m, daily highs can reach 32°C while nights cool to 17°C. Residents describe the bahar season as refreshing.",
+    "tags": [
+      "lahore",
+      "spring",
+      "temperature_extreme",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_spring_temperature_extreme_1",
+    "text": "During MarchApril, Lahore's semi-arid climate produces temperatures between 17°C at night and 32°C in the afternoon. central Punjab topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "lahore",
+      "spring",
+      "temperature_extreme",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_spring_rainfall_event_0",
+    "text": "Lahore receives significant rainfall during MarchApril (spring season). Hourly intensities can exceed 25 mm/h during convective storms, causing urban flooding in low-lying central Punjab neighbourhoods. Annual contribution from this season is roughly 12% of total.",
+    "tags": [
+      "lahore",
+      "spring",
+      "rainfall_event",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_spring_rainfall_event_1",
+    "text": "Rainfall in Lahore during spring (MarchApril) averages 25 mm for the period. The semi-arid climate means dry spells of 1020 days are common between events. Farmers in central Punjab rely on this window for rabi harvest cultivation.",
+    "tags": [
+      "lahore",
+      "spring",
+      "rainfall_event",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_spring_wind_event_0",
+    "text": "Lahore is exposed to nor'wester squall winds during MarchApril. Speeds average 18 km/h with gusts to 25 km/h, reducing apparent temperature and raising dust. The central Punjab geography channels and amplifies these winds through the spring season.",
+    "tags": [
+      "lahore",
+      "spring",
+      "wind_event",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_spring_wind_event_1",
+    "text": "Sustained nor'wester squall winds in Lahore during spring (MarchApril) can reach 18 km/h, lifting fine dust from the surrounding central Punjab terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "lahore",
+      "spring",
+      "wind_event",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_spring_fog_smog_0",
+    "text": "Lahore experiences morning mist conditions during MarchApril (spring). Visibility can fall to 300 metres before 10 AM, delaying road traffic and flights. The semi-arid climate's spring humidity profile makes Lahore one of the most affected cities in central Punjab.",
+    "tags": [
+      "lahore",
+      "spring",
+      "fog_smog",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_spring_fog_smog_1",
+    "text": "Morning morning mist in Lahore (central Punjab) during spring forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during MarchApril.",
+    "tags": [
+      "lahore",
+      "spring",
+      "fog_smog",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_spring_humidity_comfort_0",
+    "text": "Relative humidity in Lahore during spring (MarchApril) averages 48%, making outdoor activities warm but comfortable. The semi-arid climate at 217 m means central Punjab residents experience distinct seasonal humidity swings of up to 40 percentage points between spring and the preceding season.",
+    "tags": [
+      "lahore",
+      "spring",
+      "humidity_comfort",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_spring_humidity_comfort_1",
+    "text": "Heat index in Lahore during MarchApril combines 32°C air temperature with 48% relative humidity, producing a feels-like temperature of 32°C. Public health advisories are issued when the heat index exceeds 41°C in central Punjab.",
+    "tags": [
+      "lahore",
+      "spring",
+      "humidity_comfort",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_pre_monsoon_temperature_extreme_0",
+    "text": "Lahore (central Punjab) experiences its pre-monsoon temperature extremes during MayJune. With a semi-arid climate at 217 m, daily highs can reach 42°C while nights cool to 28°C. Residents describe the garmi season as scorching.",
+    "tags": [
+      "lahore",
+      "pre-monsoon",
+      "temperature_extreme",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_pre_monsoon_temperature_extreme_1",
+    "text": "During MayJune, Lahore's semi-arid climate produces temperatures between 28°C at night and 42°C in the afternoon. central Punjab topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "lahore",
+      "pre-monsoon",
+      "temperature_extreme",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_pre_monsoon_rainfall_event_0",
+    "text": "Lahore receives significant rainfall during MayJune (pre-monsoon season). Hourly intensities can exceed 12 mm/h during convective storms, causing urban flooding in low-lying central Punjab neighbourhoods. Annual contribution from this season is roughly 8% of total.",
+    "tags": [
+      "lahore",
+      "pre-monsoon",
+      "rainfall_event",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_pre_monsoon_rainfall_event_1",
+    "text": "Rainfall in Lahore during pre-monsoon (MayJune) averages 12 mm for the period. The semi-arid climate means dry spells of 1020 days are common between events. Farmers in central Punjab rely on this window for early kharif sowing cultivation.",
+    "tags": [
+      "lahore",
+      "pre-monsoon",
+      "rainfall_event",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_pre_monsoon_wind_event_0",
+    "text": "Lahore is exposed to Loo winds during MayJune. Speeds average 20 km/h with gusts to 28 km/h, reducing apparent temperature and raising dust. The central Punjab geography channels and amplifies these winds through the pre-monsoon season.",
+    "tags": [
+      "lahore",
+      "pre-monsoon",
+      "wind_event",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_pre_monsoon_wind_event_1",
+    "text": "Sustained Loo winds in Lahore during pre-monsoon (MayJune) can reach 20 km/h, lifting fine dust from the surrounding central Punjab terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "lahore",
+      "pre-monsoon",
+      "wind_event",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_pre_monsoon_fog_smog_0",
+    "text": "Lahore experiences dust haze conditions during MayJune (pre-monsoon). Visibility can fall to 800 metres before 10 AM, delaying road traffic and flights. The semi-arid climate's pre-monsoon humidity profile makes Lahore one of the most affected cities in central Punjab.",
+    "tags": [
+      "lahore",
+      "pre-monsoon",
+      "fog_smog",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_pre_monsoon_fog_smog_1",
+    "text": "Morning dust haze in Lahore (central Punjab) during pre-monsoon forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during MayJune.",
+    "tags": [
+      "lahore",
+      "pre-monsoon",
+      "fog_smog",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_pre_monsoon_humidity_comfort_0",
+    "text": "Relative humidity in Lahore during pre-monsoon (MayJune) averages 38%, making outdoor activities oppressive. The semi-arid climate at 217 m means central Punjab residents experience distinct seasonal humidity swings of up to 40 percentage points between pre-monsoon and the preceding season.",
+    "tags": [
+      "lahore",
+      "pre-monsoon",
+      "humidity_comfort",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_pre_monsoon_humidity_comfort_1",
+    "text": "Heat index in Lahore during MayJune combines 42°C air temperature with 38% relative humidity, producing a feels-like temperature of 41°C. Public health advisories are issued when the heat index exceeds 41°C in central Punjab.",
+    "tags": [
+      "lahore",
+      "pre-monsoon",
+      "humidity_comfort",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_monsoon_temperature_extreme_0",
+    "text": "Lahore (central Punjab) experiences its monsoon temperature extremes during JulySeptember. With a semi-arid climate at 217 m, daily highs can reach 36°C while nights cool to 26°C. Residents describe the baarish season as rainy and lush.",
+    "tags": [
+      "lahore",
+      "monsoon",
+      "temperature_extreme",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_monsoon_temperature_extreme_1",
+    "text": "During JulySeptember, Lahore's semi-arid climate produces temperatures between 26°C at night and 36°C in the afternoon. central Punjab topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "lahore",
+      "monsoon",
+      "temperature_extreme",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_monsoon_rainfall_event_0",
+    "text": "Lahore receives significant rainfall during JulySeptember (monsoon season). Hourly intensities can exceed 95 mm/h during convective storms, causing urban flooding in low-lying central Punjab neighbourhoods. Annual contribution from this season is roughly 52% of total.",
+    "tags": [
+      "lahore",
+      "monsoon",
+      "rainfall_event",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_monsoon_rainfall_event_1",
+    "text": "Rainfall in Lahore during monsoon (JulySeptember) averages 95 mm for the period. The semi-arid climate means dry spells of 1020 days are common between events. Farmers in central Punjab rely on this window for kharif (rice, cotton, maize) cultivation.",
+    "tags": [
+      "lahore",
+      "monsoon",
+      "rainfall_event",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_monsoon_wind_event_0",
+    "text": "Lahore is exposed to southwesterly monsoon winds during JulySeptember. Speeds average 22 km/h with gusts to 30 km/h, reducing apparent temperature and raising dust. The central Punjab geography channels and amplifies these winds through the monsoon season.",
+    "tags": [
+      "lahore",
+      "monsoon",
+      "wind_event",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_monsoon_wind_event_1",
+    "text": "Sustained southwesterly monsoon winds in Lahore during monsoon (JulySeptember) can reach 22 km/h, lifting fine dust from the surrounding central Punjab terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "lahore",
+      "monsoon",
+      "wind_event",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_monsoon_fog_smog_0",
+    "text": "Lahore experiences low stratus cloud conditions during JulySeptember (monsoon). Visibility can fall to 1500 metres before 10 AM, delaying road traffic and flights. The semi-arid climate's monsoon humidity profile makes Lahore one of the most affected cities in central Punjab.",
+    "tags": [
+      "lahore",
+      "monsoon",
+      "fog_smog",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_monsoon_fog_smog_1",
+    "text": "Morning low stratus cloud in Lahore (central Punjab) during monsoon forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during JulySeptember.",
+    "tags": [
+      "lahore",
+      "monsoon",
+      "fog_smog",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_monsoon_humidity_comfort_0",
+    "text": "Relative humidity in Lahore during monsoon (JulySeptember) averages 75%, making outdoor activities sticky and humid. The semi-arid climate at 217 m means central Punjab residents experience distinct seasonal humidity swings of up to 40 percentage points between monsoon and the preceding season.",
+    "tags": [
+      "lahore",
+      "monsoon",
+      "humidity_comfort",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_monsoon_humidity_comfort_1",
+    "text": "Heat index in Lahore during JulySeptember combines 36°C air temperature with 75% relative humidity, producing a feels-like temperature of 39°C. Public health advisories are issued when the heat index exceeds 41°C in central Punjab.",
+    "tags": [
+      "lahore",
+      "monsoon",
+      "humidity_comfort",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_post_monsoon_temperature_extreme_0",
+    "text": "Lahore (central Punjab) experiences its post-monsoon temperature extremes during OctoberNovember. With a semi-arid climate at 217 m, daily highs can reach 30°C while nights cool to 15°C. Residents describe the khushk season as temperate.",
+    "tags": [
+      "lahore",
+      "post-monsoon",
+      "temperature_extreme",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_post_monsoon_temperature_extreme_1",
+    "text": "During OctoberNovember, Lahore's semi-arid climate produces temperatures between 15°C at night and 30°C in the afternoon. central Punjab topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "lahore",
+      "post-monsoon",
+      "temperature_extreme",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_post_monsoon_rainfall_event_0",
+    "text": "Lahore receives significant rainfall during OctoberNovember (post-monsoon season). Hourly intensities can exceed 18 mm/h during convective storms, causing urban flooding in low-lying central Punjab neighbourhoods. Annual contribution from this season is roughly 8% of total.",
+    "tags": [
+      "lahore",
+      "post-monsoon",
+      "rainfall_event",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_post_monsoon_rainfall_event_1",
+    "text": "Rainfall in Lahore during post-monsoon (OctoberNovember) averages 18 mm for the period. The semi-arid climate means dry spells of 1020 days are common between events. Farmers in central Punjab rely on this window for late kharif harvest cultivation.",
+    "tags": [
+      "lahore",
+      "post-monsoon",
+      "rainfall_event",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_post_monsoon_wind_event_0",
+    "text": "Lahore is exposed to northerly winds during OctoberNovember. Speeds average 10 km/h with gusts to 14 km/h, reducing apparent temperature and raising dust. The central Punjab geography channels and amplifies these winds through the post-monsoon season.",
+    "tags": [
+      "lahore",
+      "post-monsoon",
+      "wind_event",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_post_monsoon_wind_event_1",
+    "text": "Sustained northerly winds in Lahore during post-monsoon (OctoberNovember) can reach 10 km/h, lifting fine dust from the surrounding central Punjab terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "lahore",
+      "post-monsoon",
+      "wind_event",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_post_monsoon_fog_smog_0",
+    "text": "Lahore experiences shallow fog conditions during OctoberNovember (post-monsoon). Visibility can fall to 200 metres before 10 AM, delaying road traffic and flights. The semi-arid climate's post-monsoon humidity profile makes Lahore one of the most affected cities in central Punjab.",
+    "tags": [
+      "lahore",
+      "post-monsoon",
+      "fog_smog",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_post_monsoon_fog_smog_1",
+    "text": "Morning shallow fog in Lahore (central Punjab) during post-monsoon forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during OctoberNovember.",
+    "tags": [
+      "lahore",
+      "post-monsoon",
+      "fog_smog",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_post_monsoon_humidity_comfort_0",
+    "text": "Relative humidity in Lahore during post-monsoon (OctoberNovember) averages 55%, making outdoor activities mild. The semi-arid climate at 217 m means central Punjab residents experience distinct seasonal humidity swings of up to 40 percentage points between post-monsoon and the preceding season.",
+    "tags": [
+      "lahore",
+      "post-monsoon",
+      "humidity_comfort",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_lahore_post_monsoon_humidity_comfort_1",
+    "text": "Heat index in Lahore during OctoberNovember combines 30°C air temperature with 55% relative humidity, producing a feels-like temperature of 31°C. Public health advisories are issued when the heat index exceeds 41°C in central Punjab.",
+    "tags": [
+      "lahore",
+      "post-monsoon",
+      "humidity_comfort",
+      "central punjab"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_winter_temperature_extreme_0",
+    "text": "Islamabad (Potohar plateau) experiences its winter temperature extremes during DecemberFebruary. With a sub-humid climate at 507 m, daily highs can reach 14°C while nights cool to 3°C. Residents describe the sardi season as bitterly cold.",
+    "tags": [
+      "islamabad",
+      "winter",
+      "temperature_extreme",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_winter_temperature_extreme_1",
+    "text": "During DecemberFebruary, Islamabad's sub-humid climate produces temperatures between 3°C at night and 14°C in the afternoon. Potohar plateau topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "islamabad",
+      "winter",
+      "temperature_extreme",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_winter_rainfall_event_0",
+    "text": "Islamabad receives significant rainfall during DecemberFebruary (winter season). Hourly intensities can exceed 60 mm/h during convective storms, causing urban flooding in low-lying Potohar plateau neighbourhoods. Annual contribution from this season is roughly 20% of total.",
+    "tags": [
+      "islamabad",
+      "winter",
+      "rainfall_event",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_winter_rainfall_event_1",
+    "text": "Rainfall in Islamabad during winter (DecemberFebruary) averages 60 mm for the period. The sub-humid climate means dry spells of 1020 days are common between events. Farmers in Potohar plateau rely on this window for rabi (wheat, chickpea) cultivation.",
+    "tags": [
+      "islamabad",
+      "winter",
+      "rainfall_event",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_winter_wind_event_0",
+    "text": "Islamabad is exposed to westerly winds during DecemberFebruary. Speeds average 12 km/h with gusts to 16 km/h, reducing apparent temperature and raising dust. The Potohar plateau geography channels and amplifies these winds through the winter season.",
+    "tags": [
+      "islamabad",
+      "winter",
+      "wind_event",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_winter_wind_event_1",
+    "text": "Sustained westerly winds in Islamabad during winter (DecemberFebruary) can reach 12 km/h, lifting fine dust from the surrounding Potohar plateau terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "islamabad",
+      "winter",
+      "wind_event",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_winter_fog_smog_0",
+    "text": "Islamabad experiences dense radiation fog conditions during DecemberFebruary (winter). Visibility can fall to 50 metres before 10 AM, delaying road traffic and flights. The sub-humid climate's winter humidity profile makes Islamabad one of the most affected cities in Potohar plateau.",
+    "tags": [
+      "islamabad",
+      "winter",
+      "fog_smog",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_winter_fog_smog_1",
+    "text": "Morning dense radiation fog in Islamabad (Potohar plateau) during winter forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during DecemberFebruary.",
+    "tags": [
+      "islamabad",
+      "winter",
+      "fog_smog",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_winter_humidity_comfort_0",
+    "text": "Relative humidity in Islamabad during winter (DecemberFebruary) averages 72%, making outdoor activities pleasant. The sub-humid climate at 507 m means Potohar plateau residents experience distinct seasonal humidity swings of up to 40 percentage points between winter and the preceding season.",
+    "tags": [
+      "islamabad",
+      "winter",
+      "humidity_comfort",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_winter_humidity_comfort_1",
+    "text": "Heat index in Islamabad during DecemberFebruary combines 14°C air temperature with 72% relative humidity, producing a feels-like temperature of 17°C. Public health advisories are issued when the heat index exceeds 41°C in Potohar plateau.",
+    "tags": [
+      "islamabad",
+      "winter",
+      "humidity_comfort",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_spring_temperature_extreme_0",
+    "text": "Islamabad (Potohar plateau) experiences its spring temperature extremes during MarchApril. With a sub-humid climate at 507 m, daily highs can reach 26°C while nights cool to 12°C. Residents describe the bahar season as refreshing.",
+    "tags": [
+      "islamabad",
+      "spring",
+      "temperature_extreme",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_spring_temperature_extreme_1",
+    "text": "During MarchApril, Islamabad's sub-humid climate produces temperatures between 12°C at night and 26°C in the afternoon. Potohar plateau topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "islamabad",
+      "spring",
+      "temperature_extreme",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_spring_rainfall_event_0",
+    "text": "Islamabad receives significant rainfall during MarchApril (spring season). Hourly intensities can exceed 55 mm/h during convective storms, causing urban flooding in low-lying Potohar plateau neighbourhoods. Annual contribution from this season is roughly 12% of total.",
+    "tags": [
+      "islamabad",
+      "spring",
+      "rainfall_event",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_spring_rainfall_event_1",
+    "text": "Rainfall in Islamabad during spring (MarchApril) averages 55 mm for the period. The sub-humid climate means dry spells of 1020 days are common between events. Farmers in Potohar plateau rely on this window for rabi harvest cultivation.",
+    "tags": [
+      "islamabad",
+      "spring",
+      "rainfall_event",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_spring_wind_event_0",
+    "text": "Islamabad is exposed to nor'wester squall winds during MarchApril. Speeds average 20 km/h with gusts to 28 km/h, reducing apparent temperature and raising dust. The Potohar plateau geography channels and amplifies these winds through the spring season.",
+    "tags": [
+      "islamabad",
+      "spring",
+      "wind_event",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_spring_wind_event_1",
+    "text": "Sustained nor'wester squall winds in Islamabad during spring (MarchApril) can reach 20 km/h, lifting fine dust from the surrounding Potohar plateau terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "islamabad",
+      "spring",
+      "wind_event",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_spring_fog_smog_0",
+    "text": "Islamabad experiences morning mist conditions during MarchApril (spring). Visibility can fall to 300 metres before 10 AM, delaying road traffic and flights. The sub-humid climate's spring humidity profile makes Islamabad one of the most affected cities in Potohar plateau.",
+    "tags": [
+      "islamabad",
+      "spring",
+      "fog_smog",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_spring_fog_smog_1",
+    "text": "Morning morning mist in Islamabad (Potohar plateau) during spring forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during MarchApril.",
+    "tags": [
+      "islamabad",
+      "spring",
+      "fog_smog",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_spring_humidity_comfort_0",
+    "text": "Relative humidity in Islamabad during spring (MarchApril) averages 55%, making outdoor activities warm but comfortable. The sub-humid climate at 507 m means Potohar plateau residents experience distinct seasonal humidity swings of up to 40 percentage points between spring and the preceding season.",
+    "tags": [
+      "islamabad",
+      "spring",
+      "humidity_comfort",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_spring_humidity_comfort_1",
+    "text": "Heat index in Islamabad during MarchApril combines 26°C air temperature with 55% relative humidity, producing a feels-like temperature of 27°C. Public health advisories are issued when the heat index exceeds 41°C in Potohar plateau.",
+    "tags": [
+      "islamabad",
+      "spring",
+      "humidity_comfort",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_pre_monsoon_temperature_extreme_0",
+    "text": "Islamabad (Potohar plateau) experiences its pre-monsoon temperature extremes during MayJune. With a sub-humid climate at 507 m, daily highs can reach 38°C while nights cool to 24°C. Residents describe the garmi season as scorching.",
+    "tags": [
+      "islamabad",
+      "pre-monsoon",
+      "temperature_extreme",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_pre_monsoon_temperature_extreme_1",
+    "text": "During MayJune, Islamabad's sub-humid climate produces temperatures between 24°C at night and 38°C in the afternoon. Potohar plateau topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "islamabad",
+      "pre-monsoon",
+      "temperature_extreme",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_pre_monsoon_rainfall_event_0",
+    "text": "Islamabad receives significant rainfall during MayJune (pre-monsoon season). Hourly intensities can exceed 30 mm/h during convective storms, causing urban flooding in low-lying Potohar plateau neighbourhoods. Annual contribution from this season is roughly 8% of total.",
+    "tags": [
+      "islamabad",
+      "pre-monsoon",
+      "rainfall_event",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_pre_monsoon_rainfall_event_1",
+    "text": "Rainfall in Islamabad during pre-monsoon (MayJune) averages 30 mm for the period. The sub-humid climate means dry spells of 1020 days are common between events. Farmers in Potohar plateau rely on this window for early kharif sowing cultivation.",
+    "tags": [
+      "islamabad",
+      "pre-monsoon",
+      "rainfall_event",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_pre_monsoon_wind_event_0",
+    "text": "Islamabad is exposed to Loo winds during MayJune. Speeds average 18 km/h with gusts to 25 km/h, reducing apparent temperature and raising dust. The Potohar plateau geography channels and amplifies these winds through the pre-monsoon season.",
+    "tags": [
+      "islamabad",
+      "pre-monsoon",
+      "wind_event",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_pre_monsoon_wind_event_1",
+    "text": "Sustained Loo winds in Islamabad during pre-monsoon (MayJune) can reach 18 km/h, lifting fine dust from the surrounding Potohar plateau terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "islamabad",
+      "pre-monsoon",
+      "wind_event",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_pre_monsoon_fog_smog_0",
+    "text": "Islamabad experiences dust haze conditions during MayJune (pre-monsoon). Visibility can fall to 800 metres before 10 AM, delaying road traffic and flights. The sub-humid climate's pre-monsoon humidity profile makes Islamabad one of the most affected cities in Potohar plateau.",
+    "tags": [
+      "islamabad",
+      "pre-monsoon",
+      "fog_smog",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_pre_monsoon_fog_smog_1",
+    "text": "Morning dust haze in Islamabad (Potohar plateau) during pre-monsoon forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during MayJune.",
+    "tags": [
+      "islamabad",
+      "pre-monsoon",
+      "fog_smog",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_pre_monsoon_humidity_comfort_0",
+    "text": "Relative humidity in Islamabad during pre-monsoon (MayJune) averages 42%, making outdoor activities oppressive. The sub-humid climate at 507 m means Potohar plateau residents experience distinct seasonal humidity swings of up to 40 percentage points between pre-monsoon and the preceding season.",
+    "tags": [
+      "islamabad",
+      "pre-monsoon",
+      "humidity_comfort",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_pre_monsoon_humidity_comfort_1",
+    "text": "Heat index in Islamabad during MayJune combines 38°C air temperature with 42% relative humidity, producing a feels-like temperature of 38°C. Public health advisories are issued when the heat index exceeds 41°C in Potohar plateau.",
+    "tags": [
+      "islamabad",
+      "pre-monsoon",
+      "humidity_comfort",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_monsoon_temperature_extreme_0",
+    "text": "Islamabad (Potohar plateau) experiences its monsoon temperature extremes during JulySeptember. With a sub-humid climate at 507 m, daily highs can reach 33°C while nights cool to 23°C. Residents describe the baarish season as rainy and lush.",
+    "tags": [
+      "islamabad",
+      "monsoon",
+      "temperature_extreme",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_monsoon_temperature_extreme_1",
+    "text": "During JulySeptember, Islamabad's sub-humid climate produces temperatures between 23°C at night and 33°C in the afternoon. Potohar plateau topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "islamabad",
+      "monsoon",
+      "temperature_extreme",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_monsoon_rainfall_event_0",
+    "text": "Islamabad receives significant rainfall during JulySeptember (monsoon season). Hourly intensities can exceed 220 mm/h during convective storms, causing urban flooding in low-lying Potohar plateau neighbourhoods. Annual contribution from this season is roughly 52% of total.",
+    "tags": [
+      "islamabad",
+      "monsoon",
+      "rainfall_event",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_monsoon_rainfall_event_1",
+    "text": "Rainfall in Islamabad during monsoon (JulySeptember) averages 220 mm for the period. The sub-humid climate means dry spells of 1020 days are common between events. Farmers in Potohar plateau rely on this window for kharif (rice, cotton, maize) cultivation.",
+    "tags": [
+      "islamabad",
+      "monsoon",
+      "rainfall_event",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_monsoon_wind_event_0",
+    "text": "Islamabad is exposed to southwesterly monsoon winds during JulySeptember. Speeds average 25 km/h with gusts to 35 km/h, reducing apparent temperature and raising dust. The Potohar plateau geography channels and amplifies these winds through the monsoon season.",
+    "tags": [
+      "islamabad",
+      "monsoon",
+      "wind_event",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_monsoon_wind_event_1",
+    "text": "Sustained southwesterly monsoon winds in Islamabad during monsoon (JulySeptember) can reach 25 km/h, lifting fine dust from the surrounding Potohar plateau terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "islamabad",
+      "monsoon",
+      "wind_event",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_monsoon_fog_smog_0",
+    "text": "Islamabad experiences low stratus cloud conditions during JulySeptember (monsoon). Visibility can fall to 1500 metres before 10 AM, delaying road traffic and flights. The sub-humid climate's monsoon humidity profile makes Islamabad one of the most affected cities in Potohar plateau.",
+    "tags": [
+      "islamabad",
+      "monsoon",
+      "fog_smog",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_monsoon_fog_smog_1",
+    "text": "Morning low stratus cloud in Islamabad (Potohar plateau) during monsoon forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during JulySeptember.",
+    "tags": [
+      "islamabad",
+      "monsoon",
+      "fog_smog",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_monsoon_humidity_comfort_0",
+    "text": "Relative humidity in Islamabad during monsoon (JulySeptember) averages 78%, making outdoor activities sticky and humid. The sub-humid climate at 507 m means Potohar plateau residents experience distinct seasonal humidity swings of up to 40 percentage points between monsoon and the preceding season.",
+    "tags": [
+      "islamabad",
+      "monsoon",
+      "humidity_comfort",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_monsoon_humidity_comfort_1",
+    "text": "Heat index in Islamabad during JulySeptember combines 33°C air temperature with 78% relative humidity, producing a feels-like temperature of 36°C. Public health advisories are issued when the heat index exceeds 41°C in Potohar plateau.",
+    "tags": [
+      "islamabad",
+      "monsoon",
+      "humidity_comfort",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_post_monsoon_temperature_extreme_0",
+    "text": "Islamabad (Potohar plateau) experiences its post-monsoon temperature extremes during OctoberNovember. With a sub-humid climate at 507 m, daily highs can reach 27°C while nights cool to 12°C. Residents describe the khushk season as temperate.",
+    "tags": [
+      "islamabad",
+      "post-monsoon",
+      "temperature_extreme",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_post_monsoon_temperature_extreme_1",
+    "text": "During OctoberNovember, Islamabad's sub-humid climate produces temperatures between 12°C at night and 27°C in the afternoon. Potohar plateau topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "islamabad",
+      "post-monsoon",
+      "temperature_extreme",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_post_monsoon_rainfall_event_0",
+    "text": "Islamabad receives significant rainfall during OctoberNovember (post-monsoon season). Hourly intensities can exceed 35 mm/h during convective storms, causing urban flooding in low-lying Potohar plateau neighbourhoods. Annual contribution from this season is roughly 8% of total.",
+    "tags": [
+      "islamabad",
+      "post-monsoon",
+      "rainfall_event",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_post_monsoon_rainfall_event_1",
+    "text": "Rainfall in Islamabad during post-monsoon (OctoberNovember) averages 35 mm for the period. The sub-humid climate means dry spells of 1020 days are common between events. Farmers in Potohar plateau rely on this window for late kharif harvest cultivation.",
+    "tags": [
+      "islamabad",
+      "post-monsoon",
+      "rainfall_event",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_post_monsoon_wind_event_0",
+    "text": "Islamabad is exposed to northerly winds during OctoberNovember. Speeds average 12 km/h with gusts to 16 km/h, reducing apparent temperature and raising dust. The Potohar plateau geography channels and amplifies these winds through the post-monsoon season.",
+    "tags": [
+      "islamabad",
+      "post-monsoon",
+      "wind_event",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_post_monsoon_wind_event_1",
+    "text": "Sustained northerly winds in Islamabad during post-monsoon (OctoberNovember) can reach 12 km/h, lifting fine dust from the surrounding Potohar plateau terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "islamabad",
+      "post-monsoon",
+      "wind_event",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_post_monsoon_fog_smog_0",
+    "text": "Islamabad experiences shallow fog conditions during OctoberNovember (post-monsoon). Visibility can fall to 200 metres before 10 AM, delaying road traffic and flights. The sub-humid climate's post-monsoon humidity profile makes Islamabad one of the most affected cities in Potohar plateau.",
+    "tags": [
+      "islamabad",
+      "post-monsoon",
+      "fog_smog",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_post_monsoon_fog_smog_1",
+    "text": "Morning shallow fog in Islamabad (Potohar plateau) during post-monsoon forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during OctoberNovember.",
+    "tags": [
+      "islamabad",
+      "post-monsoon",
+      "fog_smog",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_post_monsoon_humidity_comfort_0",
+    "text": "Relative humidity in Islamabad during post-monsoon (OctoberNovember) averages 52%, making outdoor activities mild. The sub-humid climate at 507 m means Potohar plateau residents experience distinct seasonal humidity swings of up to 40 percentage points between post-monsoon and the preceding season.",
+    "tags": [
+      "islamabad",
+      "post-monsoon",
+      "humidity_comfort",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_islamabad_post_monsoon_humidity_comfort_1",
+    "text": "Heat index in Islamabad during OctoberNovember combines 27°C air temperature with 52% relative humidity, producing a feels-like temperature of 28°C. Public health advisories are issued when the heat index exceeds 41°C in Potohar plateau.",
+    "tags": [
+      "islamabad",
+      "post-monsoon",
+      "humidity_comfort",
+      "potohar plateau"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_winter_temperature_extreme_0",
+    "text": "Peshawar (Khyber valley) experiences its winter temperature extremes during DecemberFebruary. With a hot semi-arid climate at 331 m, daily highs can reach 14°C while nights cool to 3°C. Residents describe the sardi season as bitterly cold.",
+    "tags": [
+      "peshawar",
+      "winter",
+      "temperature_extreme",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_winter_temperature_extreme_1",
+    "text": "During DecemberFebruary, Peshawar's hot semi-arid climate produces temperatures between 3°C at night and 14°C in the afternoon. Khyber valley topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "peshawar",
+      "winter",
+      "temperature_extreme",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_winter_rainfall_event_0",
+    "text": "Peshawar receives significant rainfall during DecemberFebruary (winter season). Hourly intensities can exceed 38 mm/h during convective storms, causing urban flooding in low-lying Khyber valley neighbourhoods. Annual contribution from this season is roughly 20% of total.",
+    "tags": [
+      "peshawar",
+      "winter",
+      "rainfall_event",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_winter_rainfall_event_1",
+    "text": "Rainfall in Peshawar during winter (DecemberFebruary) averages 38 mm for the period. The hot semi-arid climate means dry spells of 1020 days are common between events. Farmers in Khyber valley rely on this window for rabi (wheat, chickpea) cultivation.",
+    "tags": [
+      "peshawar",
+      "winter",
+      "rainfall_event",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_winter_wind_event_0",
+    "text": "Peshawar is exposed to westerly winds during DecemberFebruary. Speeds average 14 km/h with gusts to 19 km/h, reducing apparent temperature and raising dust. The Khyber valley geography channels and amplifies these winds through the winter season.",
+    "tags": [
+      "peshawar",
+      "winter",
+      "wind_event",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_winter_wind_event_1",
+    "text": "Sustained westerly winds in Peshawar during winter (DecemberFebruary) can reach 14 km/h, lifting fine dust from the surrounding Khyber valley terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "peshawar",
+      "winter",
+      "wind_event",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_winter_fog_smog_0",
+    "text": "Peshawar experiences dense radiation fog conditions during DecemberFebruary (winter). Visibility can fall to 50 metres before 10 AM, delaying road traffic and flights. The hot semi-arid climate's winter humidity profile makes Peshawar one of the most affected cities in Khyber valley.",
+    "tags": [
+      "peshawar",
+      "winter",
+      "fog_smog",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_winter_fog_smog_1",
+    "text": "Morning dense radiation fog in Peshawar (Khyber valley) during winter forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during DecemberFebruary.",
+    "tags": [
+      "peshawar",
+      "winter",
+      "fog_smog",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_winter_humidity_comfort_0",
+    "text": "Relative humidity in Peshawar during winter (DecemberFebruary) averages 68%, making outdoor activities pleasant. The hot semi-arid climate at 331 m means Khyber valley residents experience distinct seasonal humidity swings of up to 40 percentage points between winter and the preceding season.",
+    "tags": [
+      "peshawar",
+      "winter",
+      "humidity_comfort",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_winter_humidity_comfort_1",
+    "text": "Heat index in Peshawar during DecemberFebruary combines 14°C air temperature with 68% relative humidity, producing a feels-like temperature of 16°C. Public health advisories are issued when the heat index exceeds 41°C in Khyber valley.",
+    "tags": [
+      "peshawar",
+      "winter",
+      "humidity_comfort",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_spring_temperature_extreme_0",
+    "text": "Peshawar (Khyber valley) experiences its spring temperature extremes during MarchApril. With a hot semi-arid climate at 331 m, daily highs can reach 30°C while nights cool to 15°C. Residents describe the bahar season as refreshing.",
+    "tags": [
+      "peshawar",
+      "spring",
+      "temperature_extreme",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_spring_temperature_extreme_1",
+    "text": "During MarchApril, Peshawar's hot semi-arid climate produces temperatures between 15°C at night and 30°C in the afternoon. Khyber valley topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "peshawar",
+      "spring",
+      "temperature_extreme",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_spring_rainfall_event_0",
+    "text": "Peshawar receives significant rainfall during MarchApril (spring season). Hourly intensities can exceed 42 mm/h during convective storms, causing urban flooding in low-lying Khyber valley neighbourhoods. Annual contribution from this season is roughly 12% of total.",
+    "tags": [
+      "peshawar",
+      "spring",
+      "rainfall_event",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_spring_rainfall_event_1",
+    "text": "Rainfall in Peshawar during spring (MarchApril) averages 42 mm for the period. The hot semi-arid climate means dry spells of 1020 days are common between events. Farmers in Khyber valley rely on this window for rabi harvest cultivation.",
+    "tags": [
+      "peshawar",
+      "spring",
+      "rainfall_event",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_spring_wind_event_0",
+    "text": "Peshawar is exposed to nor'wester squall winds during MarchApril. Speeds average 22 km/h with gusts to 30 km/h, reducing apparent temperature and raising dust. The Khyber valley geography channels and amplifies these winds through the spring season.",
+    "tags": [
+      "peshawar",
+      "spring",
+      "wind_event",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_spring_wind_event_1",
+    "text": "Sustained nor'wester squall winds in Peshawar during spring (MarchApril) can reach 22 km/h, lifting fine dust from the surrounding Khyber valley terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "peshawar",
+      "spring",
+      "wind_event",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_spring_fog_smog_0",
+    "text": "Peshawar experiences morning mist conditions during MarchApril (spring). Visibility can fall to 300 metres before 10 AM, delaying road traffic and flights. The hot semi-arid climate's spring humidity profile makes Peshawar one of the most affected cities in Khyber valley.",
+    "tags": [
+      "peshawar",
+      "spring",
+      "fog_smog",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_spring_fog_smog_1",
+    "text": "Morning morning mist in Peshawar (Khyber valley) during spring forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during MarchApril.",
+    "tags": [
+      "peshawar",
+      "spring",
+      "fog_smog",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_spring_humidity_comfort_0",
+    "text": "Relative humidity in Peshawar during spring (MarchApril) averages 45%, making outdoor activities warm but comfortable. The hot semi-arid climate at 331 m means Khyber valley residents experience distinct seasonal humidity swings of up to 40 percentage points between spring and the preceding season.",
+    "tags": [
+      "peshawar",
+      "spring",
+      "humidity_comfort",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_spring_humidity_comfort_1",
+    "text": "Heat index in Peshawar during MarchApril combines 30°C air temperature with 45% relative humidity, producing a feels-like temperature of 30°C. Public health advisories are issued when the heat index exceeds 41°C in Khyber valley.",
+    "tags": [
+      "peshawar",
+      "spring",
+      "humidity_comfort",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_pre_monsoon_temperature_extreme_0",
+    "text": "Peshawar (Khyber valley) experiences its pre-monsoon temperature extremes during MayJune. With a hot semi-arid climate at 331 m, daily highs can reach 42°C while nights cool to 26°C. Residents describe the garmi season as scorching.",
+    "tags": [
+      "peshawar",
+      "pre-monsoon",
+      "temperature_extreme",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_pre_monsoon_temperature_extreme_1",
+    "text": "During MayJune, Peshawar's hot semi-arid climate produces temperatures between 26°C at night and 42°C in the afternoon. Khyber valley topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "peshawar",
+      "pre-monsoon",
+      "temperature_extreme",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_pre_monsoon_rainfall_event_0",
+    "text": "Peshawar receives significant rainfall during MayJune (pre-monsoon season). Hourly intensities can exceed 18 mm/h during convective storms, causing urban flooding in low-lying Khyber valley neighbourhoods. Annual contribution from this season is roughly 8% of total.",
+    "tags": [
+      "peshawar",
+      "pre-monsoon",
+      "rainfall_event",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_pre_monsoon_rainfall_event_1",
+    "text": "Rainfall in Peshawar during pre-monsoon (MayJune) averages 18 mm for the period. The hot semi-arid climate means dry spells of 1020 days are common between events. Farmers in Khyber valley rely on this window for early kharif sowing cultivation.",
+    "tags": [
+      "peshawar",
+      "pre-monsoon",
+      "rainfall_event",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_pre_monsoon_wind_event_0",
+    "text": "Peshawar is exposed to Loo winds during MayJune. Speeds average 20 km/h with gusts to 28 km/h, reducing apparent temperature and raising dust. The Khyber valley geography channels and amplifies these winds through the pre-monsoon season.",
+    "tags": [
+      "peshawar",
+      "pre-monsoon",
+      "wind_event",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_pre_monsoon_wind_event_1",
+    "text": "Sustained Loo winds in Peshawar during pre-monsoon (MayJune) can reach 20 km/h, lifting fine dust from the surrounding Khyber valley terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "peshawar",
+      "pre-monsoon",
+      "wind_event",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_pre_monsoon_fog_smog_0",
+    "text": "Peshawar experiences dust haze conditions during MayJune (pre-monsoon). Visibility can fall to 800 metres before 10 AM, delaying road traffic and flights. The hot semi-arid climate's pre-monsoon humidity profile makes Peshawar one of the most affected cities in Khyber valley.",
+    "tags": [
+      "peshawar",
+      "pre-monsoon",
+      "fog_smog",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_pre_monsoon_fog_smog_1",
+    "text": "Morning dust haze in Peshawar (Khyber valley) during pre-monsoon forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during MayJune.",
+    "tags": [
+      "peshawar",
+      "pre-monsoon",
+      "fog_smog",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_pre_monsoon_humidity_comfort_0",
+    "text": "Relative humidity in Peshawar during pre-monsoon (MayJune) averages 35%, making outdoor activities oppressive. The hot semi-arid climate at 331 m means Khyber valley residents experience distinct seasonal humidity swings of up to 40 percentage points between pre-monsoon and the preceding season.",
+    "tags": [
+      "peshawar",
+      "pre-monsoon",
+      "humidity_comfort",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_pre_monsoon_humidity_comfort_1",
+    "text": "Heat index in Peshawar during MayJune combines 42°C air temperature with 35% relative humidity, producing a feels-like temperature of 41°C. Public health advisories are issued when the heat index exceeds 41°C in Khyber valley.",
+    "tags": [
+      "peshawar",
+      "pre-monsoon",
+      "humidity_comfort",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_monsoon_temperature_extreme_0",
+    "text": "Peshawar (Khyber valley) experiences its monsoon temperature extremes during JulySeptember. With a hot semi-arid climate at 331 m, daily highs can reach 37°C while nights cool to 25°C. Residents describe the baarish season as rainy and lush.",
+    "tags": [
+      "peshawar",
+      "monsoon",
+      "temperature_extreme",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_monsoon_temperature_extreme_1",
+    "text": "During JulySeptember, Peshawar's hot semi-arid climate produces temperatures between 25°C at night and 37°C in the afternoon. Khyber valley topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "peshawar",
+      "monsoon",
+      "temperature_extreme",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_monsoon_rainfall_event_0",
+    "text": "Peshawar receives significant rainfall during JulySeptember (monsoon season). Hourly intensities can exceed 80 mm/h during convective storms, causing urban flooding in low-lying Khyber valley neighbourhoods. Annual contribution from this season is roughly 52% of total.",
+    "tags": [
+      "peshawar",
+      "monsoon",
+      "rainfall_event",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_monsoon_rainfall_event_1",
+    "text": "Rainfall in Peshawar during monsoon (JulySeptember) averages 80 mm for the period. The hot semi-arid climate means dry spells of 1020 days are common between events. Farmers in Khyber valley rely on this window for kharif (rice, cotton, maize) cultivation.",
+    "tags": [
+      "peshawar",
+      "monsoon",
+      "rainfall_event",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_monsoon_wind_event_0",
+    "text": "Peshawar is exposed to southwesterly monsoon winds during JulySeptember. Speeds average 24 km/h with gusts to 33 km/h, reducing apparent temperature and raising dust. The Khyber valley geography channels and amplifies these winds through the monsoon season.",
+    "tags": [
+      "peshawar",
+      "monsoon",
+      "wind_event",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_monsoon_wind_event_1",
+    "text": "Sustained southwesterly monsoon winds in Peshawar during monsoon (JulySeptember) can reach 24 km/h, lifting fine dust from the surrounding Khyber valley terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "peshawar",
+      "monsoon",
+      "wind_event",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_monsoon_fog_smog_0",
+    "text": "Peshawar experiences low stratus cloud conditions during JulySeptember (monsoon). Visibility can fall to 1500 metres before 10 AM, delaying road traffic and flights. The hot semi-arid climate's monsoon humidity profile makes Peshawar one of the most affected cities in Khyber valley.",
+    "tags": [
+      "peshawar",
+      "monsoon",
+      "fog_smog",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_monsoon_fog_smog_1",
+    "text": "Morning low stratus cloud in Peshawar (Khyber valley) during monsoon forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during JulySeptember.",
+    "tags": [
+      "peshawar",
+      "monsoon",
+      "fog_smog",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_monsoon_humidity_comfort_0",
+    "text": "Relative humidity in Peshawar during monsoon (JulySeptember) averages 68%, making outdoor activities sticky and humid. The hot semi-arid climate at 331 m means Khyber valley residents experience distinct seasonal humidity swings of up to 40 percentage points between monsoon and the preceding season.",
+    "tags": [
+      "peshawar",
+      "monsoon",
+      "humidity_comfort",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_monsoon_humidity_comfort_1",
+    "text": "Heat index in Peshawar during JulySeptember combines 37°C air temperature with 68% relative humidity, producing a feels-like temperature of 39°C. Public health advisories are issued when the heat index exceeds 41°C in Khyber valley.",
+    "tags": [
+      "peshawar",
+      "monsoon",
+      "humidity_comfort",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_post_monsoon_temperature_extreme_0",
+    "text": "Peshawar (Khyber valley) experiences its post-monsoon temperature extremes during OctoberNovember. With a hot semi-arid climate at 331 m, daily highs can reach 28°C while nights cool to 12°C. Residents describe the khushk season as temperate.",
+    "tags": [
+      "peshawar",
+      "post-monsoon",
+      "temperature_extreme",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_post_monsoon_temperature_extreme_1",
+    "text": "During OctoberNovember, Peshawar's hot semi-arid climate produces temperatures between 12°C at night and 28°C in the afternoon. Khyber valley topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "peshawar",
+      "post-monsoon",
+      "temperature_extreme",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_post_monsoon_rainfall_event_0",
+    "text": "Peshawar receives significant rainfall during OctoberNovember (post-monsoon season). Hourly intensities can exceed 22 mm/h during convective storms, causing urban flooding in low-lying Khyber valley neighbourhoods. Annual contribution from this season is roughly 8% of total.",
+    "tags": [
+      "peshawar",
+      "post-monsoon",
+      "rainfall_event",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_post_monsoon_rainfall_event_1",
+    "text": "Rainfall in Peshawar during post-monsoon (OctoberNovember) averages 22 mm for the period. The hot semi-arid climate means dry spells of 1020 days are common between events. Farmers in Khyber valley rely on this window for late kharif harvest cultivation.",
+    "tags": [
+      "peshawar",
+      "post-monsoon",
+      "rainfall_event",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_post_monsoon_wind_event_0",
+    "text": "Peshawar is exposed to northerly winds during OctoberNovember. Speeds average 14 km/h with gusts to 19 km/h, reducing apparent temperature and raising dust. The Khyber valley geography channels and amplifies these winds through the post-monsoon season.",
+    "tags": [
+      "peshawar",
+      "post-monsoon",
+      "wind_event",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_post_monsoon_wind_event_1",
+    "text": "Sustained northerly winds in Peshawar during post-monsoon (OctoberNovember) can reach 14 km/h, lifting fine dust from the surrounding Khyber valley terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "peshawar",
+      "post-monsoon",
+      "wind_event",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_post_monsoon_fog_smog_0",
+    "text": "Peshawar experiences shallow fog conditions during OctoberNovember (post-monsoon). Visibility can fall to 200 metres before 10 AM, delaying road traffic and flights. The hot semi-arid climate's post-monsoon humidity profile makes Peshawar one of the most affected cities in Khyber valley.",
+    "tags": [
+      "peshawar",
+      "post-monsoon",
+      "fog_smog",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_post_monsoon_fog_smog_1",
+    "text": "Morning shallow fog in Peshawar (Khyber valley) during post-monsoon forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during OctoberNovember.",
+    "tags": [
+      "peshawar",
+      "post-monsoon",
+      "fog_smog",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_post_monsoon_humidity_comfort_0",
+    "text": "Relative humidity in Peshawar during post-monsoon (OctoberNovember) averages 48%, making outdoor activities mild. The hot semi-arid climate at 331 m means Khyber valley residents experience distinct seasonal humidity swings of up to 40 percentage points between post-monsoon and the preceding season.",
+    "tags": [
+      "peshawar",
+      "post-monsoon",
+      "humidity_comfort",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_peshawar_post_monsoon_humidity_comfort_1",
+    "text": "Heat index in Peshawar during OctoberNovember combines 28°C air temperature with 48% relative humidity, producing a feels-like temperature of 28°C. Public health advisories are issued when the heat index exceeds 41°C in Khyber valley.",
+    "tags": [
+      "peshawar",
+      "post-monsoon",
+      "humidity_comfort",
+      "khyber valley"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_winter_temperature_extreme_0",
+    "text": "Quetta (northern Balochistan) experiences its winter temperature extremes during DecemberFebruary. With a cold semi-arid climate at 1680 m, daily highs can reach 7°C while nights cool to -5°C. Residents describe the sardi season as bitterly cold.",
+    "tags": [
+      "quetta",
+      "winter",
+      "temperature_extreme",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_winter_temperature_extreme_1",
+    "text": "During DecemberFebruary, Quetta's cold semi-arid climate produces temperatures between -5°C at night and 7°C in the afternoon. northern Balochistan topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "quetta",
+      "winter",
+      "temperature_extreme",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_winter_rainfall_event_0",
+    "text": "Quetta receives significant rainfall during DecemberFebruary (winter season). Hourly intensities can exceed 55 mm/h during convective storms, causing urban flooding in low-lying northern Balochistan neighbourhoods. Annual contribution from this season is roughly 20% of total.",
+    "tags": [
+      "quetta",
+      "winter",
+      "rainfall_event",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_winter_rainfall_event_1",
+    "text": "Rainfall in Quetta during winter (DecemberFebruary) averages 55 mm for the period. The cold semi-arid climate means dry spells of 1020 days are common between events. Farmers in northern Balochistan rely on this window for rabi (wheat, chickpea) cultivation.",
+    "tags": [
+      "quetta",
+      "winter",
+      "rainfall_event",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_winter_wind_event_0",
+    "text": "Quetta is exposed to westerly winds during DecemberFebruary. Speeds average 16 km/h with gusts to 22 km/h, reducing apparent temperature and raising dust. The northern Balochistan geography channels and amplifies these winds through the winter season.",
+    "tags": [
+      "quetta",
+      "winter",
+      "wind_event",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_winter_wind_event_1",
+    "text": "Sustained westerly winds in Quetta during winter (DecemberFebruary) can reach 16 km/h, lifting fine dust from the surrounding northern Balochistan terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "quetta",
+      "winter",
+      "wind_event",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_winter_fog_smog_0",
+    "text": "Quetta experiences dense radiation fog conditions during DecemberFebruary (winter). Visibility can fall to 50 metres before 10 AM, delaying road traffic and flights. The cold semi-arid climate's winter humidity profile makes Quetta one of the most affected cities in northern Balochistan.",
+    "tags": [
+      "quetta",
+      "winter",
+      "fog_smog",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_winter_fog_smog_1",
+    "text": "Morning dense radiation fog in Quetta (northern Balochistan) during winter forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during DecemberFebruary.",
+    "tags": [
+      "quetta",
+      "winter",
+      "fog_smog",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_winter_humidity_comfort_0",
+    "text": "Relative humidity in Quetta during winter (DecemberFebruary) averages 65%, making outdoor activities pleasant. The cold semi-arid climate at 1680 m means northern Balochistan residents experience distinct seasonal humidity swings of up to 40 percentage points between winter and the preceding season.",
+    "tags": [
+      "quetta",
+      "winter",
+      "humidity_comfort",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_winter_humidity_comfort_1",
+    "text": "Heat index in Quetta during DecemberFebruary combines 7°C air temperature with 65% relative humidity, producing a feels-like temperature of 9°C. Public health advisories are issued when the heat index exceeds 41°C in northern Balochistan.",
+    "tags": [
+      "quetta",
+      "winter",
+      "humidity_comfort",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_spring_temperature_extreme_0",
+    "text": "Quetta (northern Balochistan) experiences its spring temperature extremes during MarchApril. With a cold semi-arid climate at 1680 m, daily highs can reach 22°C while nights cool to 7°C. Residents describe the bahar season as refreshing.",
+    "tags": [
+      "quetta",
+      "spring",
+      "temperature_extreme",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_spring_temperature_extreme_1",
+    "text": "During MarchApril, Quetta's cold semi-arid climate produces temperatures between 7°C at night and 22°C in the afternoon. northern Balochistan topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "quetta",
+      "spring",
+      "temperature_extreme",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_spring_rainfall_event_0",
+    "text": "Quetta receives significant rainfall during MarchApril (spring season). Hourly intensities can exceed 35 mm/h during convective storms, causing urban flooding in low-lying northern Balochistan neighbourhoods. Annual contribution from this season is roughly 12% of total.",
+    "tags": [
+      "quetta",
+      "spring",
+      "rainfall_event",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_spring_rainfall_event_1",
+    "text": "Rainfall in Quetta during spring (MarchApril) averages 35 mm for the period. The cold semi-arid climate means dry spells of 1020 days are common between events. Farmers in northern Balochistan rely on this window for rabi harvest cultivation.",
+    "tags": [
+      "quetta",
+      "spring",
+      "rainfall_event",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_spring_wind_event_0",
+    "text": "Quetta is exposed to nor'wester squall winds during MarchApril. Speeds average 24 km/h with gusts to 33 km/h, reducing apparent temperature and raising dust. The northern Balochistan geography channels and amplifies these winds through the spring season.",
+    "tags": [
+      "quetta",
+      "spring",
+      "wind_event",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_spring_wind_event_1",
+    "text": "Sustained nor'wester squall winds in Quetta during spring (MarchApril) can reach 24 km/h, lifting fine dust from the surrounding northern Balochistan terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "quetta",
+      "spring",
+      "wind_event",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_spring_fog_smog_0",
+    "text": "Quetta experiences morning mist conditions during MarchApril (spring). Visibility can fall to 300 metres before 10 AM, delaying road traffic and flights. The cold semi-arid climate's spring humidity profile makes Quetta one of the most affected cities in northern Balochistan.",
+    "tags": [
+      "quetta",
+      "spring",
+      "fog_smog",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_spring_fog_smog_1",
+    "text": "Morning morning mist in Quetta (northern Balochistan) during spring forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during MarchApril.",
+    "tags": [
+      "quetta",
+      "spring",
+      "fog_smog",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_spring_humidity_comfort_0",
+    "text": "Relative humidity in Quetta during spring (MarchApril) averages 48%, making outdoor activities warm but comfortable. The cold semi-arid climate at 1680 m means northern Balochistan residents experience distinct seasonal humidity swings of up to 40 percentage points between spring and the preceding season.",
+    "tags": [
+      "quetta",
+      "spring",
+      "humidity_comfort",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_spring_humidity_comfort_1",
+    "text": "Heat index in Quetta during MarchApril combines 22°C air temperature with 48% relative humidity, producing a feels-like temperature of 22°C. Public health advisories are issued when the heat index exceeds 41°C in northern Balochistan.",
+    "tags": [
+      "quetta",
+      "spring",
+      "humidity_comfort",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_pre_monsoon_temperature_extreme_0",
+    "text": "Quetta (northern Balochistan) experiences its pre-monsoon temperature extremes during MayJune. With a cold semi-arid climate at 1680 m, daily highs can reach 34°C while nights cool to 18°C. Residents describe the garmi season as scorching.",
+    "tags": [
+      "quetta",
+      "pre-monsoon",
+      "temperature_extreme",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_pre_monsoon_temperature_extreme_1",
+    "text": "During MayJune, Quetta's cold semi-arid climate produces temperatures between 18°C at night and 34°C in the afternoon. northern Balochistan topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "quetta",
+      "pre-monsoon",
+      "temperature_extreme",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_pre_monsoon_rainfall_event_0",
+    "text": "Quetta receives significant rainfall during MayJune (pre-monsoon season). Hourly intensities can exceed 10 mm/h during convective storms, causing urban flooding in low-lying northern Balochistan neighbourhoods. Annual contribution from this season is roughly 8% of total.",
+    "tags": [
+      "quetta",
+      "pre-monsoon",
+      "rainfall_event",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_pre_monsoon_rainfall_event_1",
+    "text": "Rainfall in Quetta during pre-monsoon (MayJune) averages 10 mm for the period. The cold semi-arid climate means dry spells of 1020 days are common between events. Farmers in northern Balochistan rely on this window for early kharif sowing cultivation.",
+    "tags": [
+      "quetta",
+      "pre-monsoon",
+      "rainfall_event",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_pre_monsoon_wind_event_0",
+    "text": "Quetta is exposed to Loo winds during MayJune. Speeds average 22 km/h with gusts to 30 km/h, reducing apparent temperature and raising dust. The northern Balochistan geography channels and amplifies these winds through the pre-monsoon season.",
+    "tags": [
+      "quetta",
+      "pre-monsoon",
+      "wind_event",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_pre_monsoon_wind_event_1",
+    "text": "Sustained Loo winds in Quetta during pre-monsoon (MayJune) can reach 22 km/h, lifting fine dust from the surrounding northern Balochistan terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "quetta",
+      "pre-monsoon",
+      "wind_event",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_pre_monsoon_fog_smog_0",
+    "text": "Quetta experiences dust haze conditions during MayJune (pre-monsoon). Visibility can fall to 800 metres before 10 AM, delaying road traffic and flights. The cold semi-arid climate's pre-monsoon humidity profile makes Quetta one of the most affected cities in northern Balochistan.",
+    "tags": [
+      "quetta",
+      "pre-monsoon",
+      "fog_smog",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_pre_monsoon_fog_smog_1",
+    "text": "Morning dust haze in Quetta (northern Balochistan) during pre-monsoon forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during MayJune.",
+    "tags": [
+      "quetta",
+      "pre-monsoon",
+      "fog_smog",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_pre_monsoon_humidity_comfort_0",
+    "text": "Relative humidity in Quetta during pre-monsoon (MayJune) averages 28%, making outdoor activities oppressive. The cold semi-arid climate at 1680 m means northern Balochistan residents experience distinct seasonal humidity swings of up to 40 percentage points between pre-monsoon and the preceding season.",
+    "tags": [
+      "quetta",
+      "pre-monsoon",
+      "humidity_comfort",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_pre_monsoon_humidity_comfort_1",
+    "text": "Heat index in Quetta during MayJune combines 34°C air temperature with 28% relative humidity, producing a feels-like temperature of 32°C. Public health advisories are issued when the heat index exceeds 41°C in northern Balochistan.",
+    "tags": [
+      "quetta",
+      "pre-monsoon",
+      "humidity_comfort",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_monsoon_temperature_extreme_0",
+    "text": "Quetta (northern Balochistan) experiences its monsoon temperature extremes during JulySeptember. With a cold semi-arid climate at 1680 m, daily highs can reach 30°C while nights cool to 16°C. Residents describe the baarish season as rainy and lush.",
+    "tags": [
+      "quetta",
+      "monsoon",
+      "temperature_extreme",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_monsoon_temperature_extreme_1",
+    "text": "During JulySeptember, Quetta's cold semi-arid climate produces temperatures between 16°C at night and 30°C in the afternoon. northern Balochistan topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "quetta",
+      "monsoon",
+      "temperature_extreme",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_monsoon_rainfall_event_0",
+    "text": "Quetta receives significant rainfall during JulySeptember (monsoon season). Hourly intensities can exceed 30 mm/h during convective storms, causing urban flooding in low-lying northern Balochistan neighbourhoods. Annual contribution from this season is roughly 52% of total.",
+    "tags": [
+      "quetta",
+      "monsoon",
+      "rainfall_event",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_monsoon_rainfall_event_1",
+    "text": "Rainfall in Quetta during monsoon (JulySeptember) averages 30 mm for the period. The cold semi-arid climate means dry spells of 1020 days are common between events. Farmers in northern Balochistan rely on this window for kharif (rice, cotton, maize) cultivation.",
+    "tags": [
+      "quetta",
+      "monsoon",
+      "rainfall_event",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_monsoon_wind_event_0",
+    "text": "Quetta is exposed to southwesterly monsoon winds during JulySeptember. Speeds average 18 km/h with gusts to 25 km/h, reducing apparent temperature and raising dust. The northern Balochistan geography channels and amplifies these winds through the monsoon season.",
+    "tags": [
+      "quetta",
+      "monsoon",
+      "wind_event",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_monsoon_wind_event_1",
+    "text": "Sustained southwesterly monsoon winds in Quetta during monsoon (JulySeptember) can reach 18 km/h, lifting fine dust from the surrounding northern Balochistan terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "quetta",
+      "monsoon",
+      "wind_event",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_monsoon_fog_smog_0",
+    "text": "Quetta experiences low stratus cloud conditions during JulySeptember (monsoon). Visibility can fall to 1500 metres before 10 AM, delaying road traffic and flights. The cold semi-arid climate's monsoon humidity profile makes Quetta one of the most affected cities in northern Balochistan.",
+    "tags": [
+      "quetta",
+      "monsoon",
+      "fog_smog",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_monsoon_fog_smog_1",
+    "text": "Morning low stratus cloud in Quetta (northern Balochistan) during monsoon forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during JulySeptember.",
+    "tags": [
+      "quetta",
+      "monsoon",
+      "fog_smog",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_monsoon_humidity_comfort_0",
+    "text": "Relative humidity in Quetta during monsoon (JulySeptember) averages 50%, making outdoor activities sticky and humid. The cold semi-arid climate at 1680 m means northern Balochistan residents experience distinct seasonal humidity swings of up to 40 percentage points between monsoon and the preceding season.",
+    "tags": [
+      "quetta",
+      "monsoon",
+      "humidity_comfort",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_monsoon_humidity_comfort_1",
+    "text": "Heat index in Quetta during JulySeptember combines 30°C air temperature with 50% relative humidity, producing a feels-like temperature of 31°C. Public health advisories are issued when the heat index exceeds 41°C in northern Balochistan.",
+    "tags": [
+      "quetta",
+      "monsoon",
+      "humidity_comfort",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_post_monsoon_temperature_extreme_0",
+    "text": "Quetta (northern Balochistan) experiences its post-monsoon temperature extremes during OctoberNovember. With a cold semi-arid climate at 1680 m, daily highs can reach 22°C while nights cool to 5°C. Residents describe the khushk season as temperate.",
+    "tags": [
+      "quetta",
+      "post-monsoon",
+      "temperature_extreme",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_post_monsoon_temperature_extreme_1",
+    "text": "During OctoberNovember, Quetta's cold semi-arid climate produces temperatures between 5°C at night and 22°C in the afternoon. northern Balochistan topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "quetta",
+      "post-monsoon",
+      "temperature_extreme",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_post_monsoon_rainfall_event_0",
+    "text": "Quetta receives significant rainfall during OctoberNovember (post-monsoon season). Hourly intensities can exceed 15 mm/h during convective storms, causing urban flooding in low-lying northern Balochistan neighbourhoods. Annual contribution from this season is roughly 8% of total.",
+    "tags": [
+      "quetta",
+      "post-monsoon",
+      "rainfall_event",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_post_monsoon_rainfall_event_1",
+    "text": "Rainfall in Quetta during post-monsoon (OctoberNovember) averages 15 mm for the period. The cold semi-arid climate means dry spells of 1020 days are common between events. Farmers in northern Balochistan rely on this window for late kharif harvest cultivation.",
+    "tags": [
+      "quetta",
+      "post-monsoon",
+      "rainfall_event",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_post_monsoon_wind_event_0",
+    "text": "Quetta is exposed to northerly winds during OctoberNovember. Speeds average 15 km/h with gusts to 21 km/h, reducing apparent temperature and raising dust. The northern Balochistan geography channels and amplifies these winds through the post-monsoon season.",
+    "tags": [
+      "quetta",
+      "post-monsoon",
+      "wind_event",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_post_monsoon_wind_event_1",
+    "text": "Sustained northerly winds in Quetta during post-monsoon (OctoberNovember) can reach 15 km/h, lifting fine dust from the surrounding northern Balochistan terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "quetta",
+      "post-monsoon",
+      "wind_event",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_post_monsoon_fog_smog_0",
+    "text": "Quetta experiences shallow fog conditions during OctoberNovember (post-monsoon). Visibility can fall to 200 metres before 10 AM, delaying road traffic and flights. The cold semi-arid climate's post-monsoon humidity profile makes Quetta one of the most affected cities in northern Balochistan.",
+    "tags": [
+      "quetta",
+      "post-monsoon",
+      "fog_smog",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_post_monsoon_fog_smog_1",
+    "text": "Morning shallow fog in Quetta (northern Balochistan) during post-monsoon forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during OctoberNovember.",
+    "tags": [
+      "quetta",
+      "post-monsoon",
+      "fog_smog",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_post_monsoon_humidity_comfort_0",
+    "text": "Relative humidity in Quetta during post-monsoon (OctoberNovember) averages 42%, making outdoor activities mild. The cold semi-arid climate at 1680 m means northern Balochistan residents experience distinct seasonal humidity swings of up to 40 percentage points between post-monsoon and the preceding season.",
+    "tags": [
+      "quetta",
+      "post-monsoon",
+      "humidity_comfort",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_quetta_post_monsoon_humidity_comfort_1",
+    "text": "Heat index in Quetta during OctoberNovember combines 22°C air temperature with 42% relative humidity, producing a feels-like temperature of 22°C. Public health advisories are issued when the heat index exceeds 41°C in northern Balochistan.",
+    "tags": [
+      "quetta",
+      "post-monsoon",
+      "humidity_comfort",
+      "northern balochistan"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_winter_temperature_extreme_0",
+    "text": "Topi (Swabi district, KPK) experiences its winter temperature extremes during DecemberFebruary. With a semi-arid climate at 305 m, daily highs can reach 16°C while nights cool to 4°C. Residents describe the sardi season as bitterly cold.",
+    "tags": [
+      "topi",
+      "winter",
+      "temperature_extreme",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_winter_temperature_extreme_1",
+    "text": "During DecemberFebruary, Topi's semi-arid climate produces temperatures between 4°C at night and 16°C in the afternoon. Swabi district, KPK topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "topi",
+      "winter",
+      "temperature_extreme",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_winter_rainfall_event_0",
+    "text": "Topi receives significant rainfall during DecemberFebruary (winter season). Hourly intensities can exceed 45 mm/h during convective storms, causing urban flooding in low-lying Swabi district, KPK neighbourhoods. Annual contribution from this season is roughly 20% of total.",
+    "tags": [
+      "topi",
+      "winter",
+      "rainfall_event",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_winter_rainfall_event_1",
+    "text": "Rainfall in Topi during winter (DecemberFebruary) averages 45 mm for the period. The semi-arid climate means dry spells of 1020 days are common between events. Farmers in Swabi district, KPK rely on this window for rabi (wheat, chickpea) cultivation.",
+    "tags": [
+      "topi",
+      "winter",
+      "rainfall_event",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_winter_wind_event_0",
+    "text": "Topi is exposed to westerly winds during DecemberFebruary. Speeds average 10 km/h with gusts to 14 km/h, reducing apparent temperature and raising dust. The Swabi district, KPK geography channels and amplifies these winds through the winter season.",
+    "tags": [
+      "topi",
+      "winter",
+      "wind_event",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_winter_wind_event_1",
+    "text": "Sustained westerly winds in Topi during winter (DecemberFebruary) can reach 10 km/h, lifting fine dust from the surrounding Swabi district, KPK terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "topi",
+      "winter",
+      "wind_event",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_winter_fog_smog_0",
+    "text": "Topi experiences dense radiation fog conditions during DecemberFebruary (winter). Visibility can fall to 50 metres before 10 AM, delaying road traffic and flights. The semi-arid climate's winter humidity profile makes Topi one of the most affected cities in Swabi district, KPK.",
+    "tags": [
+      "topi",
+      "winter",
+      "fog_smog",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_winter_fog_smog_1",
+    "text": "Morning dense radiation fog in Topi (Swabi district, KPK) during winter forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during DecemberFebruary.",
+    "tags": [
+      "topi",
+      "winter",
+      "fog_smog",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_winter_humidity_comfort_0",
+    "text": "Relative humidity in Topi during winter (DecemberFebruary) averages 70%, making outdoor activities pleasant. The semi-arid climate at 305 m means Swabi district, KPK residents experience distinct seasonal humidity swings of up to 40 percentage points between winter and the preceding season.",
+    "tags": [
+      "topi",
+      "winter",
+      "humidity_comfort",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_winter_humidity_comfort_1",
+    "text": "Heat index in Topi during DecemberFebruary combines 16°C air temperature with 70% relative humidity, producing a feels-like temperature of 19°C. Public health advisories are issued when the heat index exceeds 41°C in Swabi district, KPK.",
+    "tags": [
+      "topi",
+      "winter",
+      "humidity_comfort",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_spring_temperature_extreme_0",
+    "text": "Topi (Swabi district, KPK) experiences its spring temperature extremes during MarchApril. With a semi-arid climate at 305 m, daily highs can reach 28°C while nights cool to 13°C. Residents describe the bahar season as refreshing.",
+    "tags": [
+      "topi",
+      "spring",
+      "temperature_extreme",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_spring_temperature_extreme_1",
+    "text": "During MarchApril, Topi's semi-arid climate produces temperatures between 13°C at night and 28°C in the afternoon. Swabi district, KPK topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "topi",
+      "spring",
+      "temperature_extreme",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_spring_rainfall_event_0",
+    "text": "Topi receives significant rainfall during MarchApril (spring season). Hourly intensities can exceed 40 mm/h during convective storms, causing urban flooding in low-lying Swabi district, KPK neighbourhoods. Annual contribution from this season is roughly 12% of total.",
+    "tags": [
+      "topi",
+      "spring",
+      "rainfall_event",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_spring_rainfall_event_1",
+    "text": "Rainfall in Topi during spring (MarchApril) averages 40 mm for the period. The semi-arid climate means dry spells of 1020 days are common between events. Farmers in Swabi district, KPK rely on this window for rabi harvest cultivation.",
+    "tags": [
+      "topi",
+      "spring",
+      "rainfall_event",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_spring_wind_event_0",
+    "text": "Topi is exposed to nor'wester squall winds during MarchApril. Speeds average 18 km/h with gusts to 25 km/h, reducing apparent temperature and raising dust. The Swabi district, KPK geography channels and amplifies these winds through the spring season.",
+    "tags": [
+      "topi",
+      "spring",
+      "wind_event",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_spring_wind_event_1",
+    "text": "Sustained nor'wester squall winds in Topi during spring (MarchApril) can reach 18 km/h, lifting fine dust from the surrounding Swabi district, KPK terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "topi",
+      "spring",
+      "wind_event",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_spring_fog_smog_0",
+    "text": "Topi experiences morning mist conditions during MarchApril (spring). Visibility can fall to 300 metres before 10 AM, delaying road traffic and flights. The semi-arid climate's spring humidity profile makes Topi one of the most affected cities in Swabi district, KPK.",
+    "tags": [
+      "topi",
+      "spring",
+      "fog_smog",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_spring_fog_smog_1",
+    "text": "Morning morning mist in Topi (Swabi district, KPK) during spring forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during MarchApril.",
+    "tags": [
+      "topi",
+      "spring",
+      "fog_smog",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_spring_humidity_comfort_0",
+    "text": "Relative humidity in Topi during spring (MarchApril) averages 52%, making outdoor activities warm but comfortable. The semi-arid climate at 305 m means Swabi district, KPK residents experience distinct seasonal humidity swings of up to 40 percentage points between spring and the preceding season.",
+    "tags": [
+      "topi",
+      "spring",
+      "humidity_comfort",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_spring_humidity_comfort_1",
+    "text": "Heat index in Topi during MarchApril combines 28°C air temperature with 52% relative humidity, producing a feels-like temperature of 29°C. Public health advisories are issued when the heat index exceeds 41°C in Swabi district, KPK.",
+    "tags": [
+      "topi",
+      "spring",
+      "humidity_comfort",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_pre_monsoon_temperature_extreme_0",
+    "text": "Topi (Swabi district, KPK) experiences its pre-monsoon temperature extremes during MayJune. With a semi-arid climate at 305 m, daily highs can reach 40°C while nights cool to 25°C. Residents describe the garmi season as scorching.",
+    "tags": [
+      "topi",
+      "pre-monsoon",
+      "temperature_extreme",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_pre_monsoon_temperature_extreme_1",
+    "text": "During MayJune, Topi's semi-arid climate produces temperatures between 25°C at night and 40°C in the afternoon. Swabi district, KPK topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "topi",
+      "pre-monsoon",
+      "temperature_extreme",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_pre_monsoon_rainfall_event_0",
+    "text": "Topi receives significant rainfall during MayJune (pre-monsoon season). Hourly intensities can exceed 20 mm/h during convective storms, causing urban flooding in low-lying Swabi district, KPK neighbourhoods. Annual contribution from this season is roughly 8% of total.",
+    "tags": [
+      "topi",
+      "pre-monsoon",
+      "rainfall_event",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_pre_monsoon_rainfall_event_1",
+    "text": "Rainfall in Topi during pre-monsoon (MayJune) averages 20 mm for the period. The semi-arid climate means dry spells of 1020 days are common between events. Farmers in Swabi district, KPK rely on this window for early kharif sowing cultivation.",
+    "tags": [
+      "topi",
+      "pre-monsoon",
+      "rainfall_event",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_pre_monsoon_wind_event_0",
+    "text": "Topi is exposed to Loo winds during MayJune. Speeds average 16 km/h with gusts to 22 km/h, reducing apparent temperature and raising dust. The Swabi district, KPK geography channels and amplifies these winds through the pre-monsoon season.",
+    "tags": [
+      "topi",
+      "pre-monsoon",
+      "wind_event",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_pre_monsoon_wind_event_1",
+    "text": "Sustained Loo winds in Topi during pre-monsoon (MayJune) can reach 16 km/h, lifting fine dust from the surrounding Swabi district, KPK terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "topi",
+      "pre-monsoon",
+      "wind_event",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_pre_monsoon_fog_smog_0",
+    "text": "Topi experiences dust haze conditions during MayJune (pre-monsoon). Visibility can fall to 800 metres before 10 AM, delaying road traffic and flights. The semi-arid climate's pre-monsoon humidity profile makes Topi one of the most affected cities in Swabi district, KPK.",
+    "tags": [
+      "topi",
+      "pre-monsoon",
+      "fog_smog",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_pre_monsoon_fog_smog_1",
+    "text": "Morning dust haze in Topi (Swabi district, KPK) during pre-monsoon forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during MayJune.",
+    "tags": [
+      "topi",
+      "pre-monsoon",
+      "fog_smog",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_pre_monsoon_humidity_comfort_0",
+    "text": "Relative humidity in Topi during pre-monsoon (MayJune) averages 38%, making outdoor activities oppressive. The semi-arid climate at 305 m means Swabi district, KPK residents experience distinct seasonal humidity swings of up to 40 percentage points between pre-monsoon and the preceding season.",
+    "tags": [
+      "topi",
+      "pre-monsoon",
+      "humidity_comfort",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_pre_monsoon_humidity_comfort_1",
+    "text": "Heat index in Topi during MayJune combines 40°C air temperature with 38% relative humidity, producing a feels-like temperature of 39°C. Public health advisories are issued when the heat index exceeds 41°C in Swabi district, KPK.",
+    "tags": [
+      "topi",
+      "pre-monsoon",
+      "humidity_comfort",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_monsoon_temperature_extreme_0",
+    "text": "Topi (Swabi district, KPK) experiences its monsoon temperature extremes during JulySeptember. With a semi-arid climate at 305 m, daily highs can reach 35°C while nights cool to 24°C. Residents describe the baarish season as rainy and lush.",
+    "tags": [
+      "topi",
+      "monsoon",
+      "temperature_extreme",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_monsoon_temperature_extreme_1",
+    "text": "During JulySeptember, Topi's semi-arid climate produces temperatures between 24°C at night and 35°C in the afternoon. Swabi district, KPK topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "topi",
+      "monsoon",
+      "temperature_extreme",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_monsoon_rainfall_event_0",
+    "text": "Topi receives significant rainfall during JulySeptember (monsoon season). Hourly intensities can exceed 130 mm/h during convective storms, causing urban flooding in low-lying Swabi district, KPK neighbourhoods. Annual contribution from this season is roughly 52% of total.",
+    "tags": [
+      "topi",
+      "monsoon",
+      "rainfall_event",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_monsoon_rainfall_event_1",
+    "text": "Rainfall in Topi during monsoon (JulySeptember) averages 130 mm for the period. The semi-arid climate means dry spells of 1020 days are common between events. Farmers in Swabi district, KPK rely on this window for kharif (rice, cotton, maize) cultivation.",
+    "tags": [
+      "topi",
+      "monsoon",
+      "rainfall_event",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_monsoon_wind_event_0",
+    "text": "Topi is exposed to southwesterly monsoon winds during JulySeptember. Speeds average 20 km/h with gusts to 28 km/h, reducing apparent temperature and raising dust. The Swabi district, KPK geography channels and amplifies these winds through the monsoon season.",
+    "tags": [
+      "topi",
+      "monsoon",
+      "wind_event",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_monsoon_wind_event_1",
+    "text": "Sustained southwesterly monsoon winds in Topi during monsoon (JulySeptember) can reach 20 km/h, lifting fine dust from the surrounding Swabi district, KPK terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "topi",
+      "monsoon",
+      "wind_event",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_monsoon_fog_smog_0",
+    "text": "Topi experiences low stratus cloud conditions during JulySeptember (monsoon). Visibility can fall to 1500 metres before 10 AM, delaying road traffic and flights. The semi-arid climate's monsoon humidity profile makes Topi one of the most affected cities in Swabi district, KPK.",
+    "tags": [
+      "topi",
+      "monsoon",
+      "fog_smog",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_monsoon_fog_smog_1",
+    "text": "Morning low stratus cloud in Topi (Swabi district, KPK) during monsoon forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during JulySeptember.",
+    "tags": [
+      "topi",
+      "monsoon",
+      "fog_smog",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_monsoon_humidity_comfort_0",
+    "text": "Relative humidity in Topi during monsoon (JulySeptember) averages 74%, making outdoor activities sticky and humid. The semi-arid climate at 305 m means Swabi district, KPK residents experience distinct seasonal humidity swings of up to 40 percentage points between monsoon and the preceding season.",
+    "tags": [
+      "topi",
+      "monsoon",
+      "humidity_comfort",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_monsoon_humidity_comfort_1",
+    "text": "Heat index in Topi during JulySeptember combines 35°C air temperature with 74% relative humidity, producing a feels-like temperature of 38°C. Public health advisories are issued when the heat index exceeds 41°C in Swabi district, KPK.",
+    "tags": [
+      "topi",
+      "monsoon",
+      "humidity_comfort",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_post_monsoon_temperature_extreme_0",
+    "text": "Topi (Swabi district, KPK) experiences its post-monsoon temperature extremes during OctoberNovember. With a semi-arid climate at 305 m, daily highs can reach 28°C while nights cool to 12°C. Residents describe the khushk season as temperate.",
+    "tags": [
+      "topi",
+      "post-monsoon",
+      "temperature_extreme",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_post_monsoon_temperature_extreme_1",
+    "text": "During OctoberNovember, Topi's semi-arid climate produces temperatures between 12°C at night and 28°C in the afternoon. Swabi district, KPK topography moderates extremes compared to the surrounding plains.",
+    "tags": [
+      "topi",
+      "post-monsoon",
+      "temperature_extreme",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_post_monsoon_rainfall_event_0",
+    "text": "Topi receives significant rainfall during OctoberNovember (post-monsoon season). Hourly intensities can exceed 25 mm/h during convective storms, causing urban flooding in low-lying Swabi district, KPK neighbourhoods. Annual contribution from this season is roughly 8% of total.",
+    "tags": [
+      "topi",
+      "post-monsoon",
+      "rainfall_event",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_post_monsoon_rainfall_event_1",
+    "text": "Rainfall in Topi during post-monsoon (OctoberNovember) averages 25 mm for the period. The semi-arid climate means dry spells of 1020 days are common between events. Farmers in Swabi district, KPK rely on this window for late kharif harvest cultivation.",
+    "tags": [
+      "topi",
+      "post-monsoon",
+      "rainfall_event",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_post_monsoon_wind_event_0",
+    "text": "Topi is exposed to northerly winds during OctoberNovember. Speeds average 11 km/h with gusts to 15 km/h, reducing apparent temperature and raising dust. The Swabi district, KPK geography channels and amplifies these winds through the post-monsoon season.",
+    "tags": [
+      "topi",
+      "post-monsoon",
+      "wind_event",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_post_monsoon_wind_event_1",
+    "text": "Sustained northerly winds in Topi during post-monsoon (OctoberNovember) can reach 11 km/h, lifting fine dust from the surrounding Swabi district, KPK terrain. Visibility drops to under 2 km on peak dust days.",
+    "tags": [
+      "topi",
+      "post-monsoon",
+      "wind_event",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_post_monsoon_fog_smog_0",
+    "text": "Topi experiences shallow fog conditions during OctoberNovember (post-monsoon). Visibility can fall to 200 metres before 10 AM, delaying road traffic and flights. The semi-arid climate's post-monsoon humidity profile makes Topi one of the most affected cities in Swabi district, KPK.",
+    "tags": [
+      "topi",
+      "post-monsoon",
+      "fog_smog",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_post_monsoon_fog_smog_1",
+    "text": "Morning shallow fog in Topi (Swabi district, KPK) during post-monsoon forms when overnight temperatures drop sharply while surface humidity stays above 85%. Affected hours are typically 04:0009:00 local time during OctoberNovember.",
+    "tags": [
+      "topi",
+      "post-monsoon",
+      "fog_smog",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_post_monsoon_humidity_comfort_0",
+    "text": "Relative humidity in Topi during post-monsoon (OctoberNovember) averages 50%, making outdoor activities mild. The semi-arid climate at 305 m means Swabi district, KPK residents experience distinct seasonal humidity swings of up to 40 percentage points between post-monsoon and the preceding season.",
+    "tags": [
+      "topi",
+      "post-monsoon",
+      "humidity_comfort",
+      "swabi district"
+    ],
+    "generated": true
+  },
+  {
+    "id": "gen_topi_post_monsoon_humidity_comfort_1",
+    "text": "Heat index in Topi during OctoberNovember combines 28°C air temperature with 50% relative humidity, producing a feels-like temperature of 29°C. Public health advisories are issued when the heat index exceeds 41°C in Swabi district, KPK.",
+    "tags": [
+      "topi",
+      "post-monsoon",
+      "humidity_comfort",
+      "swabi district"
+    ],
+    "generated": true
+  }
+]

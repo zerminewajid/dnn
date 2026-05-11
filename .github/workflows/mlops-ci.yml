@@ -1,23 +1,35 @@
 # ══════════════════════════════════════════════════════════════════════════════
-# Weathering With You — MLOps CI Pipeline
-# Runs on every push/PR to main. Validates all MLOps artifacts and runs
-# the cross-model comparison. Fails fast if any artifact is corrupt or missing.
+# Weathering With You — CI/CD Pipeline
+#
+# CI jobs (always run):
+#   mlops-tests      — 41 pytest artifact assertions
+#   model-comparison — compare_models.py, assert Transformer wins
+#   promotion-gate   — exactly 1 promoted run per model family
+#   data-integrity   — manifest schema + feature alignment
+#
+# CD job (runs only on push to main after all CI passes):
+#   deploy           — builds React, pushes to HuggingFace Space via git
+#
+# Required GitHub Secrets:
+#   HF_TOKEN   — HuggingFace write token (Settings → Access Tokens)
+#   HF_SPACE   — your Space name, e.g. "zermeenewajid/weathering-with-you"
 # ══════════════════════════════════════════════════════════════════════════════
 
-name: MLOps CI
+name: MLOps CI/CD
 
 on:
   push:
     branches: [main, dev]
     paths:
-      - 'backend/ml/**'
-      - 'backend/tests/**'
+      - 'backend/**'
+      - 'frontend/**'
+      - 'Dockerfile'
       - '.github/workflows/mlops-ci.yml'
   pull_request:
     branches: [main]
     paths:
-      - 'backend/ml/**'
-      - 'backend/tests/**'
+      - 'backend/**'
+      - 'frontend/**'
 
 jobs:
   # ── Job 1: MLOps artifact integrity ─────────────────────────────────────────
@@ -180,3 +192,57 @@ jobs:
               assert feat in config_src, f'Feature {feat} missing from config.yaml'
           print(f'✅ All {len(manifest[\"features\"])} features present in config.yaml')
           "
+
+  # ── Job 5: Deploy to HuggingFace Spaces (CD) ─────────────────────────────────
+  # Only runs on push to main (not on PRs), only after all CI jobs pass.
+  deploy:
+    name: Deploy to HuggingFace Spaces
+    runs-on: ubuntu-latest
+    needs: [mlops-tests, model-comparison, promotion-gate, data-integrity]
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0        # full history needed for git push
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Build React frontend
+        working-directory: frontend
+        run: |
+          npm ci
+          npm run build
+        env:
+          # Points the frontend at its own host (FastAPI serves both)
+          VITE_APP_NAME: "Weathering With You"
+
+      - name: Verify build output
+        run: |
+          ls -lh frontend/dist/
+          test -f frontend/dist/index.html && echo "✅ Build OK"
+
+      - name: Push to HuggingFace Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_SPACE: ${{ secrets.HF_SPACE }}
+        run: |
+          # Configure git identity
+          git config --global user.email "ci@github-actions"
+          git config --global user.name  "GitHub Actions"
+
+          # Add HuggingFace remote
+          git remote add hf \
+            "https://user:${HF_TOKEN}@huggingface.co/spaces/${HF_SPACE}"
+
+          # Force-push main branch to the Space
+          # HuggingFace rebuilds the Docker image automatically on every push
+          git push hf main --force
+
+          echo "✅ Deployed to https://huggingface.co/spaces/${HF_SPACE}"
