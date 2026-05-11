@@ -49,15 +49,17 @@ jobs:
 
       - name: Install test dependencies
         run: |
-          pip install pytest pyyaml matplotlib numpy
+          pip install pytest pyyaml matplotlib numpy pyarrow pandas
 
       - name: Run MLOps artifact tests
         run: |
-          pytest backend/tests/test_mlops_artifacts.py -v \
+          mkdir -p test-results
+          MPLBACKEND=Agg pytest backend/tests/test_mlops_artifacts.py -v \
             --tb=short \
             --junit-xml=test-results/mlops.xml
         env:
           PYTHONDONTWRITEBYTECODE: 1
+          MPLBACKEND: Agg
 
       - name: Upload test results
         uses: actions/upload-artifact@v4
@@ -83,11 +85,13 @@ jobs:
           cache: 'pip'
 
       - name: Install dependencies
-        run: pip install matplotlib numpy
+        run: pip install matplotlib numpy pyarrow pandas
 
       - name: Run compare_models.py
         run: |
-          python backend/ml/experiments/compare_models.py
+          MPLBACKEND=Agg python backend/ml/experiments/compare_models.py
+        env:
+          MPLBACKEND: Agg
 
       - name: Check winner is Transformer
         run: |
@@ -233,16 +237,18 @@ jobs:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           HF_SPACE: ${{ secrets.HF_SPACE }}
         run: |
-          # Configure git identity
           git config --global user.email "ci@github-actions"
           git config --global user.name  "GitHub Actions"
 
-          # Add HuggingFace remote
+          # Force-add the built frontend (it's in .gitignore for local dev,
+          # but HuggingFace needs it baked into the image via Dockerfile)
+          git add -f frontend/dist/
+          git commit -m "cd: add built frontend for HF deploy [skip ci]" || true
+
+          # Add HuggingFace remote and push
           git remote add hf \
             "https://user:${HF_TOKEN}@huggingface.co/spaces/${HF_SPACE}"
 
-          # Force-push main branch to the Space
-          # HuggingFace rebuilds the Docker image automatically on every push
-          git push hf main --force
+          git push hf HEAD:main --force
 
-          echo "✅ Deployed to https://huggingface.co/spaces/${HF_SPACE}"
+          echo "✅ Deployed → https://huggingface.co/spaces/${HF_SPACE}"
