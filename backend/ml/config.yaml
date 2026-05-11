@@ -1,0 +1,77 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# Weathering With You — ML Config
+# Single source of truth for all hyperparameters.
+# Training scripts read from here. Change once, affects all runs.
+# ══════════════════════════════════════════════════════════════════════════════
+
+# ── Shared across all models ──────────────────────────────────────────────────
+shared:
+  seed: 42
+  input_len: 48          # hours of history fed into model
+  horizon: 24            # hours ahead to forecast
+  n_features: 7          # must match data_pipeline.FEATURES
+  target_feature: temperature_2m
+  features:
+    - temperature_2m
+    - relative_humidity_2m
+    - precipitation
+    - wind_speed_10m
+    - weather_code
+    - surface_pressure
+    - cloud_cover
+
+# ── Data pipeline ─────────────────────────────────────────────────────────────
+data:
+  date_start: "2023-01-01"
+  date_end:   "2024-12-31"
+  train_end:  "2023-12-31"
+  val_start:  "2024-01-01"
+  val_end:    "2024-06-30"
+  test_start: "2024-07-01"
+  max_fill_hours: 3       # forward-fill cap for NaN gaps
+  nan_warn_pct: 0.01      # log warning if NaN rate exceeds 1%
+
+# ── Transformer (WeatherTransformer) ─────────────────────────────────────────
+transformer:
+  d_model: 128
+  n_heads: 4
+  n_layers: 4
+  d_ffn: 256
+  dropout: 0.1
+  batch_size: 64
+  lr: 0.001
+  max_epochs: 15
+  patience: 3             # early-stop on val MSE
+
+# ── LSTM (WeatherLSTM) ────────────────────────────────────────────────────────
+lstm:
+  n_layers: 2
+  hidden: 64
+  dropout: 0.1
+  batch_size: 64
+  lr: 0.001
+  max_epochs: 10
+  patience: 3
+
+# ── CNN (WeatherCNN) ──────────────────────────────────────────────────────────
+cnn:
+  batch_size: 32
+  lr: 0.001
+  max_epochs: 10
+  patience: 3
+
+# ── VAE (WeatherVAE — anomaly detection) ─────────────────────────────────────
+vae:
+  latent_dim: 8
+  hidden_dim: 32
+  hidden_dim2: 16
+  lr: 0.001
+  beta_max: 0.5
+  beta_anneal_epochs: 10  # epochs over which β rises 0 → beta_max
+  anomaly_percentile: 95  # threshold = 95th pct of train reconstruction errors
+
+# ── Promotion gate ────────────────────────────────────────────────────────────
+promotion:
+  # New model must beat current best by at least this margin (in std-scale MSE)
+  # to be promoted to production.
+  min_improvement: 0.001

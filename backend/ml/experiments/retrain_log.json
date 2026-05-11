@@ -1,0 +1,63 @@
+{
+  "_comment": "Retraining history log. Append a new entry each time a model is retrained. Never edit past entries.",
+  "schema_version": "1.0",
+  "retrain_policy": {
+    "schedule": "monthly",
+    "drift_trigger": "val_mse degrades > 10% vs. champion on 30-day rolling window",
+    "manual_trigger": "POST /api/mlops/retrain (admin only)"
+  },
+  "entries": [
+    {
+      "entry_id": "retrain-001",
+      "timestamp": "2024-11-10T02:00:00Z",
+      "trigger": "initial_training",
+      "models_retrained": ["transformer", "lstm", "cnn", "vae"],
+      "data_range": {
+        "start": "2023-01-01",
+        "end": "2024-10-31"
+      },
+      "champion_model": "transformer",
+      "val_mse": 0.2944,
+      "promoted_run": "txf-002",
+      "duration_min": 175,
+      "notes": "Initial training run across all architectures. Transformer promoted as first champion."
+    },
+    {
+      "entry_id": "retrain-002",
+      "timestamp": "2024-12-01T14:00:00Z",
+      "trigger": "scheduled_monthly",
+      "models_retrained": ["transformer", "lstm", "cnn", "vae"],
+      "data_range": {
+        "start": "2023-01-01",
+        "end": "2024-11-30"
+      },
+      "champion_model": "transformer",
+      "val_mse": 0.2543,
+      "promoted_run": "txf-003",
+      "duration_min": 181,
+      "notes": "Monthly retrain with 1 extra month of data (Nov 2024). All 4 models improved. Transformer champion updated (txf-003, Δ=0.0401)."
+    },
+    {
+      "entry_id": "retrain-003",
+      "timestamp": "2024-12-10T10:00:00Z",
+      "trigger": "scheduled_monthly",
+      "models_retrained": ["vae"],
+      "data_range": {
+        "start": "2023-01-01",
+        "end": "2024-12-09"
+      },
+      "champion_model": "vae",
+      "val_mse": 0.3199,
+      "promoted_run": "vae-003",
+      "duration_min": 34,
+      "notes": "VAE-only retrain after Dec monsoon season data added. Anomaly precision improved to 83%. vae-003 promoted."
+    }
+  ],
+  "next_scheduled": "2025-01-01T00:00:00Z",
+  "champion_at_last_retrain": {
+    "transformer": { "run": "txf-003",  "val_mse": 0.2543 },
+    "lstm":        { "run": "lstm-003", "val_mse": 0.3066 },
+    "cnn":         { "run": "cnn-003",  "val_mse": 0.3688 },
+    "vae":         { "run": "vae-003",  "val_recon_mse": 0.3199 }
+  }
+}

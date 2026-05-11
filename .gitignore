@@ -1,0 +1,25 @@
+# --- Frontend ---
+node_modules/
+frontend/dist/
+
+# --- Backend & Python ---
+__pycache__/
+*.pyc
+.env
+venv/
+.venv/
+env/
+
+# --- ML Artifacts ---
+# Ignore raw data but keep the manifest for tracking
+backend/ml/datasets/*
+!backend/ml/datasets/manifest.json
+
+# Ignore generated visuals/tables to keep the repo lean
+backend/ml/experiments/comparison_chart.png
+backend/ml/experiments/comparison_table.json
+
+# --- OS & IDE ---
+.DS_Store
+.vscode/
+.idea/

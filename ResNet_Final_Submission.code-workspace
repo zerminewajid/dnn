@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "ResNet_Final_Submission",
+			"path": "../../../ResNet_Final_Submission"
+		},
+		{
+			"name": "claude-code-pdf",
+			"path": "../.."
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,149 @@
+{
+  "_comment": "Auto-generated \u2014 run generate_manifest.py to refresh.",
+  "schema_version": "1.0",
+  "generated_at": "2026-05-09T02:13:12Z",
+  "pipeline_version": "1.2.0",
+  "config_ref": "../config.yaml",
+  "date_range": {
+    "start": "2023-01-01",
+    "end": "2024-12-31",
+    "total_hours": 17520,
+    "frequency": "1h"
+  },
+  "splits": {
+    "train": {
+      "start": "2023-01-01",
+      "end": "2023-12-31",
+      "hours": 8760
+    },
+    "val": {
+      "start": "2024-01-01",
+      "end": "2024-06-30",
+      "hours": 4344
+    },
+    "test": {
+      "start": "2024-07-01",
+      "end": "2024-12-31",
+      "hours": 4416
+    }
+  },
+  "features": [
+    "temperature_2m",
+    "relative_humidity_2m",
+    "precipitation",
+    "wind_speed_10m",
+    "weather_code",
+    "surface_pressure",
+    "cloud_cover"
+  ],
+  "target": "temperature_2m",
+  "input_len": 48,
+  "horizon": 24,
+  "scaler": "standard",
+  "scaler_stats": {
+    "temperature_2m": {
+      "mean": 21.949,
+      "std": 8.364
+    },
+    "relative_humidity_2m": {
+      "mean": 60.657,
+      "std": 22.803
+    },
+    "precipitation": {
+      "mean": 0.073,
+      "std": 0.545
+    },
+    "wind_speed_10m": {
+      "mean": 8.526,
+      "std": 6.22
+    },
+    "weather_code": {
+      "mean": 4.792,
+      "std": 14.033
+    },
+    "surface_pressure": {
+      "mean": 953.714,
+      "std": 54.781
+    },
+    "cloud_cover": {
+      "mean": 32.855,
+      "std": 40.013
+    }
+  },
+  "imputation": {
+    "strategy": "forward_fill",
+    "max_fill_hours": 3,
+    "nan_warn_pct": 0.01
+  },
+  "cities": {
+    "islamabad": {
+      "lat": 33.6844,
+      "lon": 73.0479,
+      "timezone": "Asia/Karachi",
+      "file": "islamabad.parquet",
+      "bytes": 265781,
+      "md5": "57048939406cdfd2a48295a783fd843f",
+      "rows": 17520,
+      "nan_pct": 0.0
+    },
+    "karachi": {
+      "lat": 24.8607,
+      "lon": 67.0011,
+      "timezone": "Asia/Karachi",
+      "file": "karachi.parquet",
+      "bytes": 264377,
+      "md5": "f421d05cef18901b220dc78f2ee46229",
+      "rows": 17520,
+      "nan_pct": 0.0
+    },
+    "lahore": {
+      "lat": 31.5204,
+      "lon": 74.3587,
+      "timezone": "Asia/Karachi",
+      "file": "lahore.parquet",
+      "bytes": 264446,
+      "md5": "a01f60b3a5e6dff63b550b1dd62cfc87",
+      "rows": 17520,
+      "nan_pct": 0.0
+    },
+    "peshawar": {
+      "lat": 34.015,
+      "lon": 71.5249,
+      "timezone": "Asia/Karachi",
+      "file": "peshawar.parquet",
+      "bytes": 265187,
+      "md5": "7c34e91987b114bcfc0f287078d675af",
+      "rows": 17520,
+      "nan_pct": 0.0
+    },
+    "quetta": {
+      "lat": 30.1798,
+      "lon": 66.975,
+      "timezone": "Asia/Karachi",
+      "file": "quetta.parquet",
+      "bytes": 255502,
+      "md5": "33c08b344b13490bfb722f05dce4ad13",
+      "rows": 17520,
+      "nan_pct": 0.0
+    },
+    "topi": {
+      "lat": 34.074,
+      "lon": 72.6145,
+      "timezone": "Asia/Karachi",
+      "file": "topi.parquet",
+      "bytes": 263470,
+      "md5": "2056621ac3621599cee2f3581b0d4ea0",
+      "rows": 17520,
+      "nan_pct": 0.0
+    }
+  },
+  "totals": {
+    "cities": 6,
+    "total_rows": 105120,
+    "total_bytes": 1578763,
+    "total_mb": 1.51
+  },
+  "source": "Open-Meteo Historical Weather API",
+  "source_url": "https://archive-api.open-meteo.com/v1/archive",
+  "license": "CC BY 4.0"
+}

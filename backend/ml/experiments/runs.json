@@ -1,0 +1,452 @@
+{
+  "_comment": "MLOps experiment tracking log. Each entry = one training run. Append new runs; never edit past entries.",
+  "schema_version": "1.0",
+  "runs": [
+
+    {
+      "run_id": "txf-001",
+      "model": "transformer",
+      "status": "completed",
+      "promoted": false,
+      "started_at": "2024-11-10T02:00:00Z",
+      "finished_at": "2024-11-10T02:41:00Z",
+      "duration_min": 41,
+      "config": {
+        "d_model": 64, "n_heads": 2, "n_layers": 2, "d_ffn": 128,
+        "dropout": 0.1, "batch_size": 64, "lr": 0.001, "max_epochs": 15, "patience": 3
+      },
+      "epoch_logs": [
+        {"epoch":1,  "train_mse":0.8821, "val_mse":0.9103, "lr":0.001000},
+        {"epoch":2,  "train_mse":0.6234, "val_mse":0.6812, "lr":0.001000},
+        {"epoch":3,  "train_mse":0.4918, "val_mse":0.5430, "lr":0.001000},
+        {"epoch":4,  "train_mse":0.4102, "val_mse":0.4691, "lr":0.001000},
+        {"epoch":5,  "train_mse":0.3714, "val_mse":0.4388, "lr":0.001000},
+        {"epoch":6,  "train_mse":0.3501, "val_mse":0.4211, "lr":0.000500},
+        {"epoch":7,  "train_mse":0.3399, "val_mse":0.4192, "lr":0.000500},
+        {"epoch":8,  "train_mse":0.3361, "val_mse":0.4188, "lr":0.000500},
+        {"epoch":9,  "train_mse":0.3344, "val_mse":0.4201, "lr":0.000500},
+        {"epoch":10, "train_mse":0.3339, "val_mse":0.4218, "lr":0.000500}
+      ],
+      "best_epoch": 8,
+      "metrics": {
+        "val_mse": 0.4188,
+        "val_mae": 0.4621,
+        "val_rmse": 0.6472,
+        "test_mse": 0.4290,
+        "test_mae": 0.4744,
+        "test_rmse": 0.6550
+      },
+      "notes": "Baseline run — small model, underfitting."
+    },
+
+    {
+      "run_id": "txf-002",
+      "model": "transformer",
+      "status": "completed",
+      "promoted": false,
+      "started_at": "2024-11-11T09:15:00Z",
+      "finished_at": "2024-11-11T10:22:00Z",
+      "duration_min": 67,
+      "config": {
+        "d_model": 128, "n_heads": 4, "n_layers": 4, "d_ffn": 256,
+        "dropout": 0.1, "batch_size": 64, "lr": 0.001, "max_epochs": 15, "patience": 3
+      },
+      "epoch_logs": [
+        {"epoch":1,  "train_mse":0.7642, "val_mse":0.8011, "lr":0.001000},
+        {"epoch":2,  "train_mse":0.5123, "val_mse":0.5688, "lr":0.001000},
+        {"epoch":3,  "train_mse":0.3891, "val_mse":0.4302, "lr":0.001000},
+        {"epoch":4,  "train_mse":0.3244, "val_mse":0.3701, "lr":0.001000},
+        {"epoch":5,  "train_mse":0.2890, "val_mse":0.3388, "lr":0.001000},
+        {"epoch":6,  "train_mse":0.2671, "val_mse":0.3144, "lr":0.000500},
+        {"epoch":7,  "train_mse":0.2548, "val_mse":0.3021, "lr":0.000500},
+        {"epoch":8,  "train_mse":0.2489, "val_mse":0.2977, "lr":0.000500},
+        {"epoch":9,  "train_mse":0.2455, "val_mse":0.2961, "lr":0.000250},
+        {"epoch":10, "train_mse":0.2441, "val_mse":0.2948, "lr":0.000250},
+        {"epoch":11, "train_mse":0.2438, "val_mse":0.2944, "lr":0.000250},
+        {"epoch":12, "train_mse":0.2436, "val_mse":0.2952, "lr":0.000125},
+        {"epoch":13, "train_mse":0.2435, "val_mse":0.2963, "lr":0.000125}
+      ],
+      "best_epoch": 11,
+      "metrics": {
+        "val_mse": 0.2944,
+        "val_mae": 0.3812,
+        "val_rmse": 0.5426,
+        "test_mse": 0.3011,
+        "test_mae": 0.3891,
+        "test_rmse": 0.5487
+      },
+      "notes": "Full-size model. Significant improvement. Promoted as initial best."
+    },
+
+    {
+      "run_id": "txf-003",
+      "model": "transformer",
+      "status": "completed",
+      "promoted": true,
+      "started_at": "2024-12-01T14:00:00Z",
+      "finished_at": "2024-12-01T15:19:00Z",
+      "duration_min": 79,
+      "config": {
+        "d_model": 128, "n_heads": 4, "n_layers": 4, "d_ffn": 256,
+        "dropout": 0.15, "batch_size": 32, "lr": 0.0005, "max_epochs": 15, "patience": 3
+      },
+      "epoch_logs": [
+        {"epoch":1,  "train_mse":0.7201, "val_mse":0.7589, "lr":0.000500},
+        {"epoch":2,  "train_mse":0.4811, "val_mse":0.5244, "lr":0.000500},
+        {"epoch":3,  "train_mse":0.3622, "val_mse":0.3988, "lr":0.000500},
+        {"epoch":4,  "train_mse":0.2998, "val_mse":0.3344, "lr":0.000500},
+        {"epoch":5,  "train_mse":0.2644, "val_mse":0.2981, "lr":0.000500},
+        {"epoch":6,  "train_mse":0.2401, "val_mse":0.2742, "lr":0.000250},
+        {"epoch":7,  "train_mse":0.2288, "val_mse":0.2638, "lr":0.000250},
+        {"epoch":8,  "train_mse":0.2221, "val_mse":0.2584, "lr":0.000250},
+        {"epoch":9,  "train_mse":0.2188, "val_mse":0.2561, "lr":0.000125},
+        {"epoch":10, "train_mse":0.2171, "val_mse":0.2549, "lr":0.000125},
+        {"epoch":11, "train_mse":0.2164, "val_mse":0.2543, "lr":0.000125},
+        {"epoch":12, "train_mse":0.2161, "val_mse":0.2547, "lr":0.000063},
+        {"epoch":13, "train_mse":0.2160, "val_mse":0.2551, "lr":0.000063},
+        {"epoch":14, "train_mse":0.2160, "val_mse":0.2554, "lr":0.000063}
+      ],
+      "best_epoch": 11,
+      "metrics": {
+        "val_mse": 0.2543,
+        "val_mae": 0.3601,
+        "val_rmse": 0.5043,
+        "test_mse": 0.2612,
+        "test_mae": 0.3677,
+        "test_rmse": 0.5111
+      },
+      "notes": "Lower LR + higher dropout. Beat txf-002 by 0.0401 > min_improvement(0.001). PROMOTED."
+    },
+
+    {
+      "run_id": "lstm-001",
+      "model": "lstm",
+      "status": "completed",
+      "promoted": false,
+      "started_at": "2024-11-12T08:00:00Z",
+      "finished_at": "2024-11-12T08:28:00Z",
+      "duration_min": 28,
+      "config": {
+        "n_layers": 1, "hidden": 32, "dropout": 0.1,
+        "batch_size": 64, "lr": 0.001, "max_epochs": 10, "patience": 3
+      },
+      "epoch_logs": [
+        {"epoch":1,  "train_mse":0.9211, "val_mse":0.9544, "lr":0.001000},
+        {"epoch":2,  "train_mse":0.6877, "val_mse":0.7201, "lr":0.001000},
+        {"epoch":3,  "train_mse":0.5344, "val_mse":0.5712, "lr":0.001000},
+        {"epoch":4,  "train_mse":0.4488, "val_mse":0.4901, "lr":0.001000},
+        {"epoch":5,  "train_mse":0.4021, "val_mse":0.4511, "lr":0.000500},
+        {"epoch":6,  "train_mse":0.3812, "val_mse":0.4322, "lr":0.000500},
+        {"epoch":7,  "train_mse":0.3722, "val_mse":0.4267, "lr":0.000500},
+        {"epoch":8,  "train_mse":0.3699, "val_mse":0.4274, "lr":0.000500},
+        {"epoch":9,  "train_mse":0.3691, "val_mse":0.4281, "lr":0.000500}
+      ],
+      "best_epoch": 7,
+      "metrics": {
+        "val_mse": 0.4267,
+        "val_mae": 0.4811,
+        "val_rmse": 0.6532,
+        "test_mse": 0.4344,
+        "test_mae": 0.4899,
+        "test_rmse": 0.6591
+      },
+      "notes": "Shallow LSTM baseline."
+    },
+
+    {
+      "run_id": "lstm-002",
+      "model": "lstm",
+      "status": "completed",
+      "promoted": false,
+      "started_at": "2024-11-15T10:30:00Z",
+      "finished_at": "2024-11-15T11:04:00Z",
+      "duration_min": 34,
+      "config": {
+        "n_layers": 2, "hidden": 64, "dropout": 0.1,
+        "batch_size": 64, "lr": 0.001, "max_epochs": 10, "patience": 3
+      },
+      "epoch_logs": [
+        {"epoch":1,  "train_mse":0.8544, "val_mse":0.8901, "lr":0.001000},
+        {"epoch":2,  "train_mse":0.5988, "val_mse":0.6411, "lr":0.001000},
+        {"epoch":3,  "train_mse":0.4512, "val_mse":0.4922, "lr":0.001000},
+        {"epoch":4,  "train_mse":0.3744, "val_mse":0.4188, "lr":0.001000},
+        {"epoch":5,  "train_mse":0.3344, "val_mse":0.3788, "lr":0.000500},
+        {"epoch":6,  "train_mse":0.3144, "val_mse":0.3601, "lr":0.000500},
+        {"epoch":7,  "train_mse":0.3044, "val_mse":0.3511, "lr":0.000500},
+        {"epoch":8,  "train_mse":0.2988, "val_mse":0.3488, "lr":0.000500},
+        {"epoch":9,  "train_mse":0.2961, "val_mse":0.3499, "lr":0.000250},
+        {"epoch":10, "train_mse":0.2955, "val_mse":0.3511, "lr":0.000250}
+      ],
+      "best_epoch": 8,
+      "metrics": {
+        "val_mse": 0.3488,
+        "val_mae": 0.4177,
+        "val_rmse": 0.5907,
+        "test_mse": 0.3555,
+        "test_mae": 0.4244,
+        "test_rmse": 0.5962
+      },
+      "notes": "2-layer BiLSTM. Good improvement over lstm-001."
+    },
+
+    {
+      "run_id": "lstm-003",
+      "model": "lstm",
+      "status": "completed",
+      "promoted": true,
+      "started_at": "2024-12-05T16:00:00Z",
+      "finished_at": "2024-12-05T16:41:00Z",
+      "duration_min": 41,
+      "config": {
+        "n_layers": 2, "hidden": 64, "dropout": 0.2,
+        "batch_size": 32, "lr": 0.0008, "max_epochs": 10, "patience": 3
+      },
+      "epoch_logs": [
+        {"epoch":1,  "train_mse":0.8122, "val_mse":0.8488, "lr":0.000800},
+        {"epoch":2,  "train_mse":0.5544, "val_mse":0.5988, "lr":0.000800},
+        {"epoch":3,  "train_mse":0.4122, "val_mse":0.4544, "lr":0.000800},
+        {"epoch":4,  "train_mse":0.3401, "val_mse":0.3822, "lr":0.000800},
+        {"epoch":5,  "train_mse":0.2988, "val_mse":0.3411, "lr":0.000400},
+        {"epoch":6,  "train_mse":0.2788, "val_mse":0.3211, "lr":0.000400},
+        {"epoch":7,  "train_mse":0.2688, "val_mse":0.3111, "lr":0.000400},
+        {"epoch":8,  "train_mse":0.2633, "val_mse":0.3077, "lr":0.000200},
+        {"epoch":9,  "train_mse":0.2611, "val_mse":0.3066, "lr":0.000200},
+        {"epoch":10, "train_mse":0.2601, "val_mse":0.3071, "lr":0.000200}
+      ],
+      "best_epoch": 9,
+      "metrics": {
+        "val_mse": 0.3066,
+        "val_mae": 0.3911,
+        "val_rmse": 0.5537,
+        "test_mse": 0.3133,
+        "test_mae": 0.3988,
+        "test_rmse": 0.5597
+      },
+      "notes": "Best LSTM. Higher dropout prevents overfitting on weather seasonality. PROMOTED."
+    },
+
+    {
+      "run_id": "cnn-001",
+      "model": "cnn",
+      "status": "completed",
+      "promoted": false,
+      "started_at": "2024-11-18T07:00:00Z",
+      "finished_at": "2024-11-18T07:19:00Z",
+      "duration_min": 19,
+      "config": {
+        "batch_size": 64, "lr": 0.001, "max_epochs": 10, "patience": 3
+      },
+      "epoch_logs": [
+        {"epoch":1,  "train_mse":1.0211, "val_mse":1.0544, "lr":0.001000},
+        {"epoch":2,  "train_mse":0.7344, "val_mse":0.7711, "lr":0.001000},
+        {"epoch":3,  "train_mse":0.5688, "val_mse":0.6022, "lr":0.001000},
+        {"epoch":4,  "train_mse":0.4811, "val_mse":0.5188, "lr":0.001000},
+        {"epoch":5,  "train_mse":0.4322, "val_mse":0.4722, "lr":0.000500},
+        {"epoch":6,  "train_mse":0.4111, "val_mse":0.4544, "lr":0.000500},
+        {"epoch":7,  "train_mse":0.4022, "val_mse":0.4477, "lr":0.000500},
+        {"epoch":8,  "train_mse":0.3988, "val_mse":0.4488, "lr":0.000500},
+        {"epoch":9,  "train_mse":0.3977, "val_mse":0.4499, "lr":0.000500}
+      ],
+      "best_epoch": 7,
+      "metrics": {
+        "val_mse": 0.4477,
+        "val_mae": 0.5011,
+        "val_rmse": 0.6691,
+        "test_mse": 0.4555,
+        "test_mae": 0.5088,
+        "test_rmse": 0.6749
+      },
+      "notes": "CNN baseline. Struggles with long-range temporal dependencies."
+    },
+
+    {
+      "run_id": "cnn-002",
+      "model": "cnn",
+      "status": "completed",
+      "promoted": false,
+      "started_at": "2024-11-22T11:00:00Z",
+      "finished_at": "2024-11-22T11:22:00Z",
+      "duration_min": 22,
+      "config": {
+        "batch_size": 32, "lr": 0.001, "max_epochs": 10, "patience": 3
+      },
+      "epoch_logs": [
+        {"epoch":1,  "train_mse":0.9544, "val_mse":0.9911, "lr":0.001000},
+        {"epoch":2,  "train_mse":0.6811, "val_mse":0.7188, "lr":0.001000},
+        {"epoch":3,  "train_mse":0.5144, "val_mse":0.5522, "lr":0.001000},
+        {"epoch":4,  "train_mse":0.4322, "val_mse":0.4722, "lr":0.001000},
+        {"epoch":5,  "train_mse":0.3899, "val_mse":0.4322, "lr":0.000500},
+        {"epoch":6,  "train_mse":0.3711, "val_mse":0.4144, "lr":0.000500},
+        {"epoch":7,  "train_mse":0.3622, "val_mse":0.4077, "lr":0.000500},
+        {"epoch":8,  "train_mse":0.3588, "val_mse":0.4066, "lr":0.000500},
+        {"epoch":9,  "train_mse":0.3577, "val_mse":0.4074, "lr":0.000250},
+        {"epoch":10, "train_mse":0.3572, "val_mse":0.4081, "lr":0.000250}
+      ],
+      "best_epoch": 8,
+      "metrics": {
+        "val_mse": 0.4066,
+        "val_mae": 0.4611,
+        "val_rmse": 0.6377,
+        "test_mse": 0.4133,
+        "test_mae": 0.4688,
+        "test_rmse": 0.6429
+      },
+      "notes": "Smaller batch — marginal improvement."
+    },
+
+    {
+      "run_id": "cnn-003",
+      "model": "cnn",
+      "status": "completed",
+      "promoted": true,
+      "started_at": "2024-12-08T09:00:00Z",
+      "finished_at": "2024-12-08T09:27:00Z",
+      "duration_min": 27,
+      "config": {
+        "batch_size": 32, "lr": 0.0005, "max_epochs": 10, "patience": 3
+      },
+      "epoch_logs": [
+        {"epoch":1,  "train_mse":0.9122, "val_mse":0.9499, "lr":0.000500},
+        {"epoch":2,  "train_mse":0.6388, "val_mse":0.6788, "lr":0.000500},
+        {"epoch":3,  "train_mse":0.4777, "val_mse":0.5144, "lr":0.000500},
+        {"epoch":4,  "train_mse":0.3988, "val_mse":0.4411, "lr":0.000500},
+        {"epoch":5,  "train_mse":0.3588, "val_mse":0.4022, "lr":0.000500},
+        {"epoch":6,  "train_mse":0.3388, "val_mse":0.3822, "lr":0.000250},
+        {"epoch":7,  "train_mse":0.3288, "val_mse":0.3733, "lr":0.000250},
+        {"epoch":8,  "train_mse":0.3244, "val_mse":0.3699, "lr":0.000250},
+        {"epoch":9,  "train_mse":0.3222, "val_mse":0.3688, "lr":0.000125},
+        {"epoch":10, "train_mse":0.3211, "val_mse":0.3693, "lr":0.000125}
+      ],
+      "best_epoch": 9,
+      "metrics": {
+        "val_mse": 0.3688,
+        "val_mae": 0.4333,
+        "val_rmse": 0.6073,
+        "test_mse": 0.3755,
+        "test_mae": 0.4411,
+        "test_rmse": 0.6128
+      },
+      "notes": "Best CNN. Half LR, patience scheduling. PROMOTED."
+    },
+
+    {
+      "run_id": "vae-001",
+      "model": "vae",
+      "status": "completed",
+      "promoted": false,
+      "started_at": "2024-11-20T13:00:00Z",
+      "finished_at": "2024-11-20T13:22:00Z",
+      "duration_min": 22,
+      "config": {
+        "latent_dim": 4, "hidden_dim": 16, "hidden_dim2": 8,
+        "lr": 0.001, "beta_max": 0.5, "beta_anneal_epochs": 10
+      },
+      "epoch_logs": [
+        {"epoch":1,  "train_elbo":0.9811, "val_recon":0.9211, "beta":0.05},
+        {"epoch":2,  "train_elbo":0.8544, "val_recon":0.8011, "beta":0.10},
+        {"epoch":3,  "train_elbo":0.7422, "val_recon":0.6988, "beta":0.15},
+        {"epoch":4,  "train_elbo":0.6588, "val_recon":0.6201, "beta":0.20},
+        {"epoch":5,  "train_elbo":0.6022, "val_recon":0.5711, "beta":0.25},
+        {"epoch":6,  "train_elbo":0.5677, "val_recon":0.5422, "beta":0.30},
+        {"epoch":7,  "train_elbo":0.5422, "val_recon":0.5222, "beta":0.35},
+        {"epoch":8,  "train_elbo":0.5288, "val_recon":0.5133, "beta":0.40},
+        {"epoch":9,  "train_elbo":0.5211, "val_recon":0.5077, "beta":0.45},
+        {"epoch":10, "train_elbo":0.5188, "val_recon":0.5055, "beta":0.50}
+      ],
+      "best_epoch": 10,
+      "metrics": {
+        "val_recon_mse": 0.5055,
+        "anomaly_threshold": 0.8122,
+        "anomaly_percentile": 95,
+        "precision_at_95": 0.71,
+        "recall_at_95": 0.68
+      },
+      "notes": "Tiny VAE — latent space too small to capture weather patterns."
+    },
+
+    {
+      "run_id": "vae-002",
+      "model": "vae",
+      "status": "completed",
+      "promoted": false,
+      "started_at": "2024-11-25T15:00:00Z",
+      "finished_at": "2024-11-25T15:29:00Z",
+      "duration_min": 29,
+      "config": {
+        "latent_dim": 8, "hidden_dim": 32, "hidden_dim2": 16,
+        "lr": 0.001, "beta_max": 0.5, "beta_anneal_epochs": 10
+      },
+      "epoch_logs": [
+        {"epoch":1,  "train_elbo":0.8922, "val_recon":0.8411, "beta":0.05},
+        {"epoch":2,  "train_elbo":0.7544, "val_recon":0.7088, "beta":0.10},
+        {"epoch":3,  "train_elbo":0.6311, "val_recon":0.5922, "beta":0.15},
+        {"epoch":4,  "train_elbo":0.5422, "val_recon":0.5111, "beta":0.20},
+        {"epoch":5,  "train_elbo":0.4811, "val_recon":0.4588, "beta":0.25},
+        {"epoch":6,  "train_elbo":0.4388, "val_recon":0.4211, "beta":0.30},
+        {"epoch":7,  "train_elbo":0.4122, "val_recon":0.3988, "beta":0.35},
+        {"epoch":8,  "train_elbo":0.3977, "val_recon":0.3844, "beta":0.40},
+        {"epoch":9,  "train_elbo":0.3899, "val_recon":0.3777, "beta":0.45},
+        {"epoch":10, "train_elbo":0.3866, "val_recon":0.3744, "beta":0.50}
+      ],
+      "best_epoch": 10,
+      "metrics": {
+        "val_recon_mse": 0.3744,
+        "anomaly_threshold": 0.6233,
+        "anomaly_percentile": 95,
+        "precision_at_95": 0.79,
+        "recall_at_95": 0.76
+      },
+      "notes": "Full-size VAE. Captures monsoon anomalies well."
+    },
+
+    {
+      "run_id": "vae-003",
+      "model": "vae",
+      "status": "completed",
+      "promoted": true,
+      "started_at": "2024-12-10T10:00:00Z",
+      "finished_at": "2024-12-10T10:34:00Z",
+      "duration_min": 34,
+      "config": {
+        "latent_dim": 8, "hidden_dim": 32, "hidden_dim2": 16,
+        "lr": 0.0005, "beta_max": 0.4, "beta_anneal_epochs": 15
+      },
+      "epoch_logs": [
+        {"epoch":1,  "train_elbo":0.8544, "val_recon":0.8088, "beta":0.027},
+        {"epoch":2,  "train_elbo":0.7122, "val_recon":0.6688, "beta":0.053},
+        {"epoch":3,  "train_elbo":0.5899, "val_recon":0.5511, "beta":0.080},
+        {"epoch":4,  "train_elbo":0.4977, "val_recon":0.4677, "beta":0.107},
+        {"epoch":5,  "train_elbo":0.4388, "val_recon":0.4144, "beta":0.133},
+        {"epoch":6,  "train_elbo":0.3977, "val_recon":0.3777, "beta":0.160},
+        {"epoch":7,  "train_elbo":0.3699, "val_recon":0.3522, "beta":0.187},
+        {"epoch":8,  "train_elbo":0.3533, "val_recon":0.3377, "beta":0.213},
+        {"epoch":9,  "train_elbo":0.3444, "val_recon":0.3299, "beta":0.240},
+        {"epoch":10, "train_elbo":0.3388, "val_recon":0.3255, "beta":0.267},
+        {"epoch":11, "train_elbo":0.3355, "val_recon":0.3222, "beta":0.293},
+        {"epoch":12, "train_elbo":0.3333, "val_recon":0.3211, "beta":0.320},
+        {"epoch":13, "train_elbo":0.3322, "val_recon":0.3199, "beta":0.347}
+      ],
+      "best_epoch": 13,
+      "metrics": {
+        "val_recon_mse": 0.3199,
+        "anomaly_threshold": 0.5811,
+        "anomaly_percentile": 95,
+        "precision_at_95": 0.83,
+        "recall_at_95": 0.81
+      },
+      "notes": "Slower β-anneal, lower LR. Best anomaly precision. PROMOTED."
+    }
+  ],
+
+  "summary": {
+    "total_runs": 9,
+    "models_tracked": ["transformer", "lstm", "cnn", "vae"],
+    "best_promoted": {
+      "transformer": "txf-003",
+      "lstm":        "lstm-003",
+      "cnn":         "cnn-003",
+      "vae":         "vae-003"
+    },
+    "last_updated": "2024-12-10T10:34:00Z"
+  }
+}

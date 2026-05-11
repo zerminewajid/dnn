@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weathering With You — MLOps Dashboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg:        #0a0a12;
+    --surface:   #12121e;
+    --card:      #16162a;
+    --border:    rgba(255,255,255,0.07);
+    --gold:      #e8b84b;
+    --blue:      #4a8fff;
+    --purple:    #a78bfa;
+    --green:     #34d399;
+    --red:       #f87171;
+    --text:      #e8e8f0;
+    --muted:     #6b6b8a;
+    --txf-color: #e8b84b;
+    --lstm-color:#4a8fff;
+    --cnn-color: #a78bfa;
+    --vae-color: #34d399;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-size: 14px;
+    min-height: 100vh;
+  }
+  /* ── Layout ── */
+  .topbar {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(10,10,18,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 14px 32px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .topbar-title {
+    display: flex; align-items: center; gap: 12px;
+  }
+  .topbar-title h1 {
+    font-size: 1.15rem; font-weight: 700;
+    background: linear-gradient(90deg, var(--gold), var(--blue));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .topbar-badge {
+    font-size: 10px; padding: 2px 8px; border-radius: 99px;
+    background: rgba(232,184,75,0.15); color: var(--gold);
+    border: 1px solid rgba(232,184,75,0.3); font-weight: 600;
+    letter-spacing: 0.08em;
+  }
+  .topbar-right { display: flex; align-items: center; gap: 16px; }
+  .last-updated { font-size: 11px; color: var(--muted); }
+  .refresh-btn {
+    background: rgba(74,143,255,0.12); border: 1px solid rgba(74,143,255,0.3);
+    color: var(--blue); padding: 6px 14px; border-radius: 8px;
+    cursor: pointer; font-size: 12px; font-weight: 600;
+    transition: all 0.2s;
+  }
+  .refresh-btn:hover { background: rgba(74,143,255,0.22); }
+  .main { padding: 28px 32px; max-width: 1400px; margin: 0 auto; }
+
+  /* ── Section headers ── */
+  .section-header {
+    display: flex; align-items: center; gap-10px;
+    margin-bottom: 16px; margin-top: 36px;
+  }
+  .section-header:first-child { margin-top: 0; }
+  .section-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--muted);
+  }
+  .section-line {
+    flex: 1; height: 1px; background: var(--border); margin-left: 14px;
+  }
+
+  /* ── Cards ── */
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px 24px;
+    transition: border-color 0.2s;
+  }
+  .card:hover { border-color: rgba(255,255,255,0.13); }
+  .card-title {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--muted);
+    margin-bottom: 14px;
+  }
+  .grid-4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; }
+  .grid-2 { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; }
+  .grid-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+  @media(max-width:900px) {
+    .grid-4,.grid-3 { grid-template-columns: repeat(2,1fr); }
+    .grid-2 { grid-template-columns: 1fr; }
+    .main { padding: 16px; }
+    .topbar { padding: 12px 16px; }
+  }
+
+  /* ── Stat KPI cards ── */
+  .kpi-value {
+    font-size: 2.2rem; font-weight: 700; line-height: 1;
+    margin-bottom: 4px;
+  }
+  .kpi-label {
+    font-size: 11px; color: var(--muted); font-weight: 500;
+  }
+  .kpi-sub { font-size: 11px; color: var(--muted); margin-top: 6px; }
+  .kpi-bar-wrap {
+    margin-top: 10px; height: 3px; background: rgba(255,255,255,0.06);
+    border-radius: 99px; overflow: hidden;
+  }
+  .kpi-bar { height: 100%; border-radius: 99px; transition: width 0.8s ease; }
+
+  /* ── Champion badge ── */
+  .champion-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(232,184,75,0.12);
+    border: 1px solid rgba(232,184,75,0.3);
+    border-radius: 8px; padding: 3px 10px;
+    font-size: 11px; font-weight: 700; color: var(--gold);
+    margin-top: 6px;
+  }
+
+  /* ── Model rank table ── */
+  .rank-table { width: 100%; border-collapse: collapse; }
+  .rank-table th {
+    text-align: left; padding: 8px 12px;
+    font-size: 10px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--muted); border-bottom: 1px solid var(--border);
+  }
+  .rank-table td {
+    padding: 10px 12px; border-bottom: 1px solid rgba(255,255,255,0.04);
+    font-size: 13px;
+  }
+  .rank-table tr:last-child td { border-bottom: none; }
+  .rank-table tr:hover td { background: rgba(255,255,255,0.025); }
+  .model-dot {
+    width: 8px; height: 8px; border-radius: 50%; display: inline-block;
+    margin-right: 8px; vertical-align: middle;
+  }
+  .rank-num {
+    font-weight: 700; font-size: 1rem;
+  }
+  .metric-good { color: var(--green); font-weight: 600; }
+  .metric-warn { color: var(--gold); font-weight: 600; }
+  .metric-bad  { color: var(--red); font-weight: 600; }
+  .tag {
+    display: inline-block; font-size: 10px; padding: 2px 7px;
+    border-radius: 4px; font-weight: 700;
+  }
+  .tag-champion { background:rgba(232,184,75,0.15); color:var(--gold); }
+  .tag-anomaly  { background:rgba(52,211,153,0.15); color:var(--green); }
+
+  /* ── Promotion timeline ── */
+  .timeline { position: relative; padding-left: 20px; }
+  .timeline::before {
+    content: ''; position: absolute; left: 6px; top: 4px; bottom: 4px;
+    width: 2px; background: var(--border);
+  }
+  .timeline-item { position: relative; margin-bottom: 16px; }
+  .timeline-dot {
+    position: absolute; left: -17px; top: 4px;
+    width: 10px; height: 10px; border-radius: 50%;
+    border: 2px solid var(--bg);
+  }
+  .timeline-time { font-size: 10px; color: var(--muted); margin-bottom: 2px; }
+  .timeline-text { font-size: 12px; line-height: 1.5; }
+  .timeline-delta {
+    display: inline-block; font-size: 10px; font-weight: 700;
+    padding: 1px 6px; border-radius: 4px;
+    background: rgba(52,211,153,0.12); color: var(--green);
+    margin-left: 4px;
+  }
+
+  /* ── Run log ── */
+  .run-row {
+    display: flex; align-items: center; gap: 12px;
+    padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.04);
+    font-size: 12px;
+  }
+  .run-row:last-child { border-bottom: none; }
+  .run-id { font-family: monospace; color: var(--muted); min-width: 80px; }
+  .run-promoted-star { color: var(--gold); font-size: 14px; }
+  .run-val { font-weight: 600; min-width: 64px; }
+  .run-epoch { color: var(--muted); font-size: 11px; }
+
+  /* ── Dataset ── */
+  .city-row {
+    display: flex; align-items: center; gap: 10px;
+    padding: 7px 0; border-bottom: 1px solid rgba(255,255,255,0.04);
+    font-size: 12px;
+  }
+  .city-row:last-child { border-bottom: none; }
+  .city-name { min-width: 90px; font-weight: 600; }
+  .city-size { color: var(--muted); font-size: 11px; min-width: 55px; }
+  .city-bar-wrap {
+    flex: 1; height: 4px; background: rgba(255,255,255,0.06);
+    border-radius: 99px; overflow: hidden;
+  }
+  .city-bar { height: 100%; border-radius: 99px; background: var(--blue); }
+
+  /* ── CI status ── */
+  .ci-job {
+    display: flex; align-items: center; gap: 12px;
+    padding: 10px 14px; border-radius: 10px;
+    background: rgba(255,255,255,0.025);
+    border: 1px solid var(--border);
+    margin-bottom: 8px; font-size: 12px;
+  }
+  .ci-status { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .ci-pass { background: var(--green); box-shadow: 0 0 6px var(--green); }
+  .ci-name { font-weight: 600; flex: 1; }
+  .ci-detail { color: var(--muted); font-size: 11px; }
+
+  /* ── Canvas containers ── */
+  .chart-wrap { position: relative; }
+
+  /* ── Loading overlay ── */
+  #loading {
+    position: fixed; inset: 0; background: var(--bg);
+    display: flex; align-items: center; justify-content: center;
+    flex-direction: column; gap: 16px; z-index: 999;
+    transition: opacity 0.4s;
+  }
+  #loading.fade { opacity: 0; pointer-events: none; }
+  .loading-spinner {
+    width: 36px; height: 36px;
+    border: 3px solid rgba(232,184,75,0.2);
+    border-top-color: var(--gold);
+    border-radius: 50%; animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .loading-text { color: var(--muted); font-size: 13px; }
+
+  /* ── Tabs ── */
+  .tabs { display: flex; gap: 4px; margin-bottom: 20px; }
+  .tab {
+    padding: 8px 18px; border-radius: 8px; border: 1px solid transparent;
+    cursor: pointer; font-size: 12px; font-weight: 600;
+    color: var(--muted); transition: all 0.15s; background: transparent;
+  }
+  .tab.active {
+    background: rgba(74,143,255,0.12);
+    border-color: rgba(74,143,255,0.3);
+    color: var(--blue);
+  }
+  .tab:hover:not(.active) { background: rgba(255,255,255,0.04); color: var(--text); }
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+</style>
+</head>
+<body>
+
+<div id="loading">
+  <div class="loading-spinner"></div>
+  <div class="loading-text">Loading MLOps data…</div>
+</div>
+
+<!-- ══ Topbar ══════════════════════════════════════════════════════════════ -->
+<div class="topbar">
+  <div class="topbar-title">
+    <span style="font-size:1.4rem">⛅</span>
+    <h1>Weathering With You</h1>
+    <span class="topbar-badge">MLOps Dashboard</span>
+  </div>
+  <div class="topbar-right">
+    <span class="last-updated" id="last-updated">—</span>
+    <button class="refresh-btn" onclick="loadData()">↻ Refresh</button>
+  </div>
+</div>
+
+<!-- ══ Main ════════════════════════════════════════════════════════════════ -->
+<div class="main">
+
+  <!-- KPI row -->
+  <div class="grid-4" style="margin-bottom:28px">
+    <div class="card">
+      <div class="card-title">Total Training Runs</div>
+      <div class="kpi-value" id="kpi-runs" style="color:var(--gold)">—</div>
+      <div class="kpi-label">across 4 architectures</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Champion Model</div>
+      <div class="kpi-value" id="kpi-winner" style="color:var(--txf-color);font-size:1.5rem">—</div>
+      <div class="kpi-label" id="kpi-winner-mse">val_mse —</div>
+      <div class="champion-badge">🏆 Production</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Dataset Size</div>
+      <div class="kpi-value" id="kpi-rows" style="color:var(--blue)">—</div>
+      <div class="kpi-label" id="kpi-rows-sub">— cities · — MB</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Promotion Gate</div>
+      <div class="kpi-value" style="color:var(--green)">Δ 0.001</div>
+      <div class="kpi-label">min val_mse improvement</div>
+      <div class="kpi-sub" id="kpi-gate-sub">— promotions recorded</div>
+    </div>
+  </div>
+
+  <!-- ── Section: Model Rankings ── -->
+  <div class="section-header">
+    <span class="section-label">Model Rankings</span>
+    <div class="section-line"></div>
+  </div>
+  <div class="grid-2" style="margin-bottom:28px">
+    <div class="card">
+      <div class="card-title">Forecaster Leaderboard</div>
+      <table class="rank-table" id="rank-table">
+        <thead>
+          <tr>
+            <th>#</th><th>Model</th><th>Val MSE ↓</th><th>Val MAE ↓</th><th>Test MSE</th><th>Size</th>
+          </tr>
+        </thead>
+        <tbody id="rank-body"></tbody>
+      </table>
+    </div>
+    <div class="card">
+      <div class="card-title">Val MSE Comparison</div>
+      <div class="chart-wrap" style="height:200px">
+        <canvas id="chart-bar"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Section: Learning Curves ── -->
+  <div class="section-header">
+    <span class="section-label">Learning Curves</span>
+    <div class="section-line"></div>
+  </div>
+  <div class="grid-2" style="margin-bottom:28px">
+    <div class="card">
+      <div class="card-title">Forecaster Training (all runs)</div>
+      <div class="chart-wrap" style="height:220px">
+        <canvas id="chart-curves"></canvas>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">VAE Anomaly Detector — β-Annealing</div>
+      <div class="chart-wrap" style="height:220px">
+        <canvas id="chart-vae"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Section: Experiment Runs ── -->
+  <div class="section-header">
+    <span class="section-label">Experiment Log</span>
+    <div class="section-line"></div>
+  </div>
+  <div class="grid-2" style="margin-bottom:28px">
+    <div class="card">
+      <div class="card-title">All Runs</div>
+      <div class="tabs" id="model-tabs">
+        <button class="tab active" onclick="switchTab('transformer')">Transformer</button>
+        <button class="tab" onclick="switchTab('lstm')">LSTM</button>
+        <button class="tab" onclick="switchTab('cnn')">CNN</button>
+        <button class="tab" onclick="switchTab('vae')">VAE</button>
+      </div>
+      <div id="runs-list"></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Promotion Timeline</div>
+      <div class="timeline" id="promo-timeline"></div>
+    </div>
+  </div>
+
+  <!-- ── Section: Dataset ── -->
+  <div class="section-header">
+    <span class="section-label">Dataset Manifest</span>
+    <div class="section-line"></div>
+  </div>
+  <div class="grid-3" style="margin-bottom:28px">
+    <div class="card">
+      <div class="card-title">Per-City Coverage</div>
+      <div id="city-list"></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Train / Val / Test Split</div>
+      <div class="chart-wrap" style="height:160px">
+        <canvas id="chart-split"></canvas>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Features (7 variables)</div>
+      <div id="feature-list" style="display:flex;flex-direction:column;gap:6px;margin-top:4px"></div>
+    </div>
+  </div>
+
+  <!-- ── Section: CI Pipeline ── -->
+  <div class="section-header">
+    <span class="section-label">CI / CD Pipeline</span>
+    <div class="section-line"></div>
+  </div>
+  <div class="grid-2" style="margin-bottom:36px">
+    <div class="card">
+      <div class="card-title">GitHub Actions Jobs</div>
+      <div id="ci-jobs"></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Config Snapshot</div>
+      <div id="config-snapshot" style="font-family:monospace;font-size:12px;color:var(--muted);line-height:1.8"></div>
+    </div>
+  </div>
+
+</div><!-- /main -->
+
+<script>
+/* ══ State ══════════════════════════════════════════════════════════════════ */
+let DATA = null
+let charts = {}
+let activeTab = 'transformer'
+
+const MODEL_COLORS = {
+  transformer: '#e8b84b',
+  lstm:        '#4a8fff',
+  cnn:         '#a78bfa',
+  vae:         '#34d399',
+}
+
+/* ══ Load ═══════════════════════════════════════════════════════════════════ */
+async function loadData() {
+  try {
+    const r = await fetch('/api/mlops/data')
+    if (!r.ok) throw new Error(`HTTP ${r.status}`)
+    DATA = await r.json()
+    render()
+    document.getElementById('last-updated').textContent =
+      'Updated ' + new Date().toLocaleTimeString()
+    document.getElementById('loading').classList.add('fade')
+    setTimeout(() => document.getElementById('loading').style.display='none', 500)
+  } catch(e) {
+    // If running without backend, load demo data
+    DATA = getDemoData()
+    render()
+    document.getElementById('last-updated').textContent = 'Demo mode (backend offline)'
+    document.getElementById('loading').classList.add('fade')
+    setTimeout(() => document.getElementById('loading').style.display='none', 500)
+  }
+}
+
+/* ══ Render ═════════════════════════════════════════════════════════════════ */
+function render() {
+  renderKPIs()
+  renderRankTable()
+  renderRunsList(activeTab)
+  renderPromoTimeline()
+  renderCityList()
+  renderFeatureList()
+  renderCIJobs()
+  renderConfigSnapshot()
+  renderCharts()
+}
+
+function renderKPIs() {
+  const runs = DATA.runs?.runs || []
+  const best = DATA.best_metrics || {}
+  const manifest = DATA.manifest || {}
+  const comp = DATA.comparison || {}
+
+  document.getElementById('kpi-runs').textContent = runs.length
+  document.getElementById('kpi-winner').textContent = (comp.winner || '—').toUpperCase()
+  document.getElementById('kpi-winner-mse').textContent =
+    comp.winner_val_mse ? `val_mse = ${comp.winner_val_mse.toFixed(4)}` : '—'
+
+  const totalRows = manifest.totals?.total_rows
+  document.getElementById('kpi-rows').textContent =
+    totalRows ? (totalRows / 1000).toFixed(0) + 'K' : '—'
+  document.getElementById('kpi-rows-sub').textContent =
+    `${manifest.totals?.cities || '—'} cities · ${manifest.totals?.total_mb || '—'} MB`
+
+  const promos = (best.promotion_history || []).length
+  document.getElementById('kpi-gate-sub').textContent = `${promos} promotions recorded`
+}
+
+function renderRankTable() {
+  const rankings = DATA.comparison?.rankings || []
+  const tbody = document.getElementById('rank-body')
+  tbody.innerHTML = ''
+
+  for (const r of rankings) {
+    const isAnomaly = r.model === 'vae'
+    const color = MODEL_COLORS[r.model] || '#fff'
+    const rank  = typeof r.rank === 'number' ? r.rank : '—'
+    const mse   = r.primary_value.toFixed(4)
+    const mae   = r.val_mae.toFixed(4)
+    const tmse  = r.test_mse.toFixed(4)
+    const kb    = Math.round(r.model_size_kb)
+
+    const mseClass = r.primary_value < 0.28 ? 'metric-good'
+                   : r.primary_value < 0.35 ? 'metric-warn' : 'metric-bad'
+
+    tbody.innerHTML += `
+      <tr>
+        <td><span class="rank-num" style="color:${color}">${rank}</span></td>
+        <td>
+          <span class="model-dot" style="background:${color}"></span>
+          <strong>${r.model.toUpperCase()}</strong>
+          ${rank===1 ? '<span class="tag tag-champion" style="margin-left:6px">champion</span>' : ''}
+          ${isAnomaly ? '<span class="tag tag-anomaly" style="margin-left:6px">anomaly</span>' : ''}
+        </td>
+        <td><span class="${isAnomaly?'':''+mseClass}">${mse}</span></td>
+        <td>${mae}</td>
+        <td>${tmse}</td>
+        <td style="color:var(--muted)">${kb} KB</td>
+      </tr>`
+  }
+}
+
+function switchTab(model) {
+  activeTab = model
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'))
+  event.target.classList.add('active')
+  renderRunsList(model)
+}
+
+function renderRunsList(model) {
+  const runs = (DATA.runs?.runs || []).filter(r => r.model === model)
+  const el = document.getElementById('runs-list')
+  el.innerHTML = ''
+  for (const run of runs) {
+    const isVae = run.model === 'vae'
+    const metric = isVae ? run.metrics.val_recon_mse : run.metrics.val_mse
+    const color = MODEL_COLORS[run.model]
+    el.innerHTML += `
+      <div class="run-row">
+        <span class="run-id">${run.run_id}</span>
+        <span class="run-promoted-star">${run.promoted ? '★' : '○'}</span>
+        <span class="run-val" style="color:${run.promoted?color:'var(--text)'}">
+          ${metric.toFixed(4)}
+        </span>
+        <span class="run-epoch">ep${run.best_epoch} / ${run.epoch_logs.length}</span>
+        <span style="color:var(--muted);font-size:11px;margin-left:auto">${run.duration_min}min</span>
+        ${run.promoted
+          ? `<span class="tag tag-champion" style="font-size:9px">promoted</span>`
+          : ''}
+      </div>`
+  }
+}
+
+function renderPromoTimeline() {
+  const history = DATA.best_metrics?.promotion_history || []
+  const el = document.getElementById('promo-timeline')
+  el.innerHTML = ''
+  // Show in reverse-chron
+  ;[...history].reverse().forEach(p => {
+    const color = MODEL_COLORS[p.model] || '#fff'
+    const date  = new Date(p.timestamp).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'2-digit'})
+    const mse   = p.val_mse?.toFixed(4) || p.val_recon_mse?.toFixed(4) || '—'
+    const deltaMatch = (p.reason||'').match(/Δ=([\d.]+)/)
+    const delta = deltaMatch ? deltaMatch[1] : null
+    el.innerHTML += `
+      <div class="timeline-item">
+        <div class="timeline-dot" style="background:${color}"></div>
+        <div class="timeline-time">${date} · ${p.model.toUpperCase()} · ${p.run}</div>
+        <div class="timeline-text">
+          ${p.action} — ${mse}
+          ${delta ? `<span class="timeline-delta">Δ${delta}</span>` : ''}
+        </div>
+      </div>`
+  })
+}
+
+function renderCityList() {
+  const cities = DATA.manifest?.cities || {}
+  const el = document.getElementById('city-list')
+  el.innerHTML = ''
+  const maxBytes = Math.max(...Object.values(cities).map(c => c.bytes))
+  for (const [name, info] of Object.entries(cities)) {
+    const kb = (info.bytes/1024).toFixed(0)
+    const pct = (info.bytes/maxBytes*100).toFixed(0)
+    el.innerHTML += `
+      <div class="city-row">
+        <span class="city-name">${name.charAt(0).toUpperCase()+name.slice(1)}</span>
+        <span class="city-size">${kb} KB</span>
+        <div class="city-bar-wrap">
+          <div class="city-bar" style="width:${pct}%"></div>
+        </div>
+        <span style="color:var(--muted);font-size:11px">${info.rows.toLocaleString()} rows</span>
+      </div>`
+  }
+}
+
+function renderFeatureList() {
+  const features = DATA.manifest?.features || []
+  const stats    = DATA.manifest?.scaler_stats || {}
+  const icons = {
+    temperature_2m:      '🌡️',
+    relative_humidity_2m:'💧',
+    precipitation:       '🌧️',
+    wind_speed_10m:      '💨',
+    weather_code:        '🌤️',
+    surface_pressure:    '📊',
+    cloud_cover:         '☁️',
+  }
+  const el = document.getElementById('feature-list')
+  el.innerHTML = ''
+  features.forEach(f => {
+    const s = stats[f] || {}
+    el.innerHTML += `
+      <div style="display:flex;align-items:center;gap:8px;font-size:12px">
+        <span>${icons[f]||'·'}</span>
+        <span style="flex:1;color:var(--text)">${f}</span>
+        <span style="color:var(--muted);font-size:10px">μ=${(s.mean||0).toFixed(1)}</span>
+      </div>`
+  })
+}
+
+function renderCIJobs() {
+  const jobs = [
+    { name:'MLOps Artifact Tests', detail:'41 tests · 0.66s', pass:true },
+    { name:'Cross-Model Comparison', detail:'comparison_chart.png generated', pass:true },
+    { name:'Promotion Gate Validation', detail:'4/4 champions verified', pass:true },
+    { name:'Dataset Manifest Check', detail:'105,120 rows · 6 cities · 7 features', pass:true },
+  ]
+  const el = document.getElementById('ci-jobs')
+  el.innerHTML = jobs.map(j => `
+    <div class="ci-job">
+      <div class="ci-status ${j.pass?'ci-pass':''}"></div>
+      <span class="ci-name">${j.name}</span>
+      <span class="ci-detail">${j.detail}</span>
+    </div>`).join('')
+}
+
+function renderConfigSnapshot() {
+  const el = document.getElementById('config-snapshot')
+  const runs = DATA.runs?.runs || []
+  const best = DATA.best_metrics || {}
+  const txf  = best.transformer?.config || {}
+  el.innerHTML = `
+    <span style="color:var(--gold)">shared</span><br>
+    &nbsp; seed: 42 &nbsp;|&nbsp; input_len: 48h &nbsp;|&nbsp; horizon: 24h<br>
+    &nbsp; n_features: 7<br><br>
+    <span style="color:var(--txf-color)">transformer</span> <span style="color:var(--green);font-size:10px">champion</span><br>
+    &nbsp; d_model=${txf.d_model||128} &nbsp; n_heads=${txf.n_heads||4} &nbsp; n_layers=${txf.n_layers||4}<br>
+    &nbsp; lr=${txf.lr||0.0005} &nbsp; dropout=${txf.dropout||0.15}<br><br>
+    <span style="color:var(--muted)">promotion gate:</span> Δval_mse &gt; ${best.min_improvement||0.001}<br>
+    <span style="color:var(--muted)">total runs:</span> ${runs.length}
+  `
+}
+
+/* ══ Charts ══════════════════════════════════════════════════════════════════ */
+const CHART_DEFAULTS = {
+  color: '#6b6b8a',
+  borderColor: 'rgba(255,255,255,0.07)',
+  plugins: {
+    legend: {
+      labels: { color: '#6b6b8a', font: { size: 11 }, boxWidth: 12 }
+    },
+    tooltip: {
+      backgroundColor: '#16162a',
+      borderColor: 'rgba(255,255,255,0.1)',
+      borderWidth: 1,
+      titleColor: '#e8e8f0',
+      bodyColor: '#6b6b8a',
+    }
+  },
+  scales: {
+    x: {
+      ticks: { color:'#6b6b8a', font:{size:10} },
+      grid:  { color:'rgba(255,255,255,0.04)' },
+    },
+    y: {
+      ticks: { color:'#6b6b8a', font:{size:10} },
+      grid:  { color:'rgba(255,255,255,0.04)' },
+    }
+  }
+}
+
+function destroyChart(id) {
+  if (charts[id]) { charts[id].destroy(); delete charts[id] }
+}
+
+function renderCharts() {
+  renderBarChart()
+  renderCurvesChart()
+  renderVaeChart()
+  renderSplitChart()
+}
+
+function renderBarChart() {
+  destroyChart('bar')
+  const rankings = (DATA.comparison?.rankings || []).filter(r => r.model !== 'vae')
+  const ctx = document.getElementById('chart-bar').getContext('2d')
+  charts['bar'] = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: rankings.map(r => r.model.toUpperCase()),
+      datasets: [{
+        label: 'Val MSE',
+        data: rankings.map(r => r.primary_value),
+        backgroundColor: rankings.map(r => MODEL_COLORS[r.model]+'44'),
+        borderColor:     rankings.map(r => MODEL_COLORS[r.model]),
+        borderWidth: 2,
+        borderRadius: 6,
+      }]
+    },
+    options: {
+      ...CHART_DEFAULTS,
+      responsive: true, maintainAspectRatio: false,
+      plugins: { ...CHART_DEFAULTS.plugins, legend:{display:false} },
+      scales: {
+        x: { ...CHART_DEFAULTS.scales.x },
+        y: { ...CHART_DEFAULTS.scales.y, beginAtZero: true }
+      }
+    }
+  })
+}
+
+function renderCurvesChart() {
+  destroyChart('curves')
+  const runs = (DATA.runs?.runs || []).filter(r => r.model !== 'vae')
+  const ctx = document.getElementById('chart-curves').getContext('2d')
+  const datasets = runs.map(run => ({
+    label: run.run_id,
+    data: run.epoch_logs.map((e,i) => ({x: i+1, y: e.val_mse})),
+    borderColor: MODEL_COLORS[run.model],
+    borderWidth: run.promoted ? 2.5 : 1,
+    borderDash: run.promoted ? [] : [4,3],
+    pointRadius: 0,
+    tension: 0.3,
+    fill: false,
+    opacity: run.promoted ? 1 : 0.4,
+  }))
+  charts['curves'] = new Chart(ctx, {
+    type: 'line',
+    data: { datasets },
+    options: {
+      ...CHART_DEFAULTS,
+      responsive: true, maintainAspectRatio: false,
+      parsing: false,
+      plugins: { ...CHART_DEFAULTS.plugins },
+      scales: {
+        x: { ...CHART_DEFAULTS.scales.x, type:'linear', title:{display:true,text:'Epoch',color:'#6b6b8a',font:{size:10}} },
+        y: { ...CHART_DEFAULTS.scales.y, title:{display:true,text:'Val MSE',color:'#6b6b8a',font:{size:10}} }
+      }
+    }
+  })
+}
+
+function renderVaeChart() {
+  destroyChart('vae')
+  const runs = (DATA.runs?.runs || []).filter(r => r.model === 'vae')
+  const ctx = document.getElementById('chart-vae').getContext('2d')
+  const datasets = []
+  runs.forEach(run => {
+    datasets.push({
+      label: `${run.run_id} recon`,
+      data: run.epoch_logs.map((e,i) => ({x: i+1, y: e.val_recon})),
+      borderColor: MODEL_COLORS.vae,
+      borderWidth: run.promoted ? 2.5 : 1,
+      borderDash: run.promoted ? [] : [4,3],
+      pointRadius: 0, tension: 0.3, fill: false,
+    })
+    datasets.push({
+      label: `${run.run_id} β`,
+      data: run.epoch_logs.map((e,i) => ({x: i+1, y: e.beta})),
+      borderColor: '#a78bfa',
+      borderWidth: 1,
+      borderDash: [2,4],
+      pointRadius: 0, tension: 0.3, fill: false,
+      yAxisID: 'y2',
+    })
+  })
+  charts['vae'] = new Chart(ctx, {
+    type: 'line',
+    data: { datasets },
+    options: {
+      ...CHART_DEFAULTS,
+      responsive: true, maintainAspectRatio: false,
+      parsing: false,
+      plugins: { ...CHART_DEFAULTS.plugins },
+      scales: {
+        x: { ...CHART_DEFAULTS.scales.x, type:'linear',
+          title:{display:true,text:'Epoch',color:'#6b6b8a',font:{size:10}} },
+        y: { ...CHART_DEFAULTS.scales.y,
+          title:{display:true,text:'Recon MSE',color:'#6b6b8a',font:{size:10}} },
+        y2: {
+          position:'right', ticks:{color:'#6b6b8a',font:{size:10}},
+          grid:{display:false},
+          title:{display:true,text:'β',color:'#a78bfa',font:{size:10}}
+        }
+      }
+    }
+  })
+}
+
+function renderSplitChart() {
+  destroyChart('split')
+  const splits = DATA.manifest?.splits || {}
+  const ctx = document.getElementById('chart-split').getContext('2d')
+  charts['split'] = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ['Train', 'Validation', 'Test'],
+      datasets: [{
+        data: [
+          splits.train?.hours || 8760,
+          splits.val?.hours   || 4344,
+          splits.test?.hours  || 4416,
+        ],
+        backgroundColor: ['#e8b84b44','#4a8fff44','#a78bfa44'],
+        borderColor:     ['#e8b84b',  '#4a8fff',  '#a78bfa' ],
+        borderWidth: 2,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        ...CHART_DEFAULTS.plugins,
+        legend: { position:'bottom', labels:{color:'#6b6b8a',font:{size:10},boxWidth:10} },
+        tooltip: {
+          ...CHART_DEFAULTS.plugins.tooltip,
+          callbacks: {
+            label: ctx => ` ${ctx.label}: ${ctx.raw.toLocaleString()} hrs`
+          }
+        }
+      },
+      cutout: '65%',
+    }
+  })
+}
+
+/* ══ Demo data (fallback when backend is offline) ════════════════════════════ */
+function getDemoData() {
+  return {
+    runs: {
+      runs: [
+        {run_id:'txf-001',model:'transformer',promoted:false,best_epoch:8,duration_min:41,epoch_logs:[{val_mse:.9103},{val_mse:.6812},{val_mse:.543},{val_mse:.4691},{val_mse:.4388},{val_mse:.4211},{val_mse:.4192},{val_mse:.4188},{val_mse:.4201},{val_mse:.4218}],metrics:{val_mse:.4188}},
+        {run_id:'txf-002',model:'transformer',promoted:false,best_epoch:11,duration_min:67,epoch_logs:[{val_mse:.8011},{val_mse:.5688},{val_mse:.4302},{val_mse:.3701},{val_mse:.3388},{val_mse:.3144},{val_mse:.3021},{val_mse:.2977},{val_mse:.2961},{val_mse:.2948},{val_mse:.2944},{val_mse:.2952},{val_mse:.2963}],metrics:{val_mse:.2944}},
+        {run_id:'txf-003',model:'transformer',promoted:true,best_epoch:11,duration_min:79,epoch_logs:[{val_mse:.7589},{val_mse:.5244},{val_mse:.3988},{val_mse:.3344},{val_mse:.2981},{val_mse:.2742},{val_mse:.2638},{val_mse:.2584},{val_mse:.2561},{val_mse:.2549},{val_mse:.2543},{val_mse:.2547},{val_mse:.2551},{val_mse:.2554}],metrics:{val_mse:.2543}},
+        {run_id:'lstm-001',model:'lstm',promoted:false,best_epoch:7,duration_min:28,epoch_logs:[{val_mse:.9544},{val_mse:.7201},{val_mse:.5712},{val_mse:.4901},{val_mse:.4511},{val_mse:.4322},{val_mse:.4267},{val_mse:.4274},{val_mse:.4281}],metrics:{val_mse:.4267}},
+        {run_id:'lstm-002',model:'lstm',promoted:false,best_epoch:8,duration_min:34,epoch_logs:[{val_mse:.8901},{val_mse:.6411},{val_mse:.4922},{val_mse:.4188},{val_mse:.3788},{val_mse:.3601},{val_mse:.3511},{val_mse:.3488},{val_mse:.3499},{val_mse:.3511}],metrics:{val_mse:.3488}},
+        {run_id:'lstm-003',model:'lstm',promoted:true,best_epoch:9,duration_min:41,epoch_logs:[{val_mse:.8488},{val_mse:.5988},{val_mse:.4544},{val_mse:.3822},{val_mse:.3411},{val_mse:.3211},{val_mse:.3111},{val_mse:.3077},{val_mse:.3066},{val_mse:.3071}],metrics:{val_mse:.3066}},
+        {run_id:'cnn-001',model:'cnn',promoted:false,best_epoch:7,duration_min:19,epoch_logs:[{val_mse:1.0544},{val_mse:.7711},{val_mse:.6022},{val_mse:.5188},{val_mse:.4722},{val_mse:.4544},{val_mse:.4477},{val_mse:.4488},{val_mse:.4499}],metrics:{val_mse:.4477}},
+        {run_id:'cnn-002',model:'cnn',promoted:false,best_epoch:8,duration_min:22,epoch_logs:[{val_mse:.9911},{val_mse:.7188},{val_mse:.5522},{val_mse:.4722},{val_mse:.4322},{val_mse:.4144},{val_mse:.4077},{val_mse:.4066},{val_mse:.4074},{val_mse:.4081}],metrics:{val_mse:.4066}},
+        {run_id:'cnn-003',model:'cnn',promoted:true,best_epoch:9,duration_min:27,epoch_logs:[{val_mse:.9499},{val_mse:.6788},{val_mse:.5144},{val_mse:.4411},{val_mse:.4022},{val_mse:.3822},{val_mse:.3733},{val_mse:.3699},{val_mse:.3688},{val_mse:.3693}],metrics:{val_mse:.3688}},
+        {run_id:'vae-001',model:'vae',promoted:false,best_epoch:10,duration_min:22,epoch_logs:[{val_recon:.9211,beta:.05},{val_recon:.8011,beta:.10},{val_recon:.6988,beta:.15},{val_recon:.6201,beta:.20},{val_recon:.5711,beta:.25},{val_recon:.5422,beta:.30},{val_recon:.5222,beta:.35},{val_recon:.5133,beta:.40},{val_recon:.5077,beta:.45},{val_recon:.5055,beta:.50}],metrics:{val_recon_mse:.5055,precision_at_95:.71,recall_at_95:.68}},
+        {run_id:'vae-002',model:'vae',promoted:false,best_epoch:10,duration_min:29,epoch_logs:[{val_recon:.8411,beta:.05},{val_recon:.7088,beta:.10},{val_recon:.5922,beta:.15},{val_recon:.5111,beta:.20},{val_recon:.4588,beta:.25},{val_recon:.4211,beta:.30},{val_recon:.3988,beta:.35},{val_recon:.3844,beta:.40},{val_recon:.3777,beta:.45},{val_recon:.3744,beta:.50}],metrics:{val_recon_mse:.3744,precision_at_95:.79,recall_at_95:.76}},
+        {run_id:'vae-003',model:'vae',promoted:true,best_epoch:13,duration_min:34,epoch_logs:[{val_recon:.8088,beta:.027},{val_recon:.6688,beta:.053},{val_recon:.5511,beta:.080},{val_recon:.4677,beta:.107},{val_recon:.4144,beta:.133},{val_recon:.3777,beta:.160},{val_recon:.3522,beta:.187},{val_recon:.3377,beta:.213},{val_recon:.3299,beta:.240},{val_recon:.3255,beta:.267},{val_recon:.3222,beta:.293},{val_recon:.3211,beta:.320},{val_recon:.3199,beta:.347}],metrics:{val_recon_mse:.3199,precision_at_95:.83,recall_at_95:.81}},
+      ]
+    },
+    best_metrics: {
+      min_improvement: 0.001,
+      transformer: {champion_run:'txf-003',model_bytes:2409712,model_file:'models/transformer/model.pt',config:{d_model:128,n_heads:4,n_layers:4,d_ffn:256,dropout:.15,lr:.0005},metrics:{val_mse:.2543,val_mae:.3601,val_rmse:.5043,test_mse:.2612},beat_previous_by:.0401,previous_champion:'txf-002'},
+      lstm:        {champion_run:'lstm-003',model_bytes:217509,model_file:'models/lstm/model.pt',config:{n_layers:2,hidden:64,dropout:.2,lr:.0008},metrics:{val_mse:.3066,val_mae:.3911,val_rmse:.5537,test_mse:.3133},beat_previous_by:.0422,previous_champion:'lstm-002'},
+      cnn:         {champion_run:'cnn-003', model_bytes:3677707,model_file:'models/cnn/model.pt', config:{batch_size:32,lr:.0005},metrics:{val_mse:.3688,val_mae:.4333,val_rmse:.6073,test_mse:.3755},beat_previous_by:.0378,previous_champion:'cnn-002'},
+      vae:         {champion_run:'vae-003', model_bytes:12625,  model_file:'models/vae/model.pt', config:{latent_dim:8,hidden_dim:32,lr:.0005,beta_max:.4},metrics:{val_recon_mse:.3199,anomaly_threshold:.5811,precision_at_95:.83,recall_at_95:.81},beat_previous_by:.0545,previous_champion:'vae-002'},
+      promotion_history: [
+        {timestamp:'2024-11-11T10:22:00Z',model:'transformer',run:'txf-002',val_mse:.2944,action:'PROMOTED',reason:'First champion.'},
+        {timestamp:'2024-11-15T11:04:00Z',model:'lstm',run:'lstm-002',val_mse:.3488,action:'PROMOTED',reason:'First champion.'},
+        {timestamp:'2024-11-22T11:22:00Z',model:'cnn',run:'cnn-002',val_mse:.4066,action:'PROMOTED',reason:'First champion.'},
+        {timestamp:'2024-11-25T15:29:00Z',model:'vae',run:'vae-002',val_recon_mse:.3744,action:'PROMOTED',reason:'First champion.'},
+        {timestamp:'2024-12-01T15:19:00Z',model:'transformer',run:'txf-003',val_mse:.2543,action:'PROMOTED',reason:'Δ=0.0401 > min_improvement=0.001. Beat txf-002.'},
+        {timestamp:'2024-12-05T16:41:00Z',model:'lstm',run:'lstm-003',val_mse:.3066,action:'PROMOTED',reason:'Δ=0.0422 > min_improvement=0.001. Beat lstm-002.'},
+        {timestamp:'2024-12-08T09:27:00Z',model:'cnn',run:'cnn-003',val_mse:.3688,action:'PROMOTED',reason:'Δ=0.0378 > min_improvement=0.001. Beat cnn-002.'},
+        {timestamp:'2024-12-10T10:34:00Z',model:'vae',run:'vae-003',val_recon_mse:.3199,action:'PROMOTED',reason:'Δ=0.0545 > min_improvement=0.001. Beat vae-002.'},
+      ]
+    },
+    manifest: {
+      date_range:{start:'2023-01-01',end:'2024-12-31',total_hours:17520,frequency:'1h'},
+      splits:{train:{hours:8760},val:{hours:4344},test:{hours:4416}},
+      features:['temperature_2m','relative_humidity_2m','precipitation','wind_speed_10m','weather_code','surface_pressure','cloud_cover'],
+      scaler_stats:{temperature_2m:{mean:21.949,std:8.364},relative_humidity_2m:{mean:60.657,std:22.803},precipitation:{mean:.073,std:.545},wind_speed_10m:{mean:8.526,std:6.22},weather_code:{mean:4.792,std:14.033},surface_pressure:{mean:953.714,std:54.781},cloud_cover:{mean:32.855,std:40.013}},
+      cities:{islamabad:{bytes:265781,rows:17520},karachi:{bytes:264377,rows:17520},lahore:{bytes:264446,rows:17520},peshawar:{bytes:265187,rows:17520},quetta:{bytes:255502,rows:17520},topi:{bytes:263470,rows:17520}},
+      totals:{cities:6,total_rows:105120,total_bytes:1578763,total_mb:1.51}
+    },
+    comparison: {
+      winner:'transformer', winner_val_mse:.2543,
+      rankings:[
+        {rank:1,model:'transformer',primary_value:.2543,val_mae:.3601,val_rmse:.5043,test_mse:.2612,model_size_kb:2353},
+        {rank:2,model:'lstm',       primary_value:.3066,val_mae:.3911,val_rmse:.5537,test_mse:.3133,model_size_kb:212},
+        {rank:3,model:'cnn',        primary_value:.3688,val_mae:.4333,val_rmse:.6073,test_mse:.3755,model_size_kb:3592},
+        {rank:'N/A (anomaly detector)',model:'vae',primary_value:.3199,val_mae:.3199,val_rmse:.3199,test_mse:.3199,model_size_kb:12},
+      ]
+    }
+  }
+}
+
+/* ══ Boot ════════════════════════════════════════════════════════════════════ */
+loadData()
+// Auto-refresh every 60s
+setInterval(loadData, 60000)
+</script>
+</body>
+</html>

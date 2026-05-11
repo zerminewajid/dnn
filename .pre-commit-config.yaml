@@ -1,0 +1,90 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# Weathering With You — pre-commit hooks
+# Runs automatically on `git commit`. Install with:
+#   pip install pre-commit
+#   pre-commit install
+# Run manually on all files:
+#   pre-commit run --all-files
+# ══════════════════════════════════════════════════════════════════════════════
+
+repos:
+  # ── General file hygiene ───────────────────────────────────────────────────
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+        name: Trim trailing whitespace
+      - id: end-of-file-fixer
+        name: Fix missing newline at end of file
+      - id: check-yaml
+        name: Validate YAML files
+        files: \.(yaml|yml)$
+      - id: check-json
+        name: Validate JSON files
+        files: \.json$
+      - id: check-merge-conflict
+        name: Check for merge conflict markers
+      - id: check-added-large-files
+        name: Prevent large file commits
+        args: ['--maxkb=5120']   # 5 MB limit — model .pt files should not be committed
+      - id: detect-private-key
+        name: Detect private keys / API keys
+      - id: mixed-line-ending
+        args: ['--fix=lf']
+
+  # ── Python: black formatter ────────────────────────────────────────────────
+  - repo: https://github.com/psf/black
+    rev: 24.4.2
+    hooks:
+      - id: black
+        name: Format Python with black
+        language_version: python3
+        files: ^backend/.*\.py$
+        args: ['--line-length=100']
+
+  # ── Python: flake8 linter ──────────────────────────────────────────────────
+  - repo: https://github.com/PyCQA/flake8
+    rev: 7.1.0
+    hooks:
+      - id: flake8
+        name: Lint Python with flake8
+        files: ^backend/.*\.py$
+        args:
+          - '--max-line-length=100'
+          - '--extend-ignore=E203,W503,E501'  # black-compatible ignores
+          - '--exclude=backend/ml/__pycache__,backend/.venv'
+
+  # ── Python: isort import sorter ────────────────────────────────────────────
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.13.2
+    hooks:
+      - id: isort
+        name: Sort Python imports
+        files: ^backend/.*\.py$
+        args: ['--profile=black', '--line-length=100']
+
+  # ── MLOps: artifact integrity check ───────────────────────────────────────
+  - repo: local
+    hooks:
+      - id: mlops-artifact-check
+        name: MLOps artifact integrity (fast)
+        language: python
+        entry: python -m pytest backend/tests/test_mlops_artifacts.py -q --tb=short
+        pass_filenames: false
+        always_run: false
+        files: ^backend/ml/(config\.yaml|datasets/manifest\.json|experiments/.+\.json)$
+        additional_dependencies: [pytest, pyyaml]
+
+      - id: manifest-json-valid
+        name: Check manifest.json is valid JSON
+        language: python
+        entry: python -c "import json,sys; json.load(open('backend/ml/datasets/manifest.json'))"
+        pass_filenames: false
+        files: ^backend/ml/datasets/manifest\.json$
+
+      - id: runs-json-valid
+        name: Check runs.json is valid JSON
+        language: python
+        entry: python -c "import json; json.load(open('backend/ml/experiments/runs.json'))"
+        pass_filenames: false
+        files: ^backend/ml/experiments/runs\.json$

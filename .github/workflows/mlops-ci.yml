@@ -1,0 +1,182 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# Weathering With You — MLOps CI Pipeline
+# Runs on every push/PR to main. Validates all MLOps artifacts and runs
+# the cross-model comparison. Fails fast if any artifact is corrupt or missing.
+# ══════════════════════════════════════════════════════════════════════════════
+
+name: MLOps CI
+
+on:
+  push:
+    branches: [main, dev]
+    paths:
+      - 'backend/ml/**'
+      - 'backend/tests/**'
+      - '.github/workflows/mlops-ci.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'backend/ml/**'
+      - 'backend/tests/**'
+
+jobs:
+  # ── Job 1: MLOps artifact integrity ─────────────────────────────────────────
+  mlops-tests:
+    name: MLOps Artifact Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install test dependencies
+        run: |
+          pip install pytest pyyaml matplotlib numpy
+
+      - name: Run MLOps artifact tests
+        run: |
+          pytest backend/tests/test_mlops_artifacts.py -v \
+            --tb=short \
+            --junit-xml=test-results/mlops.xml
+        env:
+          PYTHONDONTWRITEBYTECODE: 1
+
+      - name: Upload test results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: mlops-test-results
+          path: test-results/
+
+  # ── Job 2: Cross-model comparison ───────────────────────────────────────────
+  model-comparison:
+    name: Cross-Model Comparison
+    runs-on: ubuntu-latest
+    needs: mlops-tests
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install matplotlib numpy
+
+      - name: Run compare_models.py
+        run: |
+          python backend/ml/experiments/compare_models.py
+
+      - name: Check winner is Transformer
+        run: |
+          python3 -c "
+          import json
+          with open('backend/ml/experiments/comparison_table.json') as f:
+              t = json.load(f)
+          winner = t['winner']
+          val_mse = t['winner_val_mse']
+          print(f'Champion model: {winner.upper()}  val_mse={val_mse}')
+          assert winner == 'transformer', f'Unexpected winner: {winner}'
+          assert val_mse < 0.35, f'val_mse {val_mse} too high — model may have regressed'
+          print('✅ Champion check passed')
+          "
+
+      - name: Upload comparison chart
+        uses: actions/upload-artifact@v4
+        with:
+          name: comparison-chart
+          path: backend/ml/experiments/comparison_chart.png
+
+  # ── Job 3: Promotion gate check ─────────────────────────────────────────────
+  promotion-gate:
+    name: Promotion Gate Validation
+    runs-on: ubuntu-latest
+    needs: mlops-tests
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate promotion gate
+        run: |
+          python3 -c "
+          import json
+          from pathlib import Path
+
+          best   = json.loads(Path('backend/ml/experiments/best_metrics.json').read_text())
+          runs   = json.loads(Path('backend/ml/experiments/runs.json').read_text())['runs']
+          runs_by_id = {r['run_id']: r for r in runs}
+          gate = best['min_improvement']
+
+          print(f'Promotion gate: Δ > {gate}')
+          print()
+
+          all_ok = True
+          for model in ['transformer', 'lstm', 'cnn', 'vae']:
+              champ = best[model]
+              run   = runs_by_id[champ['champion_run']]
+              print(f'{model.upper():14} champion={champ[\"champion_run\"]:12} promoted={run[\"promoted\"]}')
+              if not run['promoted']:
+                  print(f'  ❌ FAIL: champion run is not marked promoted')
+                  all_ok = False
+              else:
+                  print(f'  ✅ OK')
+
+          assert all_ok, 'Promotion gate validation failed'
+          print()
+          print('All promotion gates valid.')
+          "
+
+  # ── Job 4: Data manifest integrity ──────────────────────────────────────────
+  data-integrity:
+    name: Dataset Manifest Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Check manifest schema version
+        run: |
+          python3 -c "
+          import json
+          from pathlib import Path
+          m = json.loads(Path('backend/ml/datasets/manifest.json').read_text())
+          assert m['schema_version'] == '1.0', f'Unexpected schema version: {m[\"schema_version\"]}'
+          assert len(m['features']) == 7, f'Expected 7 features, got {len(m[\"features\"])}'
+          assert m['totals']['cities'] == 6, f'Expected 6 cities'
+          assert m['totals']['total_rows'] == 105120, f'Expected 105120 rows'
+          print(f'✅ Manifest valid: {m[\"totals\"][\"cities\"]} cities, {m[\"totals\"][\"total_rows\"]} rows, {m[\"totals\"][\"total_mb\"]} MB')
+          "
+
+      - name: Verify config ↔ manifest feature alignment
+        run: |
+          python3 -c "
+          import json, re
+          from pathlib import Path
+          manifest = json.loads(Path('backend/ml/datasets/manifest.json').read_text())
+          config_src = Path('backend/ml/config.yaml').read_text()
+          for feat in manifest['features']:
+              assert feat in config_src, f'Feature {feat} missing from config.yaml'
+          print(f'✅ All {len(manifest[\"features\"])} features present in config.yaml')
+          "

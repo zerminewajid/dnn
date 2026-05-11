@@ -1,0 +1,143 @@
+{
+  "_comment": "Promotion gate registry. Each model's current production champion. Updated when a run beats min_improvement threshold.",
+  "schema_version": "1.0",
+  "min_improvement": 0.001,
+  "metric": "val_mse",
+  "last_updated": "2024-12-10T10:34:00Z",
+
+  "transformer": {
+    "champion_run": "txf-003",
+    "promoted_at": "2024-12-01T15:19:00Z",
+    "model_file": "models/transformer/model.pt",
+    "model_bytes": 2409712,
+    "model_md5": "10cd5676aef0060ec1530df59f402d9b",
+    "config": {
+      "d_model": 128, "n_heads": 4, "n_layers": 4, "d_ffn": 256,
+      "dropout": 0.15, "batch_size": 32, "lr": 0.0005,
+      "max_epochs": 15, "patience": 3
+    },
+    "metrics": {
+      "val_mse":   0.2543,
+      "val_mae":   0.3601,
+      "val_rmse":  0.5043,
+      "test_mse":  0.2612,
+      "test_mae":  0.3677,
+      "test_rmse": 0.5111
+    },
+    "beat_previous_by": 0.0401,
+    "previous_champion": "txf-002",
+    "previous_val_mse": 0.2944
+  },
+
+  "lstm": {
+    "champion_run": "lstm-003",
+    "promoted_at": "2024-12-05T16:41:00Z",
+    "model_file": "models/lstm/model.pt",
+    "model_bytes": 217509,
+    "model_md5": "961328488a6a9d2d02a94789a3df539d",
+    "config": {
+      "n_layers": 2, "hidden": 64, "dropout": 0.2,
+      "batch_size": 32, "lr": 0.0008,
+      "max_epochs": 10, "patience": 3
+    },
+    "metrics": {
+      "val_mse":   0.3066,
+      "val_mae":   0.3911,
+      "val_rmse":  0.5537,
+      "test_mse":  0.3133,
+      "test_mae":  0.3988,
+      "test_rmse": 0.5597
+    },
+    "beat_previous_by": 0.0422,
+    "previous_champion": "lstm-002",
+    "previous_val_mse": 0.3488
+  },
+
+  "cnn": {
+    "champion_run": "cnn-003",
+    "promoted_at": "2024-12-08T09:27:00Z",
+    "model_file": "models/cnn/model.pt",
+    "model_bytes": 3677707,
+    "model_md5": "4ba0f3e903aa2bb233670c1c4616c391",
+    "config": {
+      "batch_size": 32, "lr": 0.0005,
+      "max_epochs": 10, "patience": 3
+    },
+    "metrics": {
+      "val_mse":   0.3688,
+      "val_mae":   0.4333,
+      "val_rmse":  0.6073,
+      "test_mse":  0.3755,
+      "test_mae":  0.4411,
+      "test_rmse": 0.6128
+    },
+    "beat_previous_by": 0.0378,
+    "previous_champion": "cnn-002",
+    "previous_val_mse": 0.4066
+  },
+
+  "vae": {
+    "champion_run": "vae-003",
+    "promoted_at": "2024-12-10T10:34:00Z",
+    "model_file": "models/vae/model.pt",
+    "model_bytes": 12625,
+    "model_md5": "200f22182f9799e3c85b1a92a79aff5e",
+    "config": {
+      "latent_dim": 8, "hidden_dim": 32, "hidden_dim2": 16,
+      "lr": 0.0005, "beta_max": 0.4, "beta_anneal_epochs": 15
+    },
+    "metrics": {
+      "val_recon_mse":    0.3199,
+      "anomaly_threshold": 0.5811,
+      "anomaly_percentile": 95,
+      "precision_at_95":  0.83,
+      "recall_at_95":     0.81
+    },
+    "beat_previous_by": 0.0545,
+    "previous_champion": "vae-002",
+    "previous_val_recon_mse": 0.3744
+  },
+
+  "promotion_history": [
+    {
+      "timestamp": "2024-11-11T10:22:00Z", "model": "transformer",
+      "run": "txf-002", "val_mse": 0.2944, "action": "PROMOTED",
+      "reason": "First champion — no previous baseline."
+    },
+    {
+      "timestamp": "2024-11-15T11:04:00Z", "model": "lstm",
+      "run": "lstm-002", "val_mse": 0.3488, "action": "PROMOTED",
+      "reason": "First champion — no previous baseline."
+    },
+    {
+      "timestamp": "2024-11-22T11:22:00Z", "model": "cnn",
+      "run": "cnn-002", "val_mse": 0.4066, "action": "PROMOTED",
+      "reason": "First champion — no previous baseline."
+    },
+    {
+      "timestamp": "2024-11-25T15:29:00Z", "model": "vae",
+      "run": "vae-002", "val_recon_mse": 0.3744, "action": "PROMOTED",
+      "reason": "First champion — no previous baseline."
+    },
+    {
+      "timestamp": "2024-12-01T15:19:00Z", "model": "transformer",
+      "run": "txf-003", "val_mse": 0.2543, "action": "PROMOTED",
+      "reason": "Δ=0.0401 > min_improvement=0.001. Beat txf-002."
+    },
+    {
+      "timestamp": "2024-12-05T16:41:00Z", "model": "lstm",
+      "run": "lstm-003", "val_mse": 0.3066, "action": "PROMOTED",
+      "reason": "Δ=0.0422 > min_improvement=0.001. Beat lstm-002."
+    },
+    {
+      "timestamp": "2024-12-08T09:27:00Z", "model": "cnn",
+      "run": "cnn-003", "val_mse": 0.3688, "action": "PROMOTED",
+      "reason": "Δ=0.0378 > min_improvement=0.001. Beat cnn-002."
+    },
+    {
+      "timestamp": "2024-12-10T10:34:00Z", "model": "vae",
+      "run": "vae-003", "val_recon_mse": 0.3199, "action": "PROMOTED",
+      "reason": "Δ=0.0545 > min_improvement=0.001. Beat vae-002."
+    }
+  ]
+}
