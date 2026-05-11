@@ -185,7 +185,7 @@ jobs:
           print(f'✅ Manifest valid: {m[\"totals\"][\"cities\"]} cities, {m[\"totals\"][\"total_rows\"]} rows, {m[\"totals\"][\"total_mb\"]} MB')
           "
 
-      - name: Verify config ↔ manifest feature alignment
+      - name: Verify config vs manifest feature alignment
         run: |
           python3 -c "
           import json, re
